@@ -1,0 +1,13 @@
+SAUCIS REVIZYONU — MODEL/CUDA SMOKE
+============================================================
+Durum: MODEL_SMOKE_PASSED
+Final test tahmini ve makale sonucu uretilmedi. Legacy/split dosyalari degismedi.
+Protocol: dc483a2f7daabc096c06
+cpu: PASS
+cuda: PASS
+minilm: PASS
+labse: PASS
+bge_m3: PASS
+xlmr: PASS
+Bu rapor sadece istenen smoke kapsamidir; tam deney izni veya tam batch kapasite testi degildir.
+PRIVATE dosyalar ve .pt/.joblib/.npy dosyalari paylasim ZIPine dahil DEGIL.

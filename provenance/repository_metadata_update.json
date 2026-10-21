@@ -1,0 +1,32 @@
+{
+  "scope": "Repository URL update only; original research code and numerical results unchanged.",
+  "repository": "https://github.com/brkyvredu/turkish-kazakh-sentiment",
+  "repository_url_source": "Explicitly supplied by the user in this conversation.",
+  "original_package_sha256": "3659045566123234ca7239b794032ba675f51e71855fb8088b88b26a42418bc0",
+  "license_status": "NOT_SELECTED_BY_OWNER",
+  "zenodo_doi": null,
+  "external_write_performed": false,
+  "changed_files": [
+    {
+      "path": "CITATION.cff",
+      "original_sha256": "08cfecf50e89e934a9d589b9e0045b6bd0fd8ce487c95d1be3a507e386ca38ad",
+      "updated_sha256": "2b73a860be5e196f71537fd303c6c7b7fed742a83f44a8ef24fbb5ce90c69a65"
+    },
+    {
+      "path": "README.md",
+      "original_sha256": "0548fb44435a5c627d2df17301598ba6f8bd1c719a0c229f5ba9c6ca43d1e2f0",
+      "updated_sha256": "cbcb41d7e4ccba6e7b04a3c5b4affc8a7c4d0c19cbaf474ac171aafed7986a11"
+    },
+    {
+      "path": "YAYINLA_TR.md",
+      "original_sha256": "f26c06f4a9062f420e93390c0a3a49ef245137874102fca6b6fff4c5cee3f7c0",
+      "updated_sha256": "d1709d0d22b8284070ed6967fd8ea3836cf1c7c25c5be648bfb90b1d6fbdf176"
+    },
+    {
+      "path": "metadata/zenodo.template.json",
+      "original_sha256": "74e805fd0ba1f93309586ec84d26db868eba11072dc58871309a25b1a757e7a2",
+      "updated_sha256": "fe174fecb8629e938cfbb005e071f3307de7947cb57096fa1127b94911369fe7"
+    }
+  ],
+  "note": "Only the repository URL is set. Run the license helper after making an explicit license choice, then audit before publishing."
+}

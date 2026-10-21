@@ -1,0 +1,83 @@
+{
+  "version": "1.0.0",
+  "runner_sha256": "77ab3023054ef0d3f558a8c44901a3b048ef85597e90718c976a81d3c9dd690c",
+  "evaluation_report_sha256": "9de7cb66ec45ae734428dd9f65af4c28fae850317d0fed17f91b122fd150a5dc",
+  "selection_lock_sha256": "ce5e64c36db7469b56a7318cb308451fca68d73be0ebd48d2bc8b13d1900f425",
+  "root_spec_sha256": "c774dc97a731261bde2132e4fc31e7bb47b29cff24c4f2ac897ef8db1703e96d",
+  "split_report_sha256": "b39f3b3401bdb7ed439c6155846cf97da37bb713d698751bf30c3d4a477c0b5f",
+  "corpus_sha256": "48647a430ae5140c9e43c189a240204fd91653344fc15a84cd4f11a19b9a0941",
+  "protocol_id": "dc483a2f7daabc096c06",
+  "numpy": "2.3.5",
+  "unicode": "15.0.0",
+  "policy": {
+    "primary_metric": "macro_f1",
+    "bootstrap_repetitions": 2000,
+    "randomization_repetitions": 10000,
+    "confidence_level": 0.95,
+    "bootstrap_unit": "whole_NFKC_casefold_whitespace_text_group",
+    "bootstrap_method": "unstratified_cluster_percentile_fixed_class_macro_F1",
+    "paired_bootstrap": "same_resampled_groups_for_both_models",
+    "randomization": "whole_group_pairwise_swap_two_sided_absolute_delta_plus_one",
+    "multiplicity": "one_Holm_family_all_4_contrasts_x_2_directions_x_5_splits=40",
+    "alpha": 0.05,
+    "inference_scope": "conditional_on_fitted_models_and_one_test_split",
+    "overlapping_splits_pooled": false,
+    "across_seed_pvalue_aggregation": false,
+    "joint": "same_representation_classifier_same_target_manifest_bootstrap_only",
+    "diagnostics": "descriptive_post_test_no_hypothesis_tests",
+    "length_bands": "whitespace_words_1to5_6to15_16to30_31plus",
+    "script_bands": "presence_of_Unicode_named_LATIN_and_CYRILLIC_letters_not_language_ID",
+    "common_untruncated": "intersection_length_within_native_limits_of_all_4_encoders",
+    "statistical_preregistration_claimed": false,
+    "contrast_origin": "four_pairs_proposed_in_revision_planning;implementation_finalized_after_aggregate_test_results",
+    "no_refit": true,
+    "no_prediction": true,
+    "no_model_selection": true
+  },
+  "contrasts": [
+    [
+      "bge_lr_minus_word_lr",
+      [
+        "bge_m3",
+        "lr"
+      ],
+      [
+        "word",
+        "lr"
+      ]
+    ],
+    [
+      "bge_svm_minus_char_svm",
+      [
+        "bge_m3",
+        "svm"
+      ],
+      [
+        "char",
+        "svm"
+      ]
+    ],
+    [
+      "bge_lr_minus_labse_lr",
+      [
+        "bge_m3",
+        "lr"
+      ],
+      [
+        "labse",
+        "lr"
+      ]
+    ],
+    [
+      "xlmr_minus_bge_lr",
+      [
+        "xlmr",
+        "finetuned"
+      ],
+      [
+        "bge_m3",
+        "lr"
+      ]
+    ]
+  ]
+}

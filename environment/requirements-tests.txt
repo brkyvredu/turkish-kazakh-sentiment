@@ -1,0 +1,4 @@
+# Developer checks only; pytest was not recorded as a scientific-run dependency.
+pytest>=8,<10
+numpy
+scikit-learn

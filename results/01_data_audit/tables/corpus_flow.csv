@@ -1,0 +1,3 @@
+language,raw_rows,invalid_label_rows,empty_text_rows,short_nonempty_text_rows,eligible_before_any_dedup_or_cap,literal_placeholder_text_rows_not_automatically_removed,candidate_unique_normalized_text_label_pairs,candidate_unique_normalized_text_label_domain_tuples
+tr,150000,0,0,0,150000,0,141877,141877
+kz,180064,0,1,49,180014,0,178596,179089

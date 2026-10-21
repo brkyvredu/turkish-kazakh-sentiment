@@ -1,0 +1,1769 @@
+{
+  "root_spec": {
+    "protocol_id": "dc483a2f7daabc096c06",
+    "corpus_sha256": "48647a430ae5140c9e43c189a240204fd91653344fc15a84cd4f11a19b9a0941",
+    "rows": 330014,
+    "packages": {
+      "python": "3.12.3",
+      "numpy": "2.3.5",
+      "scipy": "1.17.1",
+      "scikit-learn": "1.8.0",
+      "joblib": "1.5.3",
+      "threadpoolctl": "3.6.0"
+    },
+    "split_report_sha256": "b39f3b3401bdb7ed439c6155846cf97da37bb713d698751bf30c3d4a477c0b5f",
+    "feature_report_sha256": "9e7182e4e79c1a34cd244fc621362c9cc16b4ce13ca5506d5687511101657aab",
+    "smoke_report_sha256": "e47ce3c0ba4e2abf1350bf4228a668f04fcb69c04766fa5749e66ff542efbf4d",
+    "schema_version": "1.1.0",
+    "runner_sha256": "957ffda653a635eb63ea3b3f940f78e350fd4177f90e20f769a2ec10a9603338",
+    "C_grid": [
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "lexical_parameters": {
+      "word": {
+        "analyzer": "word",
+        "binary": false,
+        "decode_error": "strict",
+        "dtype": "<class 'numpy.float64'>",
+        "encoding": "utf-8",
+        "input": "content",
+        "lowercase": true,
+        "max_df": 1.0,
+        "max_features": 80000,
+        "min_df": 2,
+        "ngram_range": [
+          1,
+          2
+        ],
+        "norm": "l2",
+        "preprocessor": null,
+        "smooth_idf": true,
+        "stop_words": null,
+        "strip_accents": null,
+        "sublinear_tf": true,
+        "token_pattern": "(?u)\\b\\w\\w+\\b",
+        "tokenizer": null,
+        "use_idf": true,
+        "vocabulary": null
+      },
+      "char": {
+        "analyzer": "char",
+        "binary": false,
+        "decode_error": "strict",
+        "dtype": "<class 'numpy.float64'>",
+        "encoding": "utf-8",
+        "input": "content",
+        "lowercase": true,
+        "max_df": 1.0,
+        "max_features": 120000,
+        "min_df": 2,
+        "ngram_range": [
+          3,
+          5
+        ],
+        "norm": "l2",
+        "preprocessor": null,
+        "smooth_idf": true,
+        "stop_words": null,
+        "strip_accents": null,
+        "sublinear_tf": true,
+        "token_pattern": "(?u)\\b\\w\\w+\\b",
+        "tokenizer": null,
+        "use_idf": true,
+        "vocabulary": null
+      }
+    },
+    "classifier_parameters": {
+      "lr": {
+        "C": 1,
+        "class_weight": "balanced",
+        "dual": false,
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "l1_ratio": 0.0,
+        "max_iter": 3000,
+        "n_jobs": null,
+        "penalty": "deprecated",
+        "random_state": 42,
+        "solver": "lbfgs",
+        "tol": 0.0001,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "svm": {
+        "C": 1,
+        "class_weight": "balanced",
+        "dual": "auto",
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "loss": "squared_hinge",
+        "max_iter": 10000,
+        "multi_class": "ovr",
+        "penalty": "l2",
+        "random_state": 42,
+        "tol": 0.0001,
+        "verbose": 0
+      }
+    },
+    "task": "development_only_no_test_scores",
+    "no_refit_train_plus_validation": true,
+    "convergence_policy": {
+      "policy_id": "svm_convergence_only_10000_then_100000_v1",
+      "svm_iteration_caps": [
+        10000,
+        100000
+      ],
+      "tol": 0.0001,
+      "trigger": "ConvergenceWarning or iteration cap reached; never validation performance",
+      "retry": "fresh estimator, identical seed, data, C, loss, penalty and dual selection",
+      "lr_iteration_caps": [
+        3000
+      ],
+      "second_failure": "block; never omit candidate or relax tolerance",
+      "legacy_reuse": "checksum-verified converged fits only; preserve actual producer/parameters"
+    },
+    "migration_source_root_sha256": "64c0c42eb7a3c59b61c910d6e6af8c7eca66f1f18b68de27f3f426da4e5a2452"
+  },
+  "all_contexts": {
+    "42": {
+      "main:tr": {
+        "context_id": "main:tr",
+        "train_set": "main:tr:train",
+        "validation_set": "main:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "main:tr_to_tr",
+          "main:tr_to_kz"
+        ]
+      },
+      "main:kz": {
+        "context_id": "main:kz",
+        "train_set": "main:kz:train",
+        "validation_set": "main:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "main:kz_to_tr",
+          "main:kz_to_kz"
+        ]
+      },
+      "main:joint": {
+        "context_id": "main:joint",
+        "train_set": "main:joint:train",
+        "validation_set": "main:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "main:joint_to_tr",
+          "main:joint_to_kz"
+        ]
+      },
+      "binary:tr": {
+        "context_id": "binary:tr",
+        "train_set": "binary:tr:train",
+        "validation_set": "binary:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "binary:tr_to_tr",
+          "binary:tr_to_kz",
+          "extreme:tr_to_kz"
+        ]
+      },
+      "binary:kz": {
+        "context_id": "binary:kz",
+        "train_set": "binary:kz:train",
+        "validation_set": "binary:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "binary:kz_to_tr",
+          "binary:kz_to_kz",
+          "extreme:kz_to_kz"
+        ]
+      },
+      "binary:joint": {
+        "context_id": "binary:joint",
+        "train_set": "binary:joint:train",
+        "validation_set": "binary:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "binary:joint_to_tr",
+          "binary:joint_to_kz",
+          "extreme:joint_to_kz"
+        ]
+      },
+      "low:100:tr": {
+        "context_id": "low:100:tr",
+        "train_set": "low_n100:tr:train",
+        "validation_set": "low_n100:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:100:tr_to_tr",
+          "low:100:tr_to_kz"
+        ]
+      },
+      "low:100:kz": {
+        "context_id": "low:100:kz",
+        "train_set": "low_n100:kz:train",
+        "validation_set": "low_n100:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "low:100:kz_to_tr",
+          "low:100:kz_to_kz"
+        ]
+      },
+      "low:100:joint": {
+        "context_id": "low:100:joint",
+        "train_set": "low_n100:joint:train",
+        "validation_set": "low_n100:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:100:joint_to_tr",
+          "low:100:joint_to_kz"
+        ]
+      },
+      "low:500:tr": {
+        "context_id": "low:500:tr",
+        "train_set": "low_n500:tr:train",
+        "validation_set": "low_n500:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:500:tr_to_tr",
+          "low:500:tr_to_kz"
+        ]
+      },
+      "low:500:kz": {
+        "context_id": "low:500:kz",
+        "train_set": "low_n500:kz:train",
+        "validation_set": "low_n500:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "low:500:kz_to_tr",
+          "low:500:kz_to_kz"
+        ]
+      },
+      "low:500:joint": {
+        "context_id": "low:500:joint",
+        "train_set": "low_n500:joint:train",
+        "validation_set": "low_n500:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:500:joint_to_tr",
+          "low:500:joint_to_kz"
+        ]
+      },
+      "low:1000:tr": {
+        "context_id": "low:1000:tr",
+        "train_set": "low_n1000:tr:train",
+        "validation_set": "low_n1000:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:1000:tr_to_tr",
+          "low:1000:tr_to_kz"
+        ]
+      },
+      "low:1000:kz": {
+        "context_id": "low:1000:kz",
+        "train_set": "low_n1000:kz:train",
+        "validation_set": "low_n1000:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "low:1000:kz_to_tr",
+          "low:1000:kz_to_kz"
+        ]
+      },
+      "low:1000:joint": {
+        "context_id": "low:1000:joint",
+        "train_set": "low_n1000:joint:train",
+        "validation_set": "low_n1000:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:1000:joint_to_tr",
+          "low:1000:joint_to_kz"
+        ]
+      },
+      "low:3000:tr": {
+        "context_id": "low:3000:tr",
+        "train_set": "low_n3000:tr:train",
+        "validation_set": "low_n3000:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:3000:tr_to_tr",
+          "low:3000:tr_to_kz"
+        ]
+      },
+      "low:3000:kz": {
+        "context_id": "low:3000:kz",
+        "train_set": "low_n3000:kz:train",
+        "validation_set": "low_n3000:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "low:3000:kz_to_tr",
+          "low:3000:kz_to_kz"
+        ]
+      },
+      "low:3000:joint": {
+        "context_id": "low:3000:joint",
+        "train_set": "low_n3000:joint:train",
+        "validation_set": "low_n3000:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:3000:joint_to_tr",
+          "low:3000:joint_to_kz"
+        ]
+      },
+      "low:5000:tr": {
+        "context_id": "low:5000:tr",
+        "train_set": "low_n5000:tr:train",
+        "validation_set": "low_n5000:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:5000:tr_to_tr",
+          "low:5000:tr_to_kz"
+        ]
+      },
+      "low:5000:kz": {
+        "context_id": "low:5000:kz",
+        "train_set": "low_n5000:kz:train",
+        "validation_set": "low_n5000:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "low:5000:kz_to_tr",
+          "low:5000:kz_to_kz"
+        ]
+      },
+      "low:5000:joint": {
+        "context_id": "low:5000:joint",
+        "train_set": "low_n5000:joint:train",
+        "validation_set": "low_n5000:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:5000:joint_to_tr",
+          "low:5000:joint_to_kz"
+        ]
+      },
+      "domain:TRSAv1": {
+        "context_id": "domain:TRSAv1",
+        "train_set": "domain:TRSAv1:train",
+        "validation_set": "domain:TRSAv1:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "domain:TRSAv1_to_TRSAv1",
+          "domain:TRSAv1_to_KZ_Market",
+          "domain:TRSAv1_to_KZ_Appstore"
+        ]
+      },
+      "domain:KZ_Market": {
+        "context_id": "domain:KZ_Market",
+        "train_set": "domain:KZ_Market:train",
+        "validation_set": "domain:KZ_Market:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "domain:KZ_Market_to_TRSAv1",
+          "domain:KZ_Market_to_KZ_Market",
+          "domain:KZ_Market_to_KZ_Appstore"
+        ]
+      },
+      "domain:KZ_Appstore": {
+        "context_id": "domain:KZ_Appstore",
+        "train_set": "domain:KZ_Appstore:train",
+        "validation_set": "domain:KZ_Appstore:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "domain:KZ_Appstore_to_TRSAv1",
+          "domain:KZ_Appstore_to_KZ_Market",
+          "domain:KZ_Appstore_to_KZ_Appstore"
+        ]
+      }
+    },
+    "43": {
+      "main:tr": {
+        "context_id": "main:tr",
+        "train_set": "main:tr:train",
+        "validation_set": "main:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "main:tr_to_tr",
+          "main:tr_to_kz"
+        ]
+      },
+      "main:kz": {
+        "context_id": "main:kz",
+        "train_set": "main:kz:train",
+        "validation_set": "main:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "main:kz_to_tr",
+          "main:kz_to_kz"
+        ]
+      },
+      "main:joint": {
+        "context_id": "main:joint",
+        "train_set": "main:joint:train",
+        "validation_set": "main:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "main:joint_to_tr",
+          "main:joint_to_kz"
+        ]
+      },
+      "binary:tr": {
+        "context_id": "binary:tr",
+        "train_set": "binary:tr:train",
+        "validation_set": "binary:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "binary:tr_to_tr",
+          "binary:tr_to_kz",
+          "extreme:tr_to_kz"
+        ]
+      },
+      "binary:kz": {
+        "context_id": "binary:kz",
+        "train_set": "binary:kz:train",
+        "validation_set": "binary:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "binary:kz_to_tr",
+          "binary:kz_to_kz",
+          "extreme:kz_to_kz"
+        ]
+      },
+      "binary:joint": {
+        "context_id": "binary:joint",
+        "train_set": "binary:joint:train",
+        "validation_set": "binary:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "binary:joint_to_tr",
+          "binary:joint_to_kz",
+          "extreme:joint_to_kz"
+        ]
+      },
+      "low:100:tr": {
+        "context_id": "low:100:tr",
+        "train_set": "low_n100:tr:train",
+        "validation_set": "low_n100:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:100:tr_to_tr",
+          "low:100:tr_to_kz"
+        ]
+      },
+      "low:100:kz": {
+        "context_id": "low:100:kz",
+        "train_set": "low_n100:kz:train",
+        "validation_set": "low_n100:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "low:100:kz_to_tr",
+          "low:100:kz_to_kz"
+        ]
+      },
+      "low:100:joint": {
+        "context_id": "low:100:joint",
+        "train_set": "low_n100:joint:train",
+        "validation_set": "low_n100:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:100:joint_to_tr",
+          "low:100:joint_to_kz"
+        ]
+      },
+      "low:500:tr": {
+        "context_id": "low:500:tr",
+        "train_set": "low_n500:tr:train",
+        "validation_set": "low_n500:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:500:tr_to_tr",
+          "low:500:tr_to_kz"
+        ]
+      },
+      "low:500:kz": {
+        "context_id": "low:500:kz",
+        "train_set": "low_n500:kz:train",
+        "validation_set": "low_n500:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "low:500:kz_to_tr",
+          "low:500:kz_to_kz"
+        ]
+      },
+      "low:500:joint": {
+        "context_id": "low:500:joint",
+        "train_set": "low_n500:joint:train",
+        "validation_set": "low_n500:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:500:joint_to_tr",
+          "low:500:joint_to_kz"
+        ]
+      },
+      "low:1000:tr": {
+        "context_id": "low:1000:tr",
+        "train_set": "low_n1000:tr:train",
+        "validation_set": "low_n1000:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:1000:tr_to_tr",
+          "low:1000:tr_to_kz"
+        ]
+      },
+      "low:1000:kz": {
+        "context_id": "low:1000:kz",
+        "train_set": "low_n1000:kz:train",
+        "validation_set": "low_n1000:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "low:1000:kz_to_tr",
+          "low:1000:kz_to_kz"
+        ]
+      },
+      "low:1000:joint": {
+        "context_id": "low:1000:joint",
+        "train_set": "low_n1000:joint:train",
+        "validation_set": "low_n1000:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:1000:joint_to_tr",
+          "low:1000:joint_to_kz"
+        ]
+      },
+      "low:3000:tr": {
+        "context_id": "low:3000:tr",
+        "train_set": "low_n3000:tr:train",
+        "validation_set": "low_n3000:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:3000:tr_to_tr",
+          "low:3000:tr_to_kz"
+        ]
+      },
+      "low:3000:kz": {
+        "context_id": "low:3000:kz",
+        "train_set": "low_n3000:kz:train",
+        "validation_set": "low_n3000:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "low:3000:kz_to_tr",
+          "low:3000:kz_to_kz"
+        ]
+      },
+      "low:3000:joint": {
+        "context_id": "low:3000:joint",
+        "train_set": "low_n3000:joint:train",
+        "validation_set": "low_n3000:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:3000:joint_to_tr",
+          "low:3000:joint_to_kz"
+        ]
+      },
+      "low:5000:tr": {
+        "context_id": "low:5000:tr",
+        "train_set": "low_n5000:tr:train",
+        "validation_set": "low_n5000:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:5000:tr_to_tr",
+          "low:5000:tr_to_kz"
+        ]
+      },
+      "low:5000:kz": {
+        "context_id": "low:5000:kz",
+        "train_set": "low_n5000:kz:train",
+        "validation_set": "low_n5000:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "low:5000:kz_to_tr",
+          "low:5000:kz_to_kz"
+        ]
+      },
+      "low:5000:joint": {
+        "context_id": "low:5000:joint",
+        "train_set": "low_n5000:joint:train",
+        "validation_set": "low_n5000:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:5000:joint_to_tr",
+          "low:5000:joint_to_kz"
+        ]
+      },
+      "domain:TRSAv1": {
+        "context_id": "domain:TRSAv1",
+        "train_set": "domain:TRSAv1:train",
+        "validation_set": "domain:TRSAv1:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "domain:TRSAv1_to_TRSAv1",
+          "domain:TRSAv1_to_KZ_Market",
+          "domain:TRSAv1_to_KZ_Appstore"
+        ]
+      },
+      "domain:KZ_Market": {
+        "context_id": "domain:KZ_Market",
+        "train_set": "domain:KZ_Market:train",
+        "validation_set": "domain:KZ_Market:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "domain:KZ_Market_to_TRSAv1",
+          "domain:KZ_Market_to_KZ_Market",
+          "domain:KZ_Market_to_KZ_Appstore"
+        ]
+      },
+      "domain:KZ_Appstore": {
+        "context_id": "domain:KZ_Appstore",
+        "train_set": "domain:KZ_Appstore:train",
+        "validation_set": "domain:KZ_Appstore:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "domain:KZ_Appstore_to_TRSAv1",
+          "domain:KZ_Appstore_to_KZ_Market",
+          "domain:KZ_Appstore_to_KZ_Appstore"
+        ]
+      }
+    },
+    "44": {
+      "main:tr": {
+        "context_id": "main:tr",
+        "train_set": "main:tr:train",
+        "validation_set": "main:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "main:tr_to_tr",
+          "main:tr_to_kz"
+        ]
+      },
+      "main:kz": {
+        "context_id": "main:kz",
+        "train_set": "main:kz:train",
+        "validation_set": "main:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "main:kz_to_tr",
+          "main:kz_to_kz"
+        ]
+      },
+      "main:joint": {
+        "context_id": "main:joint",
+        "train_set": "main:joint:train",
+        "validation_set": "main:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "main:joint_to_tr",
+          "main:joint_to_kz"
+        ]
+      },
+      "binary:tr": {
+        "context_id": "binary:tr",
+        "train_set": "binary:tr:train",
+        "validation_set": "binary:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "binary:tr_to_tr",
+          "binary:tr_to_kz",
+          "extreme:tr_to_kz"
+        ]
+      },
+      "binary:kz": {
+        "context_id": "binary:kz",
+        "train_set": "binary:kz:train",
+        "validation_set": "binary:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "binary:kz_to_tr",
+          "binary:kz_to_kz",
+          "extreme:kz_to_kz"
+        ]
+      },
+      "binary:joint": {
+        "context_id": "binary:joint",
+        "train_set": "binary:joint:train",
+        "validation_set": "binary:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "binary:joint_to_tr",
+          "binary:joint_to_kz",
+          "extreme:joint_to_kz"
+        ]
+      },
+      "low:100:tr": {
+        "context_id": "low:100:tr",
+        "train_set": "low_n100:tr:train",
+        "validation_set": "low_n100:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:100:tr_to_tr",
+          "low:100:tr_to_kz"
+        ]
+      },
+      "low:100:kz": {
+        "context_id": "low:100:kz",
+        "train_set": "low_n100:kz:train",
+        "validation_set": "low_n100:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "low:100:kz_to_tr",
+          "low:100:kz_to_kz"
+        ]
+      },
+      "low:100:joint": {
+        "context_id": "low:100:joint",
+        "train_set": "low_n100:joint:train",
+        "validation_set": "low_n100:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:100:joint_to_tr",
+          "low:100:joint_to_kz"
+        ]
+      },
+      "low:500:tr": {
+        "context_id": "low:500:tr",
+        "train_set": "low_n500:tr:train",
+        "validation_set": "low_n500:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:500:tr_to_tr",
+          "low:500:tr_to_kz"
+        ]
+      },
+      "low:500:kz": {
+        "context_id": "low:500:kz",
+        "train_set": "low_n500:kz:train",
+        "validation_set": "low_n500:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "low:500:kz_to_tr",
+          "low:500:kz_to_kz"
+        ]
+      },
+      "low:500:joint": {
+        "context_id": "low:500:joint",
+        "train_set": "low_n500:joint:train",
+        "validation_set": "low_n500:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:500:joint_to_tr",
+          "low:500:joint_to_kz"
+        ]
+      },
+      "low:1000:tr": {
+        "context_id": "low:1000:tr",
+        "train_set": "low_n1000:tr:train",
+        "validation_set": "low_n1000:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:1000:tr_to_tr",
+          "low:1000:tr_to_kz"
+        ]
+      },
+      "low:1000:kz": {
+        "context_id": "low:1000:kz",
+        "train_set": "low_n1000:kz:train",
+        "validation_set": "low_n1000:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "low:1000:kz_to_tr",
+          "low:1000:kz_to_kz"
+        ]
+      },
+      "low:1000:joint": {
+        "context_id": "low:1000:joint",
+        "train_set": "low_n1000:joint:train",
+        "validation_set": "low_n1000:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:1000:joint_to_tr",
+          "low:1000:joint_to_kz"
+        ]
+      },
+      "low:3000:tr": {
+        "context_id": "low:3000:tr",
+        "train_set": "low_n3000:tr:train",
+        "validation_set": "low_n3000:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:3000:tr_to_tr",
+          "low:3000:tr_to_kz"
+        ]
+      },
+      "low:3000:kz": {
+        "context_id": "low:3000:kz",
+        "train_set": "low_n3000:kz:train",
+        "validation_set": "low_n3000:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "low:3000:kz_to_tr",
+          "low:3000:kz_to_kz"
+        ]
+      },
+      "low:3000:joint": {
+        "context_id": "low:3000:joint",
+        "train_set": "low_n3000:joint:train",
+        "validation_set": "low_n3000:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:3000:joint_to_tr",
+          "low:3000:joint_to_kz"
+        ]
+      },
+      "low:5000:tr": {
+        "context_id": "low:5000:tr",
+        "train_set": "low_n5000:tr:train",
+        "validation_set": "low_n5000:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:5000:tr_to_tr",
+          "low:5000:tr_to_kz"
+        ]
+      },
+      "low:5000:kz": {
+        "context_id": "low:5000:kz",
+        "train_set": "low_n5000:kz:train",
+        "validation_set": "low_n5000:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "low:5000:kz_to_tr",
+          "low:5000:kz_to_kz"
+        ]
+      },
+      "low:5000:joint": {
+        "context_id": "low:5000:joint",
+        "train_set": "low_n5000:joint:train",
+        "validation_set": "low_n5000:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:5000:joint_to_tr",
+          "low:5000:joint_to_kz"
+        ]
+      },
+      "domain:TRSAv1": {
+        "context_id": "domain:TRSAv1",
+        "train_set": "domain:TRSAv1:train",
+        "validation_set": "domain:TRSAv1:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "domain:TRSAv1_to_TRSAv1",
+          "domain:TRSAv1_to_KZ_Market",
+          "domain:TRSAv1_to_KZ_Appstore"
+        ]
+      },
+      "domain:KZ_Market": {
+        "context_id": "domain:KZ_Market",
+        "train_set": "domain:KZ_Market:train",
+        "validation_set": "domain:KZ_Market:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "domain:KZ_Market_to_TRSAv1",
+          "domain:KZ_Market_to_KZ_Market",
+          "domain:KZ_Market_to_KZ_Appstore"
+        ]
+      },
+      "domain:KZ_Appstore": {
+        "context_id": "domain:KZ_Appstore",
+        "train_set": "domain:KZ_Appstore:train",
+        "validation_set": "domain:KZ_Appstore:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "domain:KZ_Appstore_to_TRSAv1",
+          "domain:KZ_Appstore_to_KZ_Market",
+          "domain:KZ_Appstore_to_KZ_Appstore"
+        ]
+      }
+    },
+    "45": {
+      "main:tr": {
+        "context_id": "main:tr",
+        "train_set": "main:tr:train",
+        "validation_set": "main:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "main:tr_to_tr",
+          "main:tr_to_kz"
+        ]
+      },
+      "main:kz": {
+        "context_id": "main:kz",
+        "train_set": "main:kz:train",
+        "validation_set": "main:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "main:kz_to_tr",
+          "main:kz_to_kz"
+        ]
+      },
+      "main:joint": {
+        "context_id": "main:joint",
+        "train_set": "main:joint:train",
+        "validation_set": "main:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "main:joint_to_tr",
+          "main:joint_to_kz"
+        ]
+      },
+      "binary:tr": {
+        "context_id": "binary:tr",
+        "train_set": "binary:tr:train",
+        "validation_set": "binary:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "binary:tr_to_tr",
+          "binary:tr_to_kz",
+          "extreme:tr_to_kz"
+        ]
+      },
+      "binary:kz": {
+        "context_id": "binary:kz",
+        "train_set": "binary:kz:train",
+        "validation_set": "binary:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "binary:kz_to_tr",
+          "binary:kz_to_kz",
+          "extreme:kz_to_kz"
+        ]
+      },
+      "binary:joint": {
+        "context_id": "binary:joint",
+        "train_set": "binary:joint:train",
+        "validation_set": "binary:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "binary:joint_to_tr",
+          "binary:joint_to_kz",
+          "extreme:joint_to_kz"
+        ]
+      },
+      "low:100:tr": {
+        "context_id": "low:100:tr",
+        "train_set": "low_n100:tr:train",
+        "validation_set": "low_n100:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:100:tr_to_tr",
+          "low:100:tr_to_kz"
+        ]
+      },
+      "low:100:kz": {
+        "context_id": "low:100:kz",
+        "train_set": "low_n100:kz:train",
+        "validation_set": "low_n100:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "low:100:kz_to_tr",
+          "low:100:kz_to_kz"
+        ]
+      },
+      "low:100:joint": {
+        "context_id": "low:100:joint",
+        "train_set": "low_n100:joint:train",
+        "validation_set": "low_n100:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:100:joint_to_tr",
+          "low:100:joint_to_kz"
+        ]
+      },
+      "low:500:tr": {
+        "context_id": "low:500:tr",
+        "train_set": "low_n500:tr:train",
+        "validation_set": "low_n500:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:500:tr_to_tr",
+          "low:500:tr_to_kz"
+        ]
+      },
+      "low:500:kz": {
+        "context_id": "low:500:kz",
+        "train_set": "low_n500:kz:train",
+        "validation_set": "low_n500:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "low:500:kz_to_tr",
+          "low:500:kz_to_kz"
+        ]
+      },
+      "low:500:joint": {
+        "context_id": "low:500:joint",
+        "train_set": "low_n500:joint:train",
+        "validation_set": "low_n500:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:500:joint_to_tr",
+          "low:500:joint_to_kz"
+        ]
+      },
+      "low:1000:tr": {
+        "context_id": "low:1000:tr",
+        "train_set": "low_n1000:tr:train",
+        "validation_set": "low_n1000:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:1000:tr_to_tr",
+          "low:1000:tr_to_kz"
+        ]
+      },
+      "low:1000:kz": {
+        "context_id": "low:1000:kz",
+        "train_set": "low_n1000:kz:train",
+        "validation_set": "low_n1000:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "low:1000:kz_to_tr",
+          "low:1000:kz_to_kz"
+        ]
+      },
+      "low:1000:joint": {
+        "context_id": "low:1000:joint",
+        "train_set": "low_n1000:joint:train",
+        "validation_set": "low_n1000:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:1000:joint_to_tr",
+          "low:1000:joint_to_kz"
+        ]
+      },
+      "low:3000:tr": {
+        "context_id": "low:3000:tr",
+        "train_set": "low_n3000:tr:train",
+        "validation_set": "low_n3000:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:3000:tr_to_tr",
+          "low:3000:tr_to_kz"
+        ]
+      },
+      "low:3000:kz": {
+        "context_id": "low:3000:kz",
+        "train_set": "low_n3000:kz:train",
+        "validation_set": "low_n3000:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "low:3000:kz_to_tr",
+          "low:3000:kz_to_kz"
+        ]
+      },
+      "low:3000:joint": {
+        "context_id": "low:3000:joint",
+        "train_set": "low_n3000:joint:train",
+        "validation_set": "low_n3000:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:3000:joint_to_tr",
+          "low:3000:joint_to_kz"
+        ]
+      },
+      "low:5000:tr": {
+        "context_id": "low:5000:tr",
+        "train_set": "low_n5000:tr:train",
+        "validation_set": "low_n5000:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:5000:tr_to_tr",
+          "low:5000:tr_to_kz"
+        ]
+      },
+      "low:5000:kz": {
+        "context_id": "low:5000:kz",
+        "train_set": "low_n5000:kz:train",
+        "validation_set": "low_n5000:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "low:5000:kz_to_tr",
+          "low:5000:kz_to_kz"
+        ]
+      },
+      "low:5000:joint": {
+        "context_id": "low:5000:joint",
+        "train_set": "low_n5000:joint:train",
+        "validation_set": "low_n5000:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:5000:joint_to_tr",
+          "low:5000:joint_to_kz"
+        ]
+      },
+      "domain:TRSAv1": {
+        "context_id": "domain:TRSAv1",
+        "train_set": "domain:TRSAv1:train",
+        "validation_set": "domain:TRSAv1:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "domain:TRSAv1_to_TRSAv1",
+          "domain:TRSAv1_to_KZ_Market",
+          "domain:TRSAv1_to_KZ_Appstore"
+        ]
+      },
+      "domain:KZ_Market": {
+        "context_id": "domain:KZ_Market",
+        "train_set": "domain:KZ_Market:train",
+        "validation_set": "domain:KZ_Market:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "domain:KZ_Market_to_TRSAv1",
+          "domain:KZ_Market_to_KZ_Market",
+          "domain:KZ_Market_to_KZ_Appstore"
+        ]
+      },
+      "domain:KZ_Appstore": {
+        "context_id": "domain:KZ_Appstore",
+        "train_set": "domain:KZ_Appstore:train",
+        "validation_set": "domain:KZ_Appstore:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "domain:KZ_Appstore_to_TRSAv1",
+          "domain:KZ_Appstore_to_KZ_Market",
+          "domain:KZ_Appstore_to_KZ_Appstore"
+        ]
+      }
+    },
+    "46": {
+      "main:tr": {
+        "context_id": "main:tr",
+        "train_set": "main:tr:train",
+        "validation_set": "main:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "main:tr_to_tr",
+          "main:tr_to_kz"
+        ]
+      },
+      "main:kz": {
+        "context_id": "main:kz",
+        "train_set": "main:kz:train",
+        "validation_set": "main:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "main:kz_to_tr",
+          "main:kz_to_kz"
+        ]
+      },
+      "main:joint": {
+        "context_id": "main:joint",
+        "train_set": "main:joint:train",
+        "validation_set": "main:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "main:joint_to_tr",
+          "main:joint_to_kz"
+        ]
+      },
+      "binary:tr": {
+        "context_id": "binary:tr",
+        "train_set": "binary:tr:train",
+        "validation_set": "binary:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "binary:tr_to_tr",
+          "binary:tr_to_kz",
+          "extreme:tr_to_kz"
+        ]
+      },
+      "binary:kz": {
+        "context_id": "binary:kz",
+        "train_set": "binary:kz:train",
+        "validation_set": "binary:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "binary:kz_to_tr",
+          "binary:kz_to_kz",
+          "extreme:kz_to_kz"
+        ]
+      },
+      "binary:joint": {
+        "context_id": "binary:joint",
+        "train_set": "binary:joint:train",
+        "validation_set": "binary:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "binary:joint_to_tr",
+          "binary:joint_to_kz",
+          "extreme:joint_to_kz"
+        ]
+      },
+      "low:100:tr": {
+        "context_id": "low:100:tr",
+        "train_set": "low_n100:tr:train",
+        "validation_set": "low_n100:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:100:tr_to_tr",
+          "low:100:tr_to_kz"
+        ]
+      },
+      "low:100:kz": {
+        "context_id": "low:100:kz",
+        "train_set": "low_n100:kz:train",
+        "validation_set": "low_n100:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "low:100:kz_to_tr",
+          "low:100:kz_to_kz"
+        ]
+      },
+      "low:100:joint": {
+        "context_id": "low:100:joint",
+        "train_set": "low_n100:joint:train",
+        "validation_set": "low_n100:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:100:joint_to_tr",
+          "low:100:joint_to_kz"
+        ]
+      },
+      "low:500:tr": {
+        "context_id": "low:500:tr",
+        "train_set": "low_n500:tr:train",
+        "validation_set": "low_n500:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:500:tr_to_tr",
+          "low:500:tr_to_kz"
+        ]
+      },
+      "low:500:kz": {
+        "context_id": "low:500:kz",
+        "train_set": "low_n500:kz:train",
+        "validation_set": "low_n500:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "low:500:kz_to_tr",
+          "low:500:kz_to_kz"
+        ]
+      },
+      "low:500:joint": {
+        "context_id": "low:500:joint",
+        "train_set": "low_n500:joint:train",
+        "validation_set": "low_n500:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:500:joint_to_tr",
+          "low:500:joint_to_kz"
+        ]
+      },
+      "low:1000:tr": {
+        "context_id": "low:1000:tr",
+        "train_set": "low_n1000:tr:train",
+        "validation_set": "low_n1000:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:1000:tr_to_tr",
+          "low:1000:tr_to_kz"
+        ]
+      },
+      "low:1000:kz": {
+        "context_id": "low:1000:kz",
+        "train_set": "low_n1000:kz:train",
+        "validation_set": "low_n1000:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "low:1000:kz_to_tr",
+          "low:1000:kz_to_kz"
+        ]
+      },
+      "low:1000:joint": {
+        "context_id": "low:1000:joint",
+        "train_set": "low_n1000:joint:train",
+        "validation_set": "low_n1000:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:1000:joint_to_tr",
+          "low:1000:joint_to_kz"
+        ]
+      },
+      "low:3000:tr": {
+        "context_id": "low:3000:tr",
+        "train_set": "low_n3000:tr:train",
+        "validation_set": "low_n3000:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:3000:tr_to_tr",
+          "low:3000:tr_to_kz"
+        ]
+      },
+      "low:3000:kz": {
+        "context_id": "low:3000:kz",
+        "train_set": "low_n3000:kz:train",
+        "validation_set": "low_n3000:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "low:3000:kz_to_tr",
+          "low:3000:kz_to_kz"
+        ]
+      },
+      "low:3000:joint": {
+        "context_id": "low:3000:joint",
+        "train_set": "low_n3000:joint:train",
+        "validation_set": "low_n3000:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:3000:joint_to_tr",
+          "low:3000:joint_to_kz"
+        ]
+      },
+      "low:5000:tr": {
+        "context_id": "low:5000:tr",
+        "train_set": "low_n5000:tr:train",
+        "validation_set": "low_n5000:tr:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:5000:tr_to_tr",
+          "low:5000:tr_to_kz"
+        ]
+      },
+      "low:5000:kz": {
+        "context_id": "low:5000:kz",
+        "train_set": "low_n5000:kz:train",
+        "validation_set": "low_n5000:kz:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "low:5000:kz_to_tr",
+          "low:5000:kz_to_kz"
+        ]
+      },
+      "low:5000:joint": {
+        "context_id": "low:5000:joint",
+        "train_set": "low_n5000:joint:train",
+        "validation_set": "low_n5000:joint:validation",
+        "selection_metric": "equal_language_mean_macro_f1",
+        "validation_languages": [
+          "kz",
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "low:5000:joint_to_tr",
+          "low:5000:joint_to_kz"
+        ]
+      },
+      "domain:TRSAv1": {
+        "context_id": "domain:TRSAv1",
+        "train_set": "domain:TRSAv1:train",
+        "validation_set": "domain:TRSAv1:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "tr"
+        ],
+        "evaluation_recipe_ids": [
+          "domain:TRSAv1_to_TRSAv1",
+          "domain:TRSAv1_to_KZ_Market",
+          "domain:TRSAv1_to_KZ_Appstore"
+        ]
+      },
+      "domain:KZ_Market": {
+        "context_id": "domain:KZ_Market",
+        "train_set": "domain:KZ_Market:train",
+        "validation_set": "domain:KZ_Market:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "domain:KZ_Market_to_TRSAv1",
+          "domain:KZ_Market_to_KZ_Market",
+          "domain:KZ_Market_to_KZ_Appstore"
+        ]
+      },
+      "domain:KZ_Appstore": {
+        "context_id": "domain:KZ_Appstore",
+        "train_set": "domain:KZ_Appstore:train",
+        "validation_set": "domain:KZ_Appstore:validation",
+        "selection_metric": "source_macro_f1",
+        "validation_languages": [
+          "kz"
+        ],
+        "evaluation_recipe_ids": [
+          "domain:KZ_Appstore_to_TRSAv1",
+          "domain:KZ_Appstore_to_KZ_Market",
+          "domain:KZ_Appstore_to_KZ_Appstore"
+        ]
+      }
+    }
+  },
+  "note": "Only development set labels may be read. Test IDs are recipe metadata only."
+}

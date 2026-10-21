@@ -1,0 +1,14 @@
+SAUCIS — VALIDATION ILE SECILEN DOGRUSAL MODELLER (YAKINSAMA DUZELTMESI)
+========================================================================
+Durum: LINEAR_MODELS_READY
+Protocol: dc483a2f7daabc096c06
+Tamamlanan temsil-context isleri: 600/600
+Secilmis classifier: 1200; dogrulanmis tamamlanan C-fit: 6000
+Eski kosudan egitilmeden aktarilan C-fit: 19
+Bu cagriya ait yeni basarili C-fit: 5981
+Kaydedilmis yakinsamayan deneme: 2
+SVM: once 10000; yalnizca yakinsamazsa ayni seed/ayarlarla 100000; tol=1e-4 sabit.
+Basarisiz aday sessizce elenmez; LR ayarlari degismedi.
+Final-test tahmini/skoru YOK. Orijinal linear klasoru, splitler ve feature bankalari degismedi.
+Rapor yarim context icindeki tamamlanan adaylari da sayar.
+PRIVATE modeller, ornek kimlikleri ve tahminler paylasim ZIPinde YOK.

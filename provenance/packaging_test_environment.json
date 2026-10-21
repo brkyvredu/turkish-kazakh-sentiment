@@ -1,0 +1,11 @@
+{
+  "purpose": "Release packaging tests only, NOT the original scientific execution environment",
+  "python": "3.13.5",
+  "packages": {
+    "numpy": "2.3.5",
+    "scikit-learn": "1.8.0",
+    "pytest": "9.0.2"
+  },
+  "full_GPU_reproduction_executed": false,
+  "external_accounts_accessed": false
+}

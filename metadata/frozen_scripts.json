@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "scripts": [
+    {
+      "path": "00_revision_preflight.py",
+      "bytes": 27452,
+      "sha256": "4245f74f5e5736b565736c8b8f85932d4d1ce6fec531e73fe3372deb76802dd5",
+      "treatment": "byte-identical recovered experiment script; canonical execution filename"
+    },
+    {
+      "path": "01_revision_data_gate.py",
+      "bytes": 36736,
+      "sha256": "91aa226c31f1bf3216fb404c059439003bca60fcbb1e50f32df42f51b5d19c09",
+      "treatment": "byte-identical recovered experiment script; canonical execution filename"
+    },
+    {
+      "path": "02_revision_split_gate.py",
+      "bytes": 44184,
+      "sha256": "93340b208b37cab26790d7e8015e0f6e59bf6b2d8bf9bcf10266c4c5628ebb55",
+      "treatment": "byte-identical recovered experiment script; canonical execution filename"
+    },
+    {
+      "path": "03_revision_model_smoke.py",
+      "bytes": 44121,
+      "sha256": "e045b983a7719717a3dbcaf25ba83b2201be4cd340aca411af80e6d2caeb45b0",
+      "treatment": "byte-identical recovered experiment script; canonical execution filename"
+    },
+    {
+      "path": "04_revision_build_features.py",
+      "bytes": 37672,
+      "sha256": "1365dd5beca0a63a9e7b95da4e836e16279c8ad6d55aac3849c02e3ed488d430",
+      "treatment": "byte-identical recovered experiment script; canonical execution filename"
+    },
+    {
+      "path": "05_revision_train_linear.py",
+      "bytes": 41602,
+      "sha256": "6f8b9dbc04ba567e959744ee685134092807a748f769ed1bc586ba1438bb5650",
+      "treatment": "byte-identical recovered experiment script; canonical execution filename"
+    },
+    {
+      "path": "05_revision_train_linear_recovery.py",
+      "bytes": 73703,
+      "sha256": "957ffda653a635eb63ea3b3f940f78e350fd4177f90e20f769a2ec10a9603338",
+      "treatment": "byte-identical recovered experiment script; canonical execution filename"
+    },
+    {
+      "path": "06_revision_xlmr_pilot.py",
+      "bytes": 39844,
+      "sha256": "6c8a833b1c3d5175516f966b6004f2511920576b335df470ed5bba60a970a8da",
+      "treatment": "byte-identical recovered experiment script; canonical execution filename"
+    },
+    {
+      "path": "07_revision_train_xlmr.py",
+      "bytes": 66089,
+      "sha256": "9e6d39a4a02494f95b09211b13275ad87cf0954b32547ad3b1ae5bde67b2b9e4",
+      "treatment": "byte-identical recovered experiment script; canonical execution filename"
+    },
+    {
+      "path": "08_revision_evaluate_test.py",
+      "bytes": 54152,
+      "sha256": "6e6a71baef11c3c0ddc1883a8aa0b9d3f25b43ec51a1db25e6a4124b768e23dd",
+      "treatment": "byte-identical recovered experiment script; canonical execution filename"
+    },
+    {
+      "path": "09_revision_analyse_predictions.py",
+      "bytes": 34148,
+      "sha256": "77ab3023054ef0d3f558a8c44901a3b048ef85597e90718c976a81d3c9dd690c",
+      "treatment": "byte-identical recovered experiment script; canonical execution filename"
+    },
+    {
+      "path": "10_revision_llm_baseline.py",
+      "bytes": 45052,
+      "sha256": "2b62ff21fe988e1c43834e9b13a6aedb6bf674754a4c3e7ed3ccbc8a32fb7387",
+      "treatment": "byte-identical recovered experiment script; canonical execution filename"
+    }
+  ]
+}

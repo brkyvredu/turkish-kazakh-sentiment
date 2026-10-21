@@ -1,0 +1,10 @@
+SAUCIS — KAYITLI TAHMINLERDEN ISTATISTIK / HATA ANALIZI
+==================================================================
+Durum: POST_TEST_ANALYSIS_READY
+Egitim, GPU, model yukleme, yeni tahmin, model secimi ve veri degisikligi YOK.
+Dogrulanan ana gorev tahmin dosyalari: 330/330
+Yeni analiz birimi: 810; tekrar kullanilan: 0
+CI: sabit egitilmis model ve tek split kosullu. Bes splitin kayitlari bagimsiz havuzlanmadi.
+Transfer: 4 sabit kontrast x 2 yon x 5 split; 10000 grup-swap; tek40testHolm.
+Bu analiz onkayit/preregistration olarak sunulmaz. Puan/siralama model secimini degistirmez.
+Ham yorum, ornek/grup IDleri ve PRIVATE tahminler paylasim ZIPine eklenmez.

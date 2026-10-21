@@ -1,0 +1,89 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "frozen_script_bytes_and_syntax",
+      "status": "PASS",
+      "details": 12
+    },
+    {
+      "check": "known_dependency_hashes",
+      "status": "PASS",
+      "details": 7
+    },
+    {
+      "check": "public_result_provenance",
+      "status": "PASS",
+      "details": 99
+    },
+    {
+      "check": "test_scope_unique",
+      "status": "PASS",
+      "details": 2820
+    },
+    {
+      "check": "confusion_and_class_metric_recomputation",
+      "status": "PASS",
+      "details": 2820
+    },
+    {
+      "check": "test_csv_json_agreement",
+      "status": "PASS",
+      "details": 2820
+    },
+    {
+      "check": "five_partition_means_sample_SDs",
+      "status": "PASS",
+      "details": 564
+    },
+    {
+      "check": "transfer_points_plus_one_Holm40",
+      "status": "PASS",
+      "details": 40
+    },
+    {
+      "check": "single_CI_point_estimates_only",
+      "status": "PASS",
+      "details": 330
+    },
+    {
+      "check": "joint_points_and_final_seed_coverage",
+      "status": "PASS",
+      "details": 110
+    },
+    {
+      "check": "documented_nonstatistical_counter_discrepancy",
+      "status": "PASS",
+      "details": "788 historical counter; 810 total units and all 110 joint rows present"
+    },
+    {
+      "check": "LLM_confusions_invalids_class_F1",
+      "status": "PASS",
+      "details": 120
+    },
+    {
+      "check": "LLM_means_sample_SDs",
+      "status": "PASS",
+      "details": 24
+    },
+    {
+      "check": "LLM_points_plus_one_Holm20",
+      "status": "PASS",
+      "details": 20
+    },
+    {
+      "check": "excluded_runtime_artifacts",
+      "status": "PASS",
+      "details": true
+    },
+    {
+      "check": "release_file_checksums",
+      "status": "PASS",
+      "details": 197
+    }
+  ],
+  "scope": "Public aggregates and frozen-code integrity only; no full GPU retraining, inference or bootstrap/permutation replay.",
+  "experiments_reexecuted": false,
+  "conditional_CI_endpoints_independently_recomputed": false,
+  "external_services_contacted": false
+}

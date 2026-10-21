@@ -1,0 +1,43 @@
+{
+  "status": "proposal_for_full_runner_review_not_executed_here",
+  "model": "FacebookAI/xlm-roberta-base",
+  "revision": "e73636d4f797dec63c3081bb6ed5c7b0bb3f2089",
+  "families": [
+    "main",
+    "binary",
+    "domain"
+  ],
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "learning_rates": [
+    1e-05,
+    2e-05
+  ],
+  "max_epochs": 3,
+  "effective_batch": 32,
+  "max_length": 256,
+  "optimizer": {
+    "name": "AdamW",
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.01,
+    "weight_decay_groups": "all trainable parameters, matching pilot",
+    "foreach": false,
+    "fused": false
+  },
+  "scheduler": "linear decay, warmup ceil(0.1*total_optimizer_steps)",
+  "max_grad_norm": 1.0,
+  "loss": "training-frequency balanced cross-entropy, one weight denominator for each effective batch",
+  "precision": "TO_BE_LOCKED_AFTER_ENGINEERING_PILOT",
+  "microbatch": "TO_BE_LOCKED_AFTER_ENGINEERING_PILOT",
+  "selection": "source-only validation; joint equal-language mean; LR/epoch selected within each training context",
+  "pilot_difference": "pilot uses artificial20step horizon,warmup2 and3updates; not full epochs or tuning"
+}

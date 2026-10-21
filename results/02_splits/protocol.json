@@ -1,0 +1,64 @@
+{
+  "protocol_id": "dc483a2f7daabc096c06",
+  "policy": {
+    "allocator": "group_histogram_greedy_v1; repeated groups then exact singleton quota fill",
+    "binary_labels": {
+      "negative": 0,
+      "positive": 1
+    },
+    "cross_protocol_roles": "main and low-resource train/validation roles may differ; test is identical per seed",
+    "domain_sources": [
+      "TRSAv1",
+      "KZ_Market",
+      "KZ_Appstore"
+    ],
+    "domain_train_per_class": 500,
+    "domain_validation_per_class": 80,
+    "duplicate_policy": "retain records and original labels; keep group in one partition",
+    "eligibility": "recognized_label and len(collapse_ws(raw_text)) >= 3",
+    "extreme_test": "Kazakh original rating 1 or 5; reuse binary-trained models, no extreme-only fit",
+    "group_key": "sha256(collapse_ws(NFKC(raw_text).casefold()))",
+    "low_nesting": "hash-ranked records per language/class/role, independent of budget",
+    "low_pools": "80/20 group-disjoint roles within the non-test development pool",
+    "low_total_labels_per_class_per_language": [
+      100,
+      500,
+      1000,
+      3000,
+      5000
+    ],
+    "low_train_fraction": 0.8,
+    "main_split": {
+      "test": 0.2,
+      "train": 0.7,
+      "validation": 0.1
+    },
+    "main_train_cap_per_class_per_language": 12000,
+    "model_text": "collapse_ws(raw_text); no added Unicode normalization or casefold",
+    "sampling_failure": "REVIEW_REQUIRED; no quota shrink, replacement, seed retry or resplitting",
+    "sampling_unit_within_role": "record; budgets may select part of a group but cannot move it across roles",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "selection": "source-only validation; joint = mean of the two language macro-F1 scores",
+    "split_strata": "language + reported domain + mapped three-class label"
+  },
+  "source_fingerprints": {
+    "tr": {
+      "repo_id": "maydogan/Turkish_SentimentAnalysis_TRSAv1",
+      "revision": "3bda52ed2c57ac1e80ac463192cafeeae9f72213",
+      "sha256": "9a4ed0fdb4ae45f2d16322d9b459b4e924c39b2c18c43c29378adc417d966589"
+    },
+    "kz": {
+      "repo_id": "issai/kazsandra",
+      "revision": "a39e47875861b4f3bdf697b5fb768a1fdd95869a",
+      "sha256": "496035dd5c19ceacac6b07809fc073a87a4918f63145432f94483dd409f9e3a6"
+    }
+  },
+  "code_sha256": "93340b208b37cab26790d7e8015e0f6e59bf6b2d8bf9bcf10266c4c5628ebb55",
+  "unicode_version": "15.0.0"
+}

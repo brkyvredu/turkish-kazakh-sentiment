@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "protocol_id": "dc483a2f7daabc096c06",
+  "runner_sha256": "6e6a71baef11c3c0ddc1883a8aa0b9d3f25b43ec51a1db25e6a4124b768e23dd",
+  "trainer_sha256": "9e6d39a4a02494f95b09211b13275ad87cf0954b32547ad3b1ae5bde67b2b9e4",
+  "corpus_sha256": "48647a430ae5140c9e43c189a240204fd91653344fc15a84cd4f11a19b9a0941",
+  "split_report_sha256": "b39f3b3401bdb7ed439c6155846cf97da37bb713d698751bf30c3d4a477c0b5f",
+  "feature_report_sha256": "9e7182e4e79c1a34cd244fc621362c9cc16b4ce13ca5506d5687511101657aab",
+  "linear_report_sha256": "0457561c0de81252b45c5fe2db2ea782a1ae7b27df21abb41a05adbe1c5ccccf",
+  "xlmr_report_sha256": "d485b8905e400506b9fc888c6fdcbf278be7ed04bf0d49ca78ec25c2eed4213e",
+  "linear_packages": {
+    "python": "3.12.3",
+    "numpy": "2.3.5",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.8.0",
+    "joblib": "1.5.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "neural_packages": {
+    "python": "3.12.3",
+    "numpy": "2.3.5",
+    "torch": "2.10.0+cu128",
+    "transformers": "5.12.1",
+    "sentence-transformers": "5.6.0",
+    "tokenizers": "0.22.2",
+    "safetensors": "0.8.0",
+    "huggingface-hub": "1.21.0"
+  },
+  "settings": {
+    "primary_metric": "macro_f1",
+    "class_zero_division": 0,
+    "labels": "fixed_task_labels",
+    "predictions": "native_classifier_predict_or_argmax_XLM_logits",
+    "calibration": false,
+    "model_selection_on_test": false,
+    "refit": false,
+    "xlmr_precision": "fp32",
+    "xlmr_microbatch": 4,
+    "xlmr_max_length": 256,
+    "xlmr_padding": "fixed_256",
+    "xlmr_attention": "eager",
+    "TF32": false,
+    "prediction_shard_rows": 1024,
+    "extreme": "reuse_binary_KZ_test_predictions",
+    "summary": "arithmetic_mean_and_sample_SD_over_five_splits_not_pooled_independent_rows",
+    "statistical_tests_in_this_stage": false
+  },
+  "model_registry_sha256": "fe6eda81fbda9e8bde7ae3acee08dad26dba739308f74fa14a80cd8ed0313a6a",
+  "plan_sha256": "af32154adad501e4a45c6727460b64e208553253e1bb95bc41f0edbeb7b140ca"
+}

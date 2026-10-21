@@ -1,0 +1,24 @@
+% Descriptive mean +/- sample SD over five overlapping grouped splits; not a CI.
+\begin{table*}[t]
+\centering
+\small
+\caption{Three-class test macro-F1 (mean $\pm$ sample SD over five grouped splits). All classifiers are reported separately.}
+\label{tab:revised_main_results}
+\begin{tabular}{lrrrrrr}
+\hline
+Model & TR$\to$TR & KZ$\to$KZ & TR$\to$KZ & KZ$\to$TR & Joint$\to$TR & Joint$\to$KZ \\
+\hline
+Word TF-IDF + LR & $0.7841 \pm 0.0013$ & $0.5076 \pm 0.0038$ & $0.1003 \pm 0.0021$ & $0.2106 \pm 0.0255$ & $0.7813 \pm 0.0017$ & $0.5200 \pm 0.0038$ \\
+Word TF-IDF + SVM & $0.7838 \pm 0.0011$ & $0.5238 \pm 0.0027$ & $0.0997 \pm 0.0011$ & $0.1900 \pm 0.0216$ & $0.7825 \pm 0.0016$ & $0.5242 \pm 0.0033$ \\
+Char TF-IDF + LR & $0.7870 \pm 0.0018$ & $0.5202 \pm 0.0030$ & $0.1104 \pm 0.0017$ & $0.3202 \pm 0.0247$ & $0.7861 \pm 0.0022$ & $0.5283 \pm 0.0039$ \\
+Char TF-IDF + SVM & $0.7860 \pm 0.0020$ & $0.5364 \pm 0.0038$ & $0.1104 \pm 0.0016$ & $0.2653 \pm 0.0285$ & $0.7865 \pm 0.0020$ & $0.5346 \pm 0.0035$ \\
+MiniLM + LR & $0.7406 \pm 0.0025$ & $0.4576 \pm 0.0023$ & $0.3236 \pm 0.0040$ & $0.5867 \pm 0.0072$ & $0.7299 \pm 0.0026$ & $0.4539 \pm 0.0035$ \\
+MiniLM + SVM & $0.7401 \pm 0.0030$ & $0.4762 \pm 0.0033$ & $0.3230 \pm 0.0044$ & $0.5708 \pm 0.0094$ & $0.7290 \pm 0.0034$ & $0.4554 \pm 0.0039$ \\
+LaBSE + LR & $0.7671 \pm 0.0009$ & $0.5052 \pm 0.0013$ & $0.4156 \pm 0.0036$ & $0.6269 \pm 0.0066$ & $0.7549 \pm 0.0012$ & $0.5041 \pm 0.0020$ \\
+LaBSE + SVM & $0.7673 \pm 0.0012$ & $0.5226 \pm 0.0042$ & $0.4270 \pm 0.0057$ & $0.6307 \pm 0.0069$ & $0.7569 \pm 0.0022$ & $0.5084 \pm 0.0025$ \\
+BGE-M3 + LR & $0.7922 \pm 0.0035$ & $0.5150 \pm 0.0029$ & $0.4166 \pm 0.0117$ & $0.6774 \pm 0.0099$ & $0.7864 \pm 0.0032$ & $0.5171 \pm 0.0024$ \\
+BGE-M3 + SVM & $0.7923 \pm 0.0021$ & $0.5337 \pm 0.0025$ & $0.4195 \pm 0.0039$ & $0.6725 \pm 0.0064$ & $0.7886 \pm 0.0023$ & $0.5241 \pm 0.0021$ \\
+XLM-R fine-tuned & $0.8155 \pm 0.0022$ & $0.5408 \pm 0.0091$ & $0.4129 \pm 0.0028$ & $0.6305 \pm 0.0206$ & $0.8138 \pm 0.0040$ & $0.5595 \pm 0.0070$ \\
+\hline
+\end{tabular}
+\end{table*}

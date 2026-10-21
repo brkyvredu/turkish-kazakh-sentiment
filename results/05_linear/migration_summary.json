@@ -1,0 +1,11 @@
+{
+  "state": "LEGACY_IMPORT_VERIFIED",
+  "source_root_spec_sha256": "64c0c42eb7a3c59b61c910d6e6af8c7eca66f1f18b68de27f3f426da4e5a2452",
+  "source_runner_sha256": "6f8b9dbc04ba567e959744ee685134092807a748f769ed1bc586ba1438bb5650",
+  "importer_runner_sha256": "957ffda653a635eb63ea3b3f940f78e350fd4177f90e20f769a2ec10a9603338",
+  "candidate_imported": 19,
+  "candidate_already_present": 0,
+  "transformer_imported": 2,
+  "failed_status_imported": 1,
+  "complete_representation_imported": 1
+}

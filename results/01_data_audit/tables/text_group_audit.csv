@@ -1,0 +1,10 @@
+scope,normalization,groups,rows,repeated_groups,rows_in_repeated_groups,conflicting_label_groups,rows_in_conflicting_label_groups,cross_language_groups,rows_in_cross_language_groups,cross_domain_groups,largest_group_rows
+tr,exact,140980,150000,2736,11756,889,6864,0,0,0,281
+kz,exact,177289,180014,1910,4635,1189,3114,0,0,467,13
+all,exact,318269,330014,4646,16391,2078,9978,0,0,467,281
+tr,nfc_ws,140891,150000,2757,11866,898,6925,0,0,0,281
+kz,nfc_ws,177242,180014,1936,4708,1193,3138,0,0,475,13
+all,nfc_ws,318133,330014,4693,16574,2091,10063,0,0,475,281
+tr,nfkc_casefold_ws_diagnostic,139577,150000,2814,13237,937,8137,0,0,0,422
+kz,nfkc_casefold_ws_diagnostic,176407,180014,2349,5956,1457,4062,0,0,637,17
+all,nfkc_casefold_ws_diagnostic,315984,330014,5163,19193,2394,12199,0,0,637,422

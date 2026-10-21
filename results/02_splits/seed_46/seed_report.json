@@ -1,0 +1,4436 @@
+{
+  "seed": 46,
+  "state": "SPLIT_MANIFESTS_READY",
+  "training_allowed": false,
+  "checks": [
+    {
+      "check": "all_groups_assigned",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_outer_test_unchanged",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "main:tr_to_tr:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "main:tr_to_tr:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "main:tr_to_tr:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "main:tr_to_tr:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "main:tr_to_kz:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "main:tr_to_kz:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "main:tr_to_kz:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "main:tr_to_kz:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "main:kz_to_tr:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "main:kz_to_tr:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "main:kz_to_tr:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "main:kz_to_tr:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "main:kz_to_kz:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "main:kz_to_kz:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "main:kz_to_kz:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "main:kz_to_kz:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "main:joint_to_tr:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "main:joint_to_tr:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "main:joint_to_tr:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "main:joint_to_tr:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "main:joint_to_kz:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "main:joint_to_kz:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "main:joint_to_kz:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "main:joint_to_kz:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "binary:tr_to_tr:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "binary:tr_to_tr:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "binary:tr_to_tr:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "binary:tr_to_tr:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "binary:tr_to_kz:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "binary:tr_to_kz:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "binary:tr_to_kz:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "binary:tr_to_kz:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "extreme:tr_to_kz:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "extreme:tr_to_kz:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "extreme:tr_to_kz:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "extreme:tr_to_kz:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "binary:kz_to_tr:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "binary:kz_to_tr:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "binary:kz_to_tr:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "binary:kz_to_tr:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "binary:kz_to_kz:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "binary:kz_to_kz:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "binary:kz_to_kz:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "binary:kz_to_kz:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "extreme:kz_to_kz:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "extreme:kz_to_kz:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "extreme:kz_to_kz:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "extreme:kz_to_kz:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "binary:joint_to_tr:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "binary:joint_to_tr:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "binary:joint_to_tr:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "binary:joint_to_tr:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "binary:joint_to_kz:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "binary:joint_to_kz:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "binary:joint_to_kz:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "binary:joint_to_kz:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "extreme:joint_to_kz:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "extreme:joint_to_kz:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "extreme:joint_to_kz:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "extreme:joint_to_kz:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n100:tr:train:exact_budget",
+      "status": "PASS",
+      "details": {
+        "expected": 240,
+        "actual": 240
+      }
+    },
+    {
+      "check": "low_n100:tr:train:nested",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n100:tr:validation:exact_budget",
+      "status": "PASS",
+      "details": {
+        "expected": 60,
+        "actual": 60
+      }
+    },
+    {
+      "check": "low_n100:tr:validation:nested",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n100:kz:train:exact_budget",
+      "status": "PASS",
+      "details": {
+        "expected": 240,
+        "actual": 240
+      }
+    },
+    {
+      "check": "low_n100:kz:train:nested",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n100:kz:validation:exact_budget",
+      "status": "PASS",
+      "details": {
+        "expected": 60,
+        "actual": 60
+      }
+    },
+    {
+      "check": "low_n100:kz:validation:nested",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:100:tr_to_tr:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "low:100:tr_to_tr:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:100:tr_to_tr:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:100:tr_to_tr:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:100:tr_to_kz:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "low:100:tr_to_kz:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:100:tr_to_kz:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:100:tr_to_kz:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:100:kz_to_tr:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "low:100:kz_to_tr:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:100:kz_to_tr:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:100:kz_to_tr:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:100:kz_to_kz:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "low:100:kz_to_kz:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:100:kz_to_kz:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:100:kz_to_kz:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:100:joint_to_tr:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "low:100:joint_to_tr:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:100:joint_to_tr:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:100:joint_to_tr:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:100:joint_to_kz:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "low:100:joint_to_kz:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:100:joint_to_kz:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:100:joint_to_kz:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n500:tr:train:exact_budget",
+      "status": "PASS",
+      "details": {
+        "expected": 1200,
+        "actual": 1200
+      }
+    },
+    {
+      "check": "low_n500:tr:train:nested",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n500:tr:validation:exact_budget",
+      "status": "PASS",
+      "details": {
+        "expected": 300,
+        "actual": 300
+      }
+    },
+    {
+      "check": "low_n500:tr:validation:nested",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n500:kz:train:exact_budget",
+      "status": "PASS",
+      "details": {
+        "expected": 1200,
+        "actual": 1200
+      }
+    },
+    {
+      "check": "low_n500:kz:train:nested",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n500:kz:validation:exact_budget",
+      "status": "PASS",
+      "details": {
+        "expected": 300,
+        "actual": 300
+      }
+    },
+    {
+      "check": "low_n500:kz:validation:nested",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:500:tr_to_tr:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "low:500:tr_to_tr:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:500:tr_to_tr:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:500:tr_to_tr:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:500:tr_to_kz:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "low:500:tr_to_kz:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:500:tr_to_kz:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:500:tr_to_kz:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:500:kz_to_tr:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "low:500:kz_to_tr:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:500:kz_to_tr:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:500:kz_to_tr:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:500:kz_to_kz:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "low:500:kz_to_kz:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:500:kz_to_kz:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:500:kz_to_kz:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:500:joint_to_tr:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "low:500:joint_to_tr:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:500:joint_to_tr:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:500:joint_to_tr:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:500:joint_to_kz:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "low:500:joint_to_kz:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:500:joint_to_kz:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:500:joint_to_kz:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n1000:tr:train:exact_budget",
+      "status": "PASS",
+      "details": {
+        "expected": 2400,
+        "actual": 2400
+      }
+    },
+    {
+      "check": "low_n1000:tr:train:nested",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n1000:tr:validation:exact_budget",
+      "status": "PASS",
+      "details": {
+        "expected": 600,
+        "actual": 600
+      }
+    },
+    {
+      "check": "low_n1000:tr:validation:nested",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n1000:kz:train:exact_budget",
+      "status": "PASS",
+      "details": {
+        "expected": 2400,
+        "actual": 2400
+      }
+    },
+    {
+      "check": "low_n1000:kz:train:nested",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n1000:kz:validation:exact_budget",
+      "status": "PASS",
+      "details": {
+        "expected": 600,
+        "actual": 600
+      }
+    },
+    {
+      "check": "low_n1000:kz:validation:nested",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:1000:tr_to_tr:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "low:1000:tr_to_tr:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:1000:tr_to_tr:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:1000:tr_to_tr:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:1000:tr_to_kz:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "low:1000:tr_to_kz:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:1000:tr_to_kz:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:1000:tr_to_kz:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:1000:kz_to_tr:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "low:1000:kz_to_tr:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:1000:kz_to_tr:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:1000:kz_to_tr:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:1000:kz_to_kz:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "low:1000:kz_to_kz:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:1000:kz_to_kz:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:1000:kz_to_kz:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:1000:joint_to_tr:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "low:1000:joint_to_tr:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:1000:joint_to_tr:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:1000:joint_to_tr:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:1000:joint_to_kz:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "low:1000:joint_to_kz:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:1000:joint_to_kz:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:1000:joint_to_kz:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n3000:tr:train:exact_budget",
+      "status": "PASS",
+      "details": {
+        "expected": 7200,
+        "actual": 7200
+      }
+    },
+    {
+      "check": "low_n3000:tr:train:nested",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n3000:tr:validation:exact_budget",
+      "status": "PASS",
+      "details": {
+        "expected": 1800,
+        "actual": 1800
+      }
+    },
+    {
+      "check": "low_n3000:tr:validation:nested",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n3000:kz:train:exact_budget",
+      "status": "PASS",
+      "details": {
+        "expected": 7200,
+        "actual": 7200
+      }
+    },
+    {
+      "check": "low_n3000:kz:train:nested",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n3000:kz:validation:exact_budget",
+      "status": "PASS",
+      "details": {
+        "expected": 1800,
+        "actual": 1800
+      }
+    },
+    {
+      "check": "low_n3000:kz:validation:nested",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:3000:tr_to_tr:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "low:3000:tr_to_tr:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:3000:tr_to_tr:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:3000:tr_to_tr:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:3000:tr_to_kz:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "low:3000:tr_to_kz:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:3000:tr_to_kz:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:3000:tr_to_kz:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:3000:kz_to_tr:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "low:3000:kz_to_tr:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:3000:kz_to_tr:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:3000:kz_to_tr:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:3000:kz_to_kz:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "low:3000:kz_to_kz:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:3000:kz_to_kz:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:3000:kz_to_kz:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:3000:joint_to_tr:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "low:3000:joint_to_tr:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:3000:joint_to_tr:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:3000:joint_to_tr:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:3000:joint_to_kz:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "low:3000:joint_to_kz:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:3000:joint_to_kz:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:3000:joint_to_kz:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n5000:tr:train:exact_budget",
+      "status": "PASS",
+      "details": {
+        "expected": 12000,
+        "actual": 12000
+      }
+    },
+    {
+      "check": "low_n5000:tr:train:nested",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n5000:tr:validation:exact_budget",
+      "status": "PASS",
+      "details": {
+        "expected": 3000,
+        "actual": 3000
+      }
+    },
+    {
+      "check": "low_n5000:tr:validation:nested",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n5000:kz:train:exact_budget",
+      "status": "PASS",
+      "details": {
+        "expected": 12000,
+        "actual": 12000
+      }
+    },
+    {
+      "check": "low_n5000:kz:train:nested",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n5000:kz:validation:exact_budget",
+      "status": "PASS",
+      "details": {
+        "expected": 3000,
+        "actual": 3000
+      }
+    },
+    {
+      "check": "low_n5000:kz:validation:nested",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:5000:tr_to_tr:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "low:5000:tr_to_tr:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:5000:tr_to_tr:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:5000:tr_to_tr:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:5000:tr_to_kz:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "low:5000:tr_to_kz:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:5000:tr_to_kz:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:5000:tr_to_kz:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:5000:kz_to_tr:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "low:5000:kz_to_tr:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:5000:kz_to_tr:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:5000:kz_to_tr:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:5000:kz_to_kz:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "low:5000:kz_to_kz:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:5000:kz_to_kz:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:5000:kz_to_kz:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:5000:joint_to_tr:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "low:5000:joint_to_tr:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:5000:joint_to_tr:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:5000:joint_to_tr:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:5000:joint_to_kz:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "low:5000:joint_to_kz:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:5000:joint_to_kz:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low:5000:joint_to_kz:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:TRSAv1:train:exact_budget",
+      "status": "PASS",
+      "details": {
+        "expected": 1500,
+        "actual": 1500
+      }
+    },
+    {
+      "check": "domain:TRSAv1:validation:exact_budget",
+      "status": "PASS",
+      "details": {
+        "expected": 240,
+        "actual": 240
+      }
+    },
+    {
+      "check": "domain:KZ_Market:train:exact_budget",
+      "status": "PASS",
+      "details": {
+        "expected": 1500,
+        "actual": 1500
+      }
+    },
+    {
+      "check": "domain:KZ_Market:validation:exact_budget",
+      "status": "PASS",
+      "details": {
+        "expected": 240,
+        "actual": 240
+      }
+    },
+    {
+      "check": "domain:KZ_Appstore:train:exact_budget",
+      "status": "PASS",
+      "details": {
+        "expected": 1500,
+        "actual": 1500
+      }
+    },
+    {
+      "check": "domain:KZ_Appstore:validation:exact_budget",
+      "status": "PASS",
+      "details": {
+        "expected": 240,
+        "actual": 240
+      }
+    },
+    {
+      "check": "domain:TRSAv1_to_TRSAv1:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "domain:TRSAv1_to_TRSAv1:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:TRSAv1_to_TRSAv1:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:TRSAv1_to_TRSAv1:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:TRSAv1_to_KZ_Market:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "domain:TRSAv1_to_KZ_Market:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:TRSAv1_to_KZ_Market:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:TRSAv1_to_KZ_Market:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:TRSAv1_to_KZ_Appstore:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "domain:TRSAv1_to_KZ_Appstore:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:TRSAv1_to_KZ_Appstore:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:TRSAv1_to_KZ_Appstore:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:KZ_Market_to_TRSAv1:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "domain:KZ_Market_to_TRSAv1:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:KZ_Market_to_TRSAv1:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:KZ_Market_to_TRSAv1:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:KZ_Market_to_KZ_Market:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "domain:KZ_Market_to_KZ_Market:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:KZ_Market_to_KZ_Market:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:KZ_Market_to_KZ_Market:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:KZ_Market_to_KZ_Appstore:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "domain:KZ_Market_to_KZ_Appstore:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:KZ_Market_to_KZ_Appstore:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:KZ_Market_to_KZ_Appstore:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:KZ_Appstore_to_TRSAv1:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "domain:KZ_Appstore_to_TRSAv1:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:KZ_Appstore_to_TRSAv1:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:KZ_Appstore_to_TRSAv1:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:KZ_Appstore_to_KZ_Market:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "domain:KZ_Appstore_to_KZ_Market:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:KZ_Appstore_to_KZ_Market:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:KZ_Appstore_to_KZ_Market:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:KZ_Appstore_to_KZ_Appstore:group_disjoint",
+      "status": "PASS",
+      "details": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      }
+    },
+    {
+      "check": "domain:KZ_Appstore_to_KZ_Appstore:all_classes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:KZ_Appstore_to_KZ_Appstore:source_only_selection",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:KZ_Appstore_to_KZ_Appstore:training_languages",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "membership_ids_exist",
+      "status": "PASS",
+      "details": 0
+    },
+    {
+      "check": "every_eligible_record_has_base_partition",
+      "status": "PASS",
+      "details": {
+        "expected": 330014,
+        "actual": 330014
+      }
+    },
+    {
+      "check": "sql_low_main_test_identity",
+      "status": "PASS",
+      "details": 0
+    },
+    {
+      "check": "sql_all_task_label_mappings",
+      "status": "PASS",
+      "details": 0
+    },
+    {
+      "check": "sql_memberships_respect_assigned_roles",
+      "status": "PASS",
+      "details": 0
+    },
+    {
+      "check": "main:tr:train:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "main:tr:validation:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "main:tr:test:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "main:kz:train:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "main:kz:validation:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "main:kz:test:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "main:joint:train:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "main:joint:validation:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "binary:tr:train:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "binary:tr:validation:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "binary:tr:test:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "binary:kz:train:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "binary:kz:validation:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "binary:kz:test:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "binary:joint:train:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "binary:joint:validation:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "extreme:kz:test:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n100:tr:train:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n100:tr:validation:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n100:kz:train:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n100:kz:validation:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n100:joint:train:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n100:joint:validation:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n500:tr:train:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n500:tr:validation:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n500:kz:train:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n500:kz:validation:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n500:joint:train:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n500:joint:validation:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n1000:tr:train:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n1000:tr:validation:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n1000:kz:train:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n1000:kz:validation:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n1000:joint:train:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n1000:joint:validation:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n3000:tr:train:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n3000:tr:validation:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n3000:kz:train:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n3000:kz:validation:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n3000:joint:train:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n3000:joint:validation:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n5000:tr:train:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n5000:tr:validation:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n5000:kz:train:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n5000:kz:validation:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n5000:joint:train:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "low_n5000:joint:validation:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:TRSAv1:train:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:TRSAv1:validation:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:TRSAv1:test:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:KZ_Market:train:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:KZ_Market:validation:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:KZ_Market:test:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:KZ_Appstore:train:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:KZ_Appstore:validation:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "domain:KZ_Appstore:test:persisted_checksum",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "sqlite_integrity",
+      "status": "PASS",
+      "details": null
+    }
+  ],
+  "budgets": [
+    {
+      "family": "main",
+      "language": "tr",
+      "label": "negative",
+      "role": "train",
+      "requested": 12000,
+      "actual": 12000,
+      "available": 35000,
+      "mode": "UPPER_CAP"
+    },
+    {
+      "family": "main",
+      "language": "tr",
+      "label": "neutral",
+      "role": "train",
+      "requested": 12000,
+      "actual": 12000,
+      "available": 35000,
+      "mode": "UPPER_CAP"
+    },
+    {
+      "family": "main",
+      "language": "tr",
+      "label": "positive",
+      "role": "train",
+      "requested": 12000,
+      "actual": 12000,
+      "available": 35000,
+      "mode": "UPPER_CAP"
+    },
+    {
+      "family": "main",
+      "language": "kz",
+      "label": "negative",
+      "role": "train",
+      "requested": 12000,
+      "actual": 12000,
+      "available": 21104,
+      "mode": "UPPER_CAP"
+    },
+    {
+      "family": "main",
+      "language": "kz",
+      "label": "neutral",
+      "role": "train",
+      "requested": 12000,
+      "actual": 5080,
+      "available": 5080,
+      "mode": "UPPER_CAP"
+    },
+    {
+      "family": "main",
+      "language": "kz",
+      "label": "positive",
+      "role": "train",
+      "requested": 12000,
+      "actual": 12000,
+      "available": 99824,
+      "mode": "UPPER_CAP"
+    },
+    {
+      "family": "low_n100",
+      "language": "tr",
+      "label": "negative",
+      "role": "train",
+      "requested": 80,
+      "actual": 80,
+      "available": 32000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n100",
+      "language": "tr",
+      "label": "neutral",
+      "role": "train",
+      "requested": 80,
+      "actual": 80,
+      "available": 32000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n100",
+      "language": "tr",
+      "label": "positive",
+      "role": "train",
+      "requested": 80,
+      "actual": 80,
+      "available": 32000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n100",
+      "language": "tr",
+      "label": "negative",
+      "role": "validation",
+      "requested": 20,
+      "actual": 20,
+      "available": 8000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n100",
+      "language": "tr",
+      "label": "neutral",
+      "role": "validation",
+      "requested": 20,
+      "actual": 20,
+      "available": 8000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n100",
+      "language": "tr",
+      "label": "positive",
+      "role": "validation",
+      "requested": 20,
+      "actual": 20,
+      "available": 8000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n100",
+      "language": "kz",
+      "label": "negative",
+      "role": "train",
+      "requested": 80,
+      "actual": 80,
+      "available": 19293,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n100",
+      "language": "kz",
+      "label": "neutral",
+      "role": "train",
+      "requested": 80,
+      "actual": 80,
+      "available": 4644,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n100",
+      "language": "kz",
+      "label": "positive",
+      "role": "train",
+      "requested": 80,
+      "actual": 80,
+      "available": 91268,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n100",
+      "language": "kz",
+      "label": "negative",
+      "role": "validation",
+      "requested": 20,
+      "actual": 20,
+      "available": 4825,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n100",
+      "language": "kz",
+      "label": "neutral",
+      "role": "validation",
+      "requested": 20,
+      "actual": 20,
+      "available": 1161,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n100",
+      "language": "kz",
+      "label": "positive",
+      "role": "validation",
+      "requested": 20,
+      "actual": 20,
+      "available": 22817,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n500",
+      "language": "tr",
+      "label": "negative",
+      "role": "train",
+      "requested": 400,
+      "actual": 400,
+      "available": 32000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n500",
+      "language": "tr",
+      "label": "neutral",
+      "role": "train",
+      "requested": 400,
+      "actual": 400,
+      "available": 32000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n500",
+      "language": "tr",
+      "label": "positive",
+      "role": "train",
+      "requested": 400,
+      "actual": 400,
+      "available": 32000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n500",
+      "language": "tr",
+      "label": "negative",
+      "role": "validation",
+      "requested": 100,
+      "actual": 100,
+      "available": 8000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n500",
+      "language": "tr",
+      "label": "neutral",
+      "role": "validation",
+      "requested": 100,
+      "actual": 100,
+      "available": 8000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n500",
+      "language": "tr",
+      "label": "positive",
+      "role": "validation",
+      "requested": 100,
+      "actual": 100,
+      "available": 8000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n500",
+      "language": "kz",
+      "label": "negative",
+      "role": "train",
+      "requested": 400,
+      "actual": 400,
+      "available": 19293,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n500",
+      "language": "kz",
+      "label": "neutral",
+      "role": "train",
+      "requested": 400,
+      "actual": 400,
+      "available": 4644,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n500",
+      "language": "kz",
+      "label": "positive",
+      "role": "train",
+      "requested": 400,
+      "actual": 400,
+      "available": 91268,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n500",
+      "language": "kz",
+      "label": "negative",
+      "role": "validation",
+      "requested": 100,
+      "actual": 100,
+      "available": 4825,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n500",
+      "language": "kz",
+      "label": "neutral",
+      "role": "validation",
+      "requested": 100,
+      "actual": 100,
+      "available": 1161,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n500",
+      "language": "kz",
+      "label": "positive",
+      "role": "validation",
+      "requested": 100,
+      "actual": 100,
+      "available": 22817,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n1000",
+      "language": "tr",
+      "label": "negative",
+      "role": "train",
+      "requested": 800,
+      "actual": 800,
+      "available": 32000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n1000",
+      "language": "tr",
+      "label": "neutral",
+      "role": "train",
+      "requested": 800,
+      "actual": 800,
+      "available": 32000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n1000",
+      "language": "tr",
+      "label": "positive",
+      "role": "train",
+      "requested": 800,
+      "actual": 800,
+      "available": 32000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n1000",
+      "language": "tr",
+      "label": "negative",
+      "role": "validation",
+      "requested": 200,
+      "actual": 200,
+      "available": 8000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n1000",
+      "language": "tr",
+      "label": "neutral",
+      "role": "validation",
+      "requested": 200,
+      "actual": 200,
+      "available": 8000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n1000",
+      "language": "tr",
+      "label": "positive",
+      "role": "validation",
+      "requested": 200,
+      "actual": 200,
+      "available": 8000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n1000",
+      "language": "kz",
+      "label": "negative",
+      "role": "train",
+      "requested": 800,
+      "actual": 800,
+      "available": 19293,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n1000",
+      "language": "kz",
+      "label": "neutral",
+      "role": "train",
+      "requested": 800,
+      "actual": 800,
+      "available": 4644,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n1000",
+      "language": "kz",
+      "label": "positive",
+      "role": "train",
+      "requested": 800,
+      "actual": 800,
+      "available": 91268,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n1000",
+      "language": "kz",
+      "label": "negative",
+      "role": "validation",
+      "requested": 200,
+      "actual": 200,
+      "available": 4825,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n1000",
+      "language": "kz",
+      "label": "neutral",
+      "role": "validation",
+      "requested": 200,
+      "actual": 200,
+      "available": 1161,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n1000",
+      "language": "kz",
+      "label": "positive",
+      "role": "validation",
+      "requested": 200,
+      "actual": 200,
+      "available": 22817,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n3000",
+      "language": "tr",
+      "label": "negative",
+      "role": "train",
+      "requested": 2400,
+      "actual": 2400,
+      "available": 32000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n3000",
+      "language": "tr",
+      "label": "neutral",
+      "role": "train",
+      "requested": 2400,
+      "actual": 2400,
+      "available": 32000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n3000",
+      "language": "tr",
+      "label": "positive",
+      "role": "train",
+      "requested": 2400,
+      "actual": 2400,
+      "available": 32000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n3000",
+      "language": "tr",
+      "label": "negative",
+      "role": "validation",
+      "requested": 600,
+      "actual": 600,
+      "available": 8000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n3000",
+      "language": "tr",
+      "label": "neutral",
+      "role": "validation",
+      "requested": 600,
+      "actual": 600,
+      "available": 8000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n3000",
+      "language": "tr",
+      "label": "positive",
+      "role": "validation",
+      "requested": 600,
+      "actual": 600,
+      "available": 8000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n3000",
+      "language": "kz",
+      "label": "negative",
+      "role": "train",
+      "requested": 2400,
+      "actual": 2400,
+      "available": 19293,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n3000",
+      "language": "kz",
+      "label": "neutral",
+      "role": "train",
+      "requested": 2400,
+      "actual": 2400,
+      "available": 4644,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n3000",
+      "language": "kz",
+      "label": "positive",
+      "role": "train",
+      "requested": 2400,
+      "actual": 2400,
+      "available": 91268,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n3000",
+      "language": "kz",
+      "label": "negative",
+      "role": "validation",
+      "requested": 600,
+      "actual": 600,
+      "available": 4825,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n3000",
+      "language": "kz",
+      "label": "neutral",
+      "role": "validation",
+      "requested": 600,
+      "actual": 600,
+      "available": 1161,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n3000",
+      "language": "kz",
+      "label": "positive",
+      "role": "validation",
+      "requested": 600,
+      "actual": 600,
+      "available": 22817,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n5000",
+      "language": "tr",
+      "label": "negative",
+      "role": "train",
+      "requested": 4000,
+      "actual": 4000,
+      "available": 32000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n5000",
+      "language": "tr",
+      "label": "neutral",
+      "role": "train",
+      "requested": 4000,
+      "actual": 4000,
+      "available": 32000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n5000",
+      "language": "tr",
+      "label": "positive",
+      "role": "train",
+      "requested": 4000,
+      "actual": 4000,
+      "available": 32000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n5000",
+      "language": "tr",
+      "label": "negative",
+      "role": "validation",
+      "requested": 1000,
+      "actual": 1000,
+      "available": 8000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n5000",
+      "language": "tr",
+      "label": "neutral",
+      "role": "validation",
+      "requested": 1000,
+      "actual": 1000,
+      "available": 8000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n5000",
+      "language": "tr",
+      "label": "positive",
+      "role": "validation",
+      "requested": 1000,
+      "actual": 1000,
+      "available": 8000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n5000",
+      "language": "kz",
+      "label": "negative",
+      "role": "train",
+      "requested": 4000,
+      "actual": 4000,
+      "available": 19293,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n5000",
+      "language": "kz",
+      "label": "neutral",
+      "role": "train",
+      "requested": 4000,
+      "actual": 4000,
+      "available": 4644,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n5000",
+      "language": "kz",
+      "label": "positive",
+      "role": "train",
+      "requested": 4000,
+      "actual": 4000,
+      "available": 91268,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n5000",
+      "language": "kz",
+      "label": "negative",
+      "role": "validation",
+      "requested": 1000,
+      "actual": 1000,
+      "available": 4825,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n5000",
+      "language": "kz",
+      "label": "neutral",
+      "role": "validation",
+      "requested": 1000,
+      "actual": 1000,
+      "available": 1161,
+      "mode": "EXACT"
+    },
+    {
+      "family": "low_n5000",
+      "language": "kz",
+      "label": "positive",
+      "role": "validation",
+      "requested": 1000,
+      "actual": 1000,
+      "available": 22817,
+      "mode": "EXACT"
+    },
+    {
+      "family": "domain:TRSAv1",
+      "language": "tr",
+      "label": "negative",
+      "role": "train",
+      "requested": 500,
+      "actual": 500,
+      "available": 35000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "domain:TRSAv1",
+      "language": "tr",
+      "label": "neutral",
+      "role": "train",
+      "requested": 500,
+      "actual": 500,
+      "available": 35000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "domain:TRSAv1",
+      "language": "tr",
+      "label": "positive",
+      "role": "train",
+      "requested": 500,
+      "actual": 500,
+      "available": 35000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "domain:TRSAv1",
+      "language": "tr",
+      "label": "negative",
+      "role": "validation",
+      "requested": 80,
+      "actual": 80,
+      "available": 5000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "domain:TRSAv1",
+      "language": "tr",
+      "label": "neutral",
+      "role": "validation",
+      "requested": 80,
+      "actual": 80,
+      "available": 5000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "domain:TRSAv1",
+      "language": "tr",
+      "label": "positive",
+      "role": "validation",
+      "requested": 80,
+      "actual": 80,
+      "available": 5000,
+      "mode": "EXACT"
+    },
+    {
+      "family": "domain:KZ_Market",
+      "language": "kz",
+      "label": "negative",
+      "role": "train",
+      "requested": 500,
+      "actual": 500,
+      "available": 975,
+      "mode": "EXACT"
+    },
+    {
+      "family": "domain:KZ_Market",
+      "language": "kz",
+      "label": "neutral",
+      "role": "train",
+      "requested": 500,
+      "actual": 500,
+      "available": 639,
+      "mode": "EXACT"
+    },
+    {
+      "family": "domain:KZ_Market",
+      "language": "kz",
+      "label": "positive",
+      "role": "train",
+      "requested": 500,
+      "actual": 500,
+      "available": 19587,
+      "mode": "EXACT"
+    },
+    {
+      "family": "domain:KZ_Market",
+      "language": "kz",
+      "label": "negative",
+      "role": "validation",
+      "requested": 80,
+      "actual": 80,
+      "available": 139,
+      "mode": "EXACT"
+    },
+    {
+      "family": "domain:KZ_Market",
+      "language": "kz",
+      "label": "neutral",
+      "role": "validation",
+      "requested": 80,
+      "actual": 80,
+      "available": 91,
+      "mode": "EXACT"
+    },
+    {
+      "family": "domain:KZ_Market",
+      "language": "kz",
+      "label": "positive",
+      "role": "validation",
+      "requested": 80,
+      "actual": 80,
+      "available": 2798,
+      "mode": "EXACT"
+    },
+    {
+      "family": "domain:KZ_Appstore",
+      "language": "kz",
+      "label": "negative",
+      "role": "train",
+      "requested": 500,
+      "actual": 500,
+      "available": 18715,
+      "mode": "EXACT"
+    },
+    {
+      "family": "domain:KZ_Appstore",
+      "language": "kz",
+      "label": "neutral",
+      "role": "train",
+      "requested": 500,
+      "actual": 500,
+      "available": 4028,
+      "mode": "EXACT"
+    },
+    {
+      "family": "domain:KZ_Appstore",
+      "language": "kz",
+      "label": "positive",
+      "role": "train",
+      "requested": 500,
+      "actual": 500,
+      "available": 71776,
+      "mode": "EXACT"
+    },
+    {
+      "family": "domain:KZ_Appstore",
+      "language": "kz",
+      "label": "negative",
+      "role": "validation",
+      "requested": 80,
+      "actual": 80,
+      "available": 2673,
+      "mode": "EXACT"
+    },
+    {
+      "family": "domain:KZ_Appstore",
+      "language": "kz",
+      "label": "neutral",
+      "role": "validation",
+      "requested": 80,
+      "actual": 80,
+      "available": 575,
+      "mode": "EXACT"
+    },
+    {
+      "family": "domain:KZ_Appstore",
+      "language": "kz",
+      "label": "positive",
+      "role": "validation",
+      "requested": 80,
+      "actual": 80,
+      "available": 10254,
+      "mode": "EXACT"
+    }
+  ],
+  "sets": [
+    {
+      "set_id": "main:tr:train",
+      "role": "train",
+      "task": "three_class",
+      "rows": 36000,
+      "groups": 34130,
+      "label_counts": {
+        "positive": 12000,
+        "negative": 12000,
+        "neutral": 12000
+      },
+      "language_counts": {
+        "tr": 36000
+      },
+      "manifest_sha256": "4c27d508b67203e19a1e07a6937d988911e5743e92520175492025a79fecc43f"
+    },
+    {
+      "set_id": "main:tr:validation",
+      "role": "validation",
+      "task": "three_class",
+      "rows": 15000,
+      "groups": 13957,
+      "label_counts": {
+        "neutral": 5000,
+        "negative": 5000,
+        "positive": 5000
+      },
+      "language_counts": {
+        "tr": 15000
+      },
+      "manifest_sha256": "c79df1b6f0ce3c0b4611a16a757805a8b2d5e9008d1072feb44805563dcc6346"
+    },
+    {
+      "set_id": "main:tr:test",
+      "role": "test",
+      "task": "three_class",
+      "rows": 30000,
+      "groups": 27913,
+      "label_counts": {
+        "negative": 10000,
+        "positive": 10000,
+        "neutral": 10000
+      },
+      "language_counts": {
+        "tr": 30000
+      },
+      "manifest_sha256": "36e67dd2c5fe95193a8b61e36fb59ff23e3ce6abd40b27d4a02e35cc7059dbb8"
+    },
+    {
+      "set_id": "main:kz:train",
+      "role": "train",
+      "task": "three_class",
+      "rows": 29080,
+      "groups": 28712,
+      "label_counts": {
+        "negative": 12000,
+        "positive": 12000,
+        "neutral": 5080
+      },
+      "language_counts": {
+        "kz": 29080
+      },
+      "manifest_sha256": "04097faff70a0362c7b8f1a4de81344921ece24fd69ed5a7820a8fec4b8ee81f"
+    },
+    {
+      "set_id": "main:kz:validation",
+      "role": "validation",
+      "task": "three_class",
+      "rows": 18000,
+      "groups": 17639,
+      "label_counts": {
+        "negative": 3014,
+        "positive": 14261,
+        "neutral": 725
+      },
+      "language_counts": {
+        "kz": 18000
+      },
+      "manifest_sha256": "96efdb133d53455a95559bc21a30eaf3cb472ee81ce26070b8922ecfa6cb38db"
+    },
+    {
+      "set_id": "main:kz:test",
+      "role": "test",
+      "task": "three_class",
+      "rows": 36006,
+      "groups": 35285,
+      "label_counts": {
+        "negative": 6031,
+        "positive": 28522,
+        "neutral": 1453
+      },
+      "language_counts": {
+        "kz": 36006
+      },
+      "manifest_sha256": "a2dda54c5d96fa58e05c396b58c68e65ebfe2379799a9f78e28d5262ecf58634"
+    },
+    {
+      "set_id": "main:joint:train",
+      "role": "train",
+      "task": "three_class",
+      "rows": 65080,
+      "groups": 62842,
+      "label_counts": {
+        "positive": 24000,
+        "negative": 24000,
+        "neutral": 17080
+      },
+      "language_counts": {
+        "tr": 36000,
+        "kz": 29080
+      },
+      "manifest_sha256": "9db87034422a48b61a24867b4a8805ef2451a58d6e1ae1a2b55c4ec835f86e3d"
+    },
+    {
+      "set_id": "main:joint:validation",
+      "role": "validation",
+      "task": "three_class",
+      "rows": 33000,
+      "groups": 31596,
+      "label_counts": {
+        "neutral": 5725,
+        "negative": 8014,
+        "positive": 19261
+      },
+      "language_counts": {
+        "tr": 15000,
+        "kz": 18000
+      },
+      "manifest_sha256": "dc7ff449b5fb8eb12c7ac3b108b48c275c9958a4aa04d30b2c07a5711a9ecc34"
+    },
+    {
+      "set_id": "binary:tr:train",
+      "role": "train",
+      "task": "binary",
+      "rows": 24000,
+      "groups": 23133,
+      "label_counts": {
+        "positive": 12000,
+        "negative": 12000
+      },
+      "language_counts": {
+        "tr": 24000
+      },
+      "manifest_sha256": "3ecbb1540e1cfcd297a48fc63266dfa2edc2ca4f1c33380721800e0a3b487265"
+    },
+    {
+      "set_id": "binary:tr:validation",
+      "role": "validation",
+      "task": "binary",
+      "rows": 10000,
+      "groups": 9474,
+      "label_counts": {
+        "negative": 5000,
+        "positive": 5000
+      },
+      "language_counts": {
+        "tr": 10000
+      },
+      "manifest_sha256": "f42a8c5a0e7b7ba92609a23b7adcf0de2de68e5deee587a501732978e56a26d6"
+    },
+    {
+      "set_id": "binary:tr:test",
+      "role": "test",
+      "task": "binary",
+      "rows": 20000,
+      "groups": 18951,
+      "label_counts": {
+        "negative": 10000,
+        "positive": 10000
+      },
+      "language_counts": {
+        "tr": 20000
+      },
+      "manifest_sha256": "32cf2d576b74fa8b481fabc966cad95524ea83aaf5eebe6dca9d669b7003f8d6"
+    },
+    {
+      "set_id": "binary:kz:train",
+      "role": "train",
+      "task": "binary",
+      "rows": 24000,
+      "groups": 23826,
+      "label_counts": {
+        "negative": 12000,
+        "positive": 12000
+      },
+      "language_counts": {
+        "kz": 24000
+      },
+      "manifest_sha256": "f73376c133f554906068d691453ceea495646ccc825b65608170539928345eb8"
+    },
+    {
+      "set_id": "binary:kz:validation",
+      "role": "validation",
+      "task": "binary",
+      "rows": 17275,
+      "groups": 16971,
+      "label_counts": {
+        "negative": 3014,
+        "positive": 14261
+      },
+      "language_counts": {
+        "kz": 17275
+      },
+      "manifest_sha256": "499a151cbb19c86843b9b2a9e0d73371954b350b76c33222003ba253fca8ab99"
+    },
+    {
+      "set_id": "binary:kz:test",
+      "role": "test",
+      "task": "binary",
+      "rows": 34553,
+      "groups": 33946,
+      "label_counts": {
+        "negative": 6031,
+        "positive": 28522
+      },
+      "language_counts": {
+        "kz": 34553
+      },
+      "manifest_sha256": "44c71843fcfe056f6d282a03ff3d3d359052ce704d0f61b3585a1f08c63f4a93"
+    },
+    {
+      "set_id": "binary:joint:train",
+      "role": "train",
+      "task": "binary",
+      "rows": 48000,
+      "groups": 46959,
+      "label_counts": {
+        "positive": 24000,
+        "negative": 24000
+      },
+      "language_counts": {
+        "tr": 24000,
+        "kz": 24000
+      },
+      "manifest_sha256": "544720dffa36494ac0767ec3c581c92add82d768baaa6a411cea0118f145069a"
+    },
+    {
+      "set_id": "binary:joint:validation",
+      "role": "validation",
+      "task": "binary",
+      "rows": 27275,
+      "groups": 26445,
+      "label_counts": {
+        "negative": 8014,
+        "positive": 19261
+      },
+      "language_counts": {
+        "tr": 10000,
+        "kz": 17275
+      },
+      "manifest_sha256": "3b8af38d2d0a62d732842366fa39b79a808a15583e580b10dcf414880b74c1a0"
+    },
+    {
+      "set_id": "extreme:kz:test",
+      "role": "test",
+      "task": "binary",
+      "rows": 31257,
+      "groups": 30943,
+      "label_counts": {
+        "negative": 5058,
+        "positive": 26199
+      },
+      "language_counts": {
+        "kz": 31257
+      },
+      "manifest_sha256": "b1f0fcbae1646b465486e43b2c36b767a159ed6455963abdf76e8d5c46acb4dc"
+    },
+    {
+      "set_id": "low_n100:tr:train",
+      "role": "train",
+      "task": "three_class",
+      "rows": 240,
+      "groups": 239,
+      "label_counts": {
+        "negative": 80,
+        "neutral": 80,
+        "positive": 80
+      },
+      "language_counts": {
+        "tr": 240
+      },
+      "manifest_sha256": "e62e9069e66969a9a0820056287e9c83dd4e0d59e50d3ddaddd6b31471a0d142"
+    },
+    {
+      "set_id": "low_n100:tr:validation",
+      "role": "validation",
+      "task": "three_class",
+      "rows": 60,
+      "groups": 60,
+      "label_counts": {
+        "neutral": 20,
+        "negative": 20,
+        "positive": 20
+      },
+      "language_counts": {
+        "tr": 60
+      },
+      "manifest_sha256": "396694a8cd5ded3e27e07837245ded59cf74d167a0b9ac1e27e19d7229581066"
+    },
+    {
+      "set_id": "low_n100:kz:train",
+      "role": "train",
+      "task": "three_class",
+      "rows": 240,
+      "groups": 240,
+      "label_counts": {
+        "negative": 80,
+        "positive": 80,
+        "neutral": 80
+      },
+      "language_counts": {
+        "kz": 240
+      },
+      "manifest_sha256": "9d219f8f6a3322fd044b8f59d61860450b047aa7cf942c87da95d84d45d8091c"
+    },
+    {
+      "set_id": "low_n100:kz:validation",
+      "role": "validation",
+      "task": "three_class",
+      "rows": 60,
+      "groups": 60,
+      "label_counts": {
+        "positive": 20,
+        "negative": 20,
+        "neutral": 20
+      },
+      "language_counts": {
+        "kz": 60
+      },
+      "manifest_sha256": "73a8e63b99cde2cf90956928743422604f5edbd01e37b96b974160ce64756333"
+    },
+    {
+      "set_id": "low_n100:joint:train",
+      "role": "train",
+      "task": "three_class",
+      "rows": 480,
+      "groups": 479,
+      "label_counts": {
+        "negative": 160,
+        "neutral": 160,
+        "positive": 160
+      },
+      "language_counts": {
+        "tr": 240,
+        "kz": 240
+      },
+      "manifest_sha256": "ad35b1f89b55a86de72fecac41fa879a17c6a9068ec575a35a2f43c6ab59df88"
+    },
+    {
+      "set_id": "low_n100:joint:validation",
+      "role": "validation",
+      "task": "three_class",
+      "rows": 120,
+      "groups": 120,
+      "label_counts": {
+        "neutral": 40,
+        "negative": 40,
+        "positive": 40
+      },
+      "language_counts": {
+        "tr": 60,
+        "kz": 60
+      },
+      "manifest_sha256": "2f718055e005684b5e2fef5f601b8f6ad40d010046af31259810d8861537e6bd"
+    },
+    {
+      "set_id": "low_n500:tr:train",
+      "role": "train",
+      "task": "three_class",
+      "rows": 1200,
+      "groups": 1187,
+      "label_counts": {
+        "negative": 400,
+        "neutral": 400,
+        "positive": 400
+      },
+      "language_counts": {
+        "tr": 1200
+      },
+      "manifest_sha256": "0b84e0e0047f7be9dd0ab7a16490c0b1fa0b730ec458b250919d643b7cf35e41"
+    },
+    {
+      "set_id": "low_n500:tr:validation",
+      "role": "validation",
+      "task": "three_class",
+      "rows": 300,
+      "groups": 297,
+      "label_counts": {
+        "neutral": 100,
+        "positive": 100,
+        "negative": 100
+      },
+      "language_counts": {
+        "tr": 300
+      },
+      "manifest_sha256": "daf4c61e520d00491a900e7d5d87fb3b3cbe7244f457cefb77abf308a5e33257"
+    },
+    {
+      "set_id": "low_n500:kz:train",
+      "role": "train",
+      "task": "three_class",
+      "rows": 1200,
+      "groups": 1198,
+      "label_counts": {
+        "positive": 400,
+        "negative": 400,
+        "neutral": 400
+      },
+      "language_counts": {
+        "kz": 1200
+      },
+      "manifest_sha256": "7e4d0d0939f812e64473cd0c86874603b64ff525300e711778d6b7950f2e35ef"
+    },
+    {
+      "set_id": "low_n500:kz:validation",
+      "role": "validation",
+      "task": "three_class",
+      "rows": 300,
+      "groups": 298,
+      "label_counts": {
+        "negative": 100,
+        "neutral": 100,
+        "positive": 100
+      },
+      "language_counts": {
+        "kz": 300
+      },
+      "manifest_sha256": "ec94d82180f46e332d16e80e3adfdccbf4f66aa09ade5f949d33618224187d02"
+    },
+    {
+      "set_id": "low_n500:joint:train",
+      "role": "train",
+      "task": "three_class",
+      "rows": 2400,
+      "groups": 2385,
+      "label_counts": {
+        "negative": 800,
+        "neutral": 800,
+        "positive": 800
+      },
+      "language_counts": {
+        "tr": 1200,
+        "kz": 1200
+      },
+      "manifest_sha256": "2f8a2749b64baf00a43e143f2ea84533ed8dfc922de09c43977a92c9351cb0e7"
+    },
+    {
+      "set_id": "low_n500:joint:validation",
+      "role": "validation",
+      "task": "three_class",
+      "rows": 600,
+      "groups": 595,
+      "label_counts": {
+        "neutral": 200,
+        "positive": 200,
+        "negative": 200
+      },
+      "language_counts": {
+        "tr": 300,
+        "kz": 300
+      },
+      "manifest_sha256": "36fdb8d04a0ee7d49356382a89483e9b98d35305f12e714163b49349519fa310"
+    },
+    {
+      "set_id": "low_n1000:tr:train",
+      "role": "train",
+      "task": "three_class",
+      "rows": 2400,
+      "groups": 2352,
+      "label_counts": {
+        "negative": 800,
+        "positive": 800,
+        "neutral": 800
+      },
+      "language_counts": {
+        "tr": 2400
+      },
+      "manifest_sha256": "995379823fabe613137c235fd5a20ca9b8dfcfd8568799bbd9cffa05c55615ae"
+    },
+    {
+      "set_id": "low_n1000:tr:validation",
+      "role": "validation",
+      "task": "three_class",
+      "rows": 600,
+      "groups": 591,
+      "label_counts": {
+        "positive": 200,
+        "neutral": 200,
+        "negative": 200
+      },
+      "language_counts": {
+        "tr": 600
+      },
+      "manifest_sha256": "9ac7ea2fd627b977d3b6f48d85c8b8e463d324fc53b30120640a5e20795f8bbb"
+    },
+    {
+      "set_id": "low_n1000:kz:train",
+      "role": "train",
+      "task": "three_class",
+      "rows": 2400,
+      "groups": 2395,
+      "label_counts": {
+        "neutral": 800,
+        "positive": 800,
+        "negative": 800
+      },
+      "language_counts": {
+        "kz": 2400
+      },
+      "manifest_sha256": "d537c835eababb675acf3de1f268ab0bea7cb6b226d2223168994e1a12e982fb"
+    },
+    {
+      "set_id": "low_n1000:kz:validation",
+      "role": "validation",
+      "task": "three_class",
+      "rows": 600,
+      "groups": 597,
+      "label_counts": {
+        "positive": 200,
+        "negative": 200,
+        "neutral": 200
+      },
+      "language_counts": {
+        "kz": 600
+      },
+      "manifest_sha256": "814d8534ef371aa7d82724b9e9efb3650b80baf402e194d6842d5586a9b5f7ab"
+    },
+    {
+      "set_id": "low_n1000:joint:train",
+      "role": "train",
+      "task": "three_class",
+      "rows": 4800,
+      "groups": 4747,
+      "label_counts": {
+        "negative": 1600,
+        "positive": 1600,
+        "neutral": 1600
+      },
+      "language_counts": {
+        "tr": 2400,
+        "kz": 2400
+      },
+      "manifest_sha256": "7d2f926da88c90c0304c060e7f11a2189ffe937aa092dcc269d4794bf6df7ab5"
+    },
+    {
+      "set_id": "low_n1000:joint:validation",
+      "role": "validation",
+      "task": "three_class",
+      "rows": 1200,
+      "groups": 1188,
+      "label_counts": {
+        "positive": 400,
+        "neutral": 400,
+        "negative": 400
+      },
+      "language_counts": {
+        "tr": 600,
+        "kz": 600
+      },
+      "manifest_sha256": "81fdf3b0ce2062e2df1fab3860a7b4457643c259b31bdeb17c7289df452ac10e"
+    },
+    {
+      "set_id": "low_n3000:tr:train",
+      "role": "train",
+      "task": "three_class",
+      "rows": 7200,
+      "groups": 6967,
+      "label_counts": {
+        "positive": 2400,
+        "negative": 2400,
+        "neutral": 2400
+      },
+      "language_counts": {
+        "tr": 7200
+      },
+      "manifest_sha256": "4c0676b4d1fec6418b154a11c8044b81579aa35e913d5a15583798b8360032c1"
+    },
+    {
+      "set_id": "low_n3000:tr:validation",
+      "role": "validation",
+      "task": "three_class",
+      "rows": 1800,
+      "groups": 1745,
+      "label_counts": {
+        "positive": 600,
+        "neutral": 600,
+        "negative": 600
+      },
+      "language_counts": {
+        "tr": 1800
+      },
+      "manifest_sha256": "ba99e3ad5803147371a192b7748a36b5e4ed2b0a4d0dea8e664b8df866a38f37"
+    },
+    {
+      "set_id": "low_n3000:kz:train",
+      "role": "train",
+      "task": "three_class",
+      "rows": 7200,
+      "groups": 7164,
+      "label_counts": {
+        "negative": 2400,
+        "neutral": 2400,
+        "positive": 2400
+      },
+      "language_counts": {
+        "kz": 7200
+      },
+      "manifest_sha256": "5694a4224b472401ff74cdf68a37cee6742fd75d7d084beaa898c417b0fca704"
+    },
+    {
+      "set_id": "low_n3000:kz:validation",
+      "role": "validation",
+      "task": "three_class",
+      "rows": 1800,
+      "groups": 1791,
+      "label_counts": {
+        "positive": 600,
+        "negative": 600,
+        "neutral": 600
+      },
+      "language_counts": {
+        "kz": 1800
+      },
+      "manifest_sha256": "3926471708c50b2aac27e446cad4b1056bad1094183ae012655c7ab4533b541b"
+    },
+    {
+      "set_id": "low_n3000:joint:train",
+      "role": "train",
+      "task": "three_class",
+      "rows": 14400,
+      "groups": 14131,
+      "label_counts": {
+        "positive": 4800,
+        "negative": 4800,
+        "neutral": 4800
+      },
+      "language_counts": {
+        "tr": 7200,
+        "kz": 7200
+      },
+      "manifest_sha256": "39eaf3d0fcfbd8ab8375130814ec4737420eacba05dd77f3a5e296a8dcacfade"
+    },
+    {
+      "set_id": "low_n3000:joint:validation",
+      "role": "validation",
+      "task": "three_class",
+      "rows": 3600,
+      "groups": 3536,
+      "label_counts": {
+        "positive": 1200,
+        "neutral": 1200,
+        "negative": 1200
+      },
+      "language_counts": {
+        "tr": 1800,
+        "kz": 1800
+      },
+      "manifest_sha256": "cc94ba5427c28db6973fed5fa8f6321a82a9ee9f310dbc8afe436c8033535372"
+    },
+    {
+      "set_id": "low_n5000:tr:train",
+      "role": "train",
+      "task": "three_class",
+      "rows": 12000,
+      "groups": 11561,
+      "label_counts": {
+        "positive": 4000,
+        "negative": 4000,
+        "neutral": 4000
+      },
+      "language_counts": {
+        "tr": 12000
+      },
+      "manifest_sha256": "6a5ff486e11ce733cbac6af1c97e1464b309dc39592bb8d46989364edb86a7d5"
+    },
+    {
+      "set_id": "low_n5000:tr:validation",
+      "role": "validation",
+      "task": "three_class",
+      "rows": 3000,
+      "groups": 2889,
+      "label_counts": {
+        "positive": 1000,
+        "neutral": 1000,
+        "negative": 1000
+      },
+      "language_counts": {
+        "tr": 3000
+      },
+      "manifest_sha256": "e1305a91f3695ee86dcd56a5ba650ceccd6771931037ae57ed3f3998eecd9fa6"
+    },
+    {
+      "set_id": "low_n5000:kz:train",
+      "role": "train",
+      "task": "three_class",
+      "rows": 12000,
+      "groups": 11898,
+      "label_counts": {
+        "negative": 4000,
+        "neutral": 4000,
+        "positive": 4000
+      },
+      "language_counts": {
+        "kz": 12000
+      },
+      "manifest_sha256": "6b7be07ec2432aaa9ea09be4d6b0c9164c9110d70fb9be80f066518b0acd1b36"
+    },
+    {
+      "set_id": "low_n5000:kz:validation",
+      "role": "validation",
+      "task": "three_class",
+      "rows": 3000,
+      "groups": 2983,
+      "label_counts": {
+        "negative": 1000,
+        "neutral": 1000,
+        "positive": 1000
+      },
+      "language_counts": {
+        "kz": 3000
+      },
+      "manifest_sha256": "9cb685a4ade2a7eb358220bf10e364bcf108116e2beddd8540188676f9ce0aff"
+    },
+    {
+      "set_id": "low_n5000:joint:train",
+      "role": "train",
+      "task": "three_class",
+      "rows": 24000,
+      "groups": 23459,
+      "label_counts": {
+        "positive": 8000,
+        "negative": 8000,
+        "neutral": 8000
+      },
+      "language_counts": {
+        "tr": 12000,
+        "kz": 12000
+      },
+      "manifest_sha256": "1561bd14cc9cc5bc86ffd2cfe2e9ed95cbd1d9d972721cfc19edece1d9ee154a"
+    },
+    {
+      "set_id": "low_n5000:joint:validation",
+      "role": "validation",
+      "task": "three_class",
+      "rows": 6000,
+      "groups": 5872,
+      "label_counts": {
+        "positive": 2000,
+        "neutral": 2000,
+        "negative": 2000
+      },
+      "language_counts": {
+        "tr": 3000,
+        "kz": 3000
+      },
+      "manifest_sha256": "dc0f72ac8a07d3b8ca25daedd8655e848e401d297c7da6b02de6ae8b9a64bdd5"
+    },
+    {
+      "set_id": "domain:TRSAv1:train",
+      "role": "train",
+      "task": "three_class",
+      "rows": 1500,
+      "groups": 1475,
+      "label_counts": {
+        "neutral": 500,
+        "negative": 500,
+        "positive": 500
+      },
+      "language_counts": {
+        "tr": 1500
+      },
+      "manifest_sha256": "f1f2ffda914e3f46d30883ff6151d729c41b98de6050cf4f07bcb930e683af04"
+    },
+    {
+      "set_id": "domain:TRSAv1:validation",
+      "role": "validation",
+      "task": "three_class",
+      "rows": 240,
+      "groups": 233,
+      "label_counts": {
+        "positive": 80,
+        "negative": 80,
+        "neutral": 80
+      },
+      "language_counts": {
+        "tr": 240
+      },
+      "manifest_sha256": "4c742e8fcb3e0f85f2086e875d9a305f55fed0864f46663b8bb91dfb9ed2002e"
+    },
+    {
+      "set_id": "domain:TRSAv1:test",
+      "role": "test",
+      "task": "three_class",
+      "rows": 30000,
+      "groups": 27913,
+      "label_counts": {
+        "negative": 10000,
+        "positive": 10000,
+        "neutral": 10000
+      },
+      "language_counts": {
+        "tr": 30000
+      },
+      "manifest_sha256": "36e67dd2c5fe95193a8b61e36fb59ff23e3ce6abd40b27d4a02e35cc7059dbb8"
+    },
+    {
+      "set_id": "domain:KZ_Market:train",
+      "role": "train",
+      "task": "three_class",
+      "rows": 1500,
+      "groups": 1493,
+      "label_counts": {
+        "neutral": 500,
+        "negative": 500,
+        "positive": 500
+      },
+      "language_counts": {
+        "kz": 1500
+      },
+      "manifest_sha256": "7475e7459c18b5bf489cf6e928b7f1452053d34a19923f0c6b2c0eb207d77b75"
+    },
+    {
+      "set_id": "domain:KZ_Market:validation",
+      "role": "validation",
+      "task": "three_class",
+      "rows": 240,
+      "groups": 236,
+      "label_counts": {
+        "positive": 80,
+        "negative": 80,
+        "neutral": 80
+      },
+      "language_counts": {
+        "kz": 240
+      },
+      "manifest_sha256": "6b80577fbac559b4bd45417ac886709dc9d092aeeb538a8343afded2aa19bce2"
+    },
+    {
+      "set_id": "domain:KZ_Market:test",
+      "role": "test",
+      "task": "three_class",
+      "rows": 6059,
+      "groups": 5983,
+      "label_counts": {
+        "positive": 5597,
+        "negative": 279,
+        "neutral": 183
+      },
+      "language_counts": {
+        "kz": 6059
+      },
+      "manifest_sha256": "f9e90b01ae572cea5953f2587a0e9f868562725d9bd549f668db7e821c463c02"
+    },
+    {
+      "set_id": "domain:KZ_Appstore:train",
+      "role": "train",
+      "task": "three_class",
+      "rows": 1500,
+      "groups": 1499,
+      "label_counts": {
+        "neutral": 500,
+        "negative": 500,
+        "positive": 500
+      },
+      "language_counts": {
+        "kz": 1500
+      },
+      "manifest_sha256": "925692614db74fab4ba555cef5289cfc5588b8b409cd5753126b84467d627e1f"
+    },
+    {
+      "set_id": "domain:KZ_Appstore:validation",
+      "role": "validation",
+      "task": "three_class",
+      "rows": 240,
+      "groups": 240,
+      "label_counts": {
+        "positive": 80,
+        "neutral": 80,
+        "negative": 80
+      },
+      "language_counts": {
+        "kz": 240
+      },
+      "manifest_sha256": "425c1a589fdc4a48668624a33ec13bda923512f6787aac41f935e453fa961597"
+    },
+    {
+      "set_id": "domain:KZ_Appstore:test",
+      "role": "test",
+      "task": "three_class",
+      "rows": 27005,
+      "groups": 26546,
+      "label_counts": {
+        "negative": 5347,
+        "positive": 20507,
+        "neutral": 1151
+      },
+      "language_counts": {
+        "kz": 27005
+      },
+      "manifest_sha256": "5eca8de54cf94357a6089748dc6aa5f5e48e5c06e67b31e3ec63ccb103338bda"
+    }
+  ],
+  "main_strata": [
+    {
+      "language": "kz",
+      "domain": "Appstore",
+      "label": "negative",
+      "target_rows": 18715,
+      "actual_rows": 18715,
+      "deviation_rows": 0,
+      "stratum_total": 26735,
+      "partition": "train"
+    },
+    {
+      "language": "kz",
+      "domain": "Appstore",
+      "label": "negative",
+      "target_rows": 2673,
+      "actual_rows": 2673,
+      "deviation_rows": 0,
+      "stratum_total": 26735,
+      "partition": "validation"
+    },
+    {
+      "language": "kz",
+      "domain": "Appstore",
+      "label": "negative",
+      "target_rows": 5347,
+      "actual_rows": 5347,
+      "deviation_rows": 0,
+      "stratum_total": 26735,
+      "partition": "test"
+    },
+    {
+      "language": "kz",
+      "domain": "Appstore",
+      "label": "neutral",
+      "target_rows": 4028,
+      "actual_rows": 4028,
+      "deviation_rows": 0,
+      "stratum_total": 5754,
+      "partition": "train"
+    },
+    {
+      "language": "kz",
+      "domain": "Appstore",
+      "label": "neutral",
+      "target_rows": 575,
+      "actual_rows": 575,
+      "deviation_rows": 0,
+      "stratum_total": 5754,
+      "partition": "validation"
+    },
+    {
+      "language": "kz",
+      "domain": "Appstore",
+      "label": "neutral",
+      "target_rows": 1151,
+      "actual_rows": 1151,
+      "deviation_rows": 0,
+      "stratum_total": 5754,
+      "partition": "test"
+    },
+    {
+      "language": "kz",
+      "domain": "Appstore",
+      "label": "positive",
+      "target_rows": 71776,
+      "actual_rows": 71776,
+      "deviation_rows": 0,
+      "stratum_total": 102537,
+      "partition": "train"
+    },
+    {
+      "language": "kz",
+      "domain": "Appstore",
+      "label": "positive",
+      "target_rows": 10254,
+      "actual_rows": 10254,
+      "deviation_rows": 0,
+      "stratum_total": 102537,
+      "partition": "validation"
+    },
+    {
+      "language": "kz",
+      "domain": "Appstore",
+      "label": "positive",
+      "target_rows": 20507,
+      "actual_rows": 20507,
+      "deviation_rows": 0,
+      "stratum_total": 102537,
+      "partition": "test"
+    },
+    {
+      "language": "kz",
+      "domain": "Bookstore",
+      "label": "negative",
+      "target_rows": 554,
+      "actual_rows": 554,
+      "deviation_rows": 0,
+      "stratum_total": 792,
+      "partition": "train"
+    },
+    {
+      "language": "kz",
+      "domain": "Bookstore",
+      "label": "negative",
+      "target_rows": 79,
+      "actual_rows": 79,
+      "deviation_rows": 0,
+      "stratum_total": 792,
+      "partition": "validation"
+    },
+    {
+      "language": "kz",
+      "domain": "Bookstore",
+      "label": "negative",
+      "target_rows": 159,
+      "actual_rows": 159,
+      "deviation_rows": 0,
+      "stratum_total": 792,
+      "partition": "test"
+    },
+    {
+      "language": "kz",
+      "domain": "Bookstore",
+      "label": "neutral",
+      "target_rows": 155,
+      "actual_rows": 155,
+      "deviation_rows": 0,
+      "stratum_total": 222,
+      "partition": "train"
+    },
+    {
+      "language": "kz",
+      "domain": "Bookstore",
+      "label": "neutral",
+      "target_rows": 22,
+      "actual_rows": 22,
+      "deviation_rows": 0,
+      "stratum_total": 222,
+      "partition": "validation"
+    },
+    {
+      "language": "kz",
+      "domain": "Bookstore",
+      "label": "neutral",
+      "target_rows": 45,
+      "actual_rows": 45,
+      "deviation_rows": 0,
+      "stratum_total": 222,
+      "partition": "test"
+    },
+    {
+      "language": "kz",
+      "domain": "Bookstore",
+      "label": "positive",
+      "target_rows": 3353,
+      "actual_rows": 3353,
+      "deviation_rows": 0,
+      "stratum_total": 4790,
+      "partition": "train"
+    },
+    {
+      "language": "kz",
+      "domain": "Bookstore",
+      "label": "positive",
+      "target_rows": 479,
+      "actual_rows": 479,
+      "deviation_rows": 0,
+      "stratum_total": 4790,
+      "partition": "validation"
+    },
+    {
+      "language": "kz",
+      "domain": "Bookstore",
+      "label": "positive",
+      "target_rows": 958,
+      "actual_rows": 958,
+      "deviation_rows": 0,
+      "stratum_total": 4790,
+      "partition": "test"
+    },
+    {
+      "language": "kz",
+      "domain": "Mapping",
+      "label": "negative",
+      "target_rows": 860,
+      "actual_rows": 860,
+      "deviation_rows": 0,
+      "stratum_total": 1229,
+      "partition": "train"
+    },
+    {
+      "language": "kz",
+      "domain": "Mapping",
+      "label": "negative",
+      "target_rows": 123,
+      "actual_rows": 123,
+      "deviation_rows": 0,
+      "stratum_total": 1229,
+      "partition": "validation"
+    },
+    {
+      "language": "kz",
+      "domain": "Mapping",
+      "label": "negative",
+      "target_rows": 246,
+      "actual_rows": 246,
+      "deviation_rows": 0,
+      "stratum_total": 1229,
+      "partition": "test"
+    },
+    {
+      "language": "kz",
+      "domain": "Mapping",
+      "label": "neutral",
+      "target_rows": 258,
+      "actual_rows": 258,
+      "deviation_rows": 0,
+      "stratum_total": 369,
+      "partition": "train"
+    },
+    {
+      "language": "kz",
+      "domain": "Mapping",
+      "label": "neutral",
+      "target_rows": 37,
+      "actual_rows": 37,
+      "deviation_rows": 0,
+      "stratum_total": 369,
+      "partition": "validation"
+    },
+    {
+      "language": "kz",
+      "domain": "Mapping",
+      "label": "neutral",
+      "target_rows": 74,
+      "actual_rows": 74,
+      "deviation_rows": 0,
+      "stratum_total": 369,
+      "partition": "test"
+    },
+    {
+      "language": "kz",
+      "domain": "Mapping",
+      "label": "positive",
+      "target_rows": 5108,
+      "actual_rows": 5108,
+      "deviation_rows": 0,
+      "stratum_total": 7298,
+      "partition": "train"
+    },
+    {
+      "language": "kz",
+      "domain": "Mapping",
+      "label": "positive",
+      "target_rows": 730,
+      "actual_rows": 730,
+      "deviation_rows": 0,
+      "stratum_total": 7298,
+      "partition": "validation"
+    },
+    {
+      "language": "kz",
+      "domain": "Mapping",
+      "label": "positive",
+      "target_rows": 1460,
+      "actual_rows": 1460,
+      "deviation_rows": 0,
+      "stratum_total": 7298,
+      "partition": "test"
+    },
+    {
+      "language": "kz",
+      "domain": "Market",
+      "label": "negative",
+      "target_rows": 975,
+      "actual_rows": 975,
+      "deviation_rows": 0,
+      "stratum_total": 1393,
+      "partition": "train"
+    },
+    {
+      "language": "kz",
+      "domain": "Market",
+      "label": "negative",
+      "target_rows": 139,
+      "actual_rows": 139,
+      "deviation_rows": 0,
+      "stratum_total": 1393,
+      "partition": "validation"
+    },
+    {
+      "language": "kz",
+      "domain": "Market",
+      "label": "negative",
+      "target_rows": 279,
+      "actual_rows": 279,
+      "deviation_rows": 0,
+      "stratum_total": 1393,
+      "partition": "test"
+    },
+    {
+      "language": "kz",
+      "domain": "Market",
+      "label": "neutral",
+      "target_rows": 639,
+      "actual_rows": 639,
+      "deviation_rows": 0,
+      "stratum_total": 913,
+      "partition": "train"
+    },
+    {
+      "language": "kz",
+      "domain": "Market",
+      "label": "neutral",
+      "target_rows": 91,
+      "actual_rows": 91,
+      "deviation_rows": 0,
+      "stratum_total": 913,
+      "partition": "validation"
+    },
+    {
+      "language": "kz",
+      "domain": "Market",
+      "label": "neutral",
+      "target_rows": 183,
+      "actual_rows": 183,
+      "deviation_rows": 0,
+      "stratum_total": 913,
+      "partition": "test"
+    },
+    {
+      "language": "kz",
+      "domain": "Market",
+      "label": "positive",
+      "target_rows": 19587,
+      "actual_rows": 19587,
+      "deviation_rows": 0,
+      "stratum_total": 27982,
+      "partition": "train"
+    },
+    {
+      "language": "kz",
+      "domain": "Market",
+      "label": "positive",
+      "target_rows": 2798,
+      "actual_rows": 2798,
+      "deviation_rows": 0,
+      "stratum_total": 27982,
+      "partition": "validation"
+    },
+    {
+      "language": "kz",
+      "domain": "Market",
+      "label": "positive",
+      "target_rows": 5597,
+      "actual_rows": 5597,
+      "deviation_rows": 0,
+      "stratum_total": 27982,
+      "partition": "test"
+    },
+    {
+      "language": "tr",
+      "domain": "NOT_PROVIDED",
+      "label": "negative",
+      "target_rows": 35000,
+      "actual_rows": 35000,
+      "deviation_rows": 0,
+      "stratum_total": 50000,
+      "partition": "train"
+    },
+    {
+      "language": "tr",
+      "domain": "NOT_PROVIDED",
+      "label": "negative",
+      "target_rows": 5000,
+      "actual_rows": 5000,
+      "deviation_rows": 0,
+      "stratum_total": 50000,
+      "partition": "validation"
+    },
+    {
+      "language": "tr",
+      "domain": "NOT_PROVIDED",
+      "label": "negative",
+      "target_rows": 10000,
+      "actual_rows": 10000,
+      "deviation_rows": 0,
+      "stratum_total": 50000,
+      "partition": "test"
+    },
+    {
+      "language": "tr",
+      "domain": "NOT_PROVIDED",
+      "label": "neutral",
+      "target_rows": 35000,
+      "actual_rows": 35000,
+      "deviation_rows": 0,
+      "stratum_total": 50000,
+      "partition": "train"
+    },
+    {
+      "language": "tr",
+      "domain": "NOT_PROVIDED",
+      "label": "neutral",
+      "target_rows": 5000,
+      "actual_rows": 5000,
+      "deviation_rows": 0,
+      "stratum_total": 50000,
+      "partition": "validation"
+    },
+    {
+      "language": "tr",
+      "domain": "NOT_PROVIDED",
+      "label": "neutral",
+      "target_rows": 10000,
+      "actual_rows": 10000,
+      "deviation_rows": 0,
+      "stratum_total": 50000,
+      "partition": "test"
+    },
+    {
+      "language": "tr",
+      "domain": "NOT_PROVIDED",
+      "label": "positive",
+      "target_rows": 35000,
+      "actual_rows": 35000,
+      "deviation_rows": 0,
+      "stratum_total": 50000,
+      "partition": "train"
+    },
+    {
+      "language": "tr",
+      "domain": "NOT_PROVIDED",
+      "label": "positive",
+      "target_rows": 5000,
+      "actual_rows": 5000,
+      "deviation_rows": 0,
+      "stratum_total": 50000,
+      "partition": "validation"
+    },
+    {
+      "language": "tr",
+      "domain": "NOT_PROVIDED",
+      "label": "positive",
+      "target_rows": 10000,
+      "actual_rows": 10000,
+      "deviation_rows": 0,
+      "stratum_total": 50000,
+      "partition": "test"
+    }
+  ],
+  "low_pool_strata": [
+    {
+      "language": "kz",
+      "domain": "Appstore",
+      "label": "negative",
+      "target_rows": 17110,
+      "actual_rows": 17110,
+      "deviation_rows": 0,
+      "stratum_total": 21388,
+      "partition": "train"
+    },
+    {
+      "language": "kz",
+      "domain": "Appstore",
+      "label": "negative",
+      "target_rows": 4278,
+      "actual_rows": 4278,
+      "deviation_rows": 0,
+      "stratum_total": 21388,
+      "partition": "validation"
+    },
+    {
+      "language": "kz",
+      "domain": "Appstore",
+      "label": "neutral",
+      "target_rows": 3682,
+      "actual_rows": 3682,
+      "deviation_rows": 0,
+      "stratum_total": 4603,
+      "partition": "train"
+    },
+    {
+      "language": "kz",
+      "domain": "Appstore",
+      "label": "neutral",
+      "target_rows": 921,
+      "actual_rows": 921,
+      "deviation_rows": 0,
+      "stratum_total": 4603,
+      "partition": "validation"
+    },
+    {
+      "language": "kz",
+      "domain": "Appstore",
+      "label": "positive",
+      "target_rows": 65624,
+      "actual_rows": 65624,
+      "deviation_rows": 0,
+      "stratum_total": 82030,
+      "partition": "train"
+    },
+    {
+      "language": "kz",
+      "domain": "Appstore",
+      "label": "positive",
+      "target_rows": 16406,
+      "actual_rows": 16406,
+      "deviation_rows": 0,
+      "stratum_total": 82030,
+      "partition": "validation"
+    },
+    {
+      "language": "kz",
+      "domain": "Bookstore",
+      "label": "negative",
+      "target_rows": 506,
+      "actual_rows": 506,
+      "deviation_rows": 0,
+      "stratum_total": 633,
+      "partition": "train"
+    },
+    {
+      "language": "kz",
+      "domain": "Bookstore",
+      "label": "negative",
+      "target_rows": 127,
+      "actual_rows": 127,
+      "deviation_rows": 0,
+      "stratum_total": 633,
+      "partition": "validation"
+    },
+    {
+      "language": "kz",
+      "domain": "Bookstore",
+      "label": "neutral",
+      "target_rows": 142,
+      "actual_rows": 142,
+      "deviation_rows": 0,
+      "stratum_total": 177,
+      "partition": "train"
+    },
+    {
+      "language": "kz",
+      "domain": "Bookstore",
+      "label": "neutral",
+      "target_rows": 35,
+      "actual_rows": 35,
+      "deviation_rows": 0,
+      "stratum_total": 177,
+      "partition": "validation"
+    },
+    {
+      "language": "kz",
+      "domain": "Bookstore",
+      "label": "positive",
+      "target_rows": 3066,
+      "actual_rows": 3066,
+      "deviation_rows": 0,
+      "stratum_total": 3832,
+      "partition": "train"
+    },
+    {
+      "language": "kz",
+      "domain": "Bookstore",
+      "label": "positive",
+      "target_rows": 766,
+      "actual_rows": 766,
+      "deviation_rows": 0,
+      "stratum_total": 3832,
+      "partition": "validation"
+    },
+    {
+      "language": "kz",
+      "domain": "Mapping",
+      "label": "negative",
+      "target_rows": 786,
+      "actual_rows": 786,
+      "deviation_rows": 0,
+      "stratum_total": 983,
+      "partition": "train"
+    },
+    {
+      "language": "kz",
+      "domain": "Mapping",
+      "label": "negative",
+      "target_rows": 197,
+      "actual_rows": 197,
+      "deviation_rows": 0,
+      "stratum_total": 983,
+      "partition": "validation"
+    },
+    {
+      "language": "kz",
+      "domain": "Mapping",
+      "label": "neutral",
+      "target_rows": 236,
+      "actual_rows": 236,
+      "deviation_rows": 0,
+      "stratum_total": 295,
+      "partition": "train"
+    },
+    {
+      "language": "kz",
+      "domain": "Mapping",
+      "label": "neutral",
+      "target_rows": 59,
+      "actual_rows": 59,
+      "deviation_rows": 0,
+      "stratum_total": 295,
+      "partition": "validation"
+    },
+    {
+      "language": "kz",
+      "domain": "Mapping",
+      "label": "positive",
+      "target_rows": 4670,
+      "actual_rows": 4670,
+      "deviation_rows": 0,
+      "stratum_total": 5838,
+      "partition": "train"
+    },
+    {
+      "language": "kz",
+      "domain": "Mapping",
+      "label": "positive",
+      "target_rows": 1168,
+      "actual_rows": 1168,
+      "deviation_rows": 0,
+      "stratum_total": 5838,
+      "partition": "validation"
+    },
+    {
+      "language": "kz",
+      "domain": "Market",
+      "label": "negative",
+      "target_rows": 891,
+      "actual_rows": 891,
+      "deviation_rows": 0,
+      "stratum_total": 1114,
+      "partition": "train"
+    },
+    {
+      "language": "kz",
+      "domain": "Market",
+      "label": "negative",
+      "target_rows": 223,
+      "actual_rows": 223,
+      "deviation_rows": 0,
+      "stratum_total": 1114,
+      "partition": "validation"
+    },
+    {
+      "language": "kz",
+      "domain": "Market",
+      "label": "neutral",
+      "target_rows": 584,
+      "actual_rows": 584,
+      "deviation_rows": 0,
+      "stratum_total": 730,
+      "partition": "train"
+    },
+    {
+      "language": "kz",
+      "domain": "Market",
+      "label": "neutral",
+      "target_rows": 146,
+      "actual_rows": 146,
+      "deviation_rows": 0,
+      "stratum_total": 730,
+      "partition": "validation"
+    },
+    {
+      "language": "kz",
+      "domain": "Market",
+      "label": "positive",
+      "target_rows": 17908,
+      "actual_rows": 17908,
+      "deviation_rows": 0,
+      "stratum_total": 22385,
+      "partition": "train"
+    },
+    {
+      "language": "kz",
+      "domain": "Market",
+      "label": "positive",
+      "target_rows": 4477,
+      "actual_rows": 4477,
+      "deviation_rows": 0,
+      "stratum_total": 22385,
+      "partition": "validation"
+    },
+    {
+      "language": "tr",
+      "domain": "NOT_PROVIDED",
+      "label": "negative",
+      "target_rows": 32000,
+      "actual_rows": 32000,
+      "deviation_rows": 0,
+      "stratum_total": 40000,
+      "partition": "train"
+    },
+    {
+      "language": "tr",
+      "domain": "NOT_PROVIDED",
+      "label": "negative",
+      "target_rows": 8000,
+      "actual_rows": 8000,
+      "deviation_rows": 0,
+      "stratum_total": 40000,
+      "partition": "validation"
+    },
+    {
+      "language": "tr",
+      "domain": "NOT_PROVIDED",
+      "label": "neutral",
+      "target_rows": 32000,
+      "actual_rows": 32000,
+      "deviation_rows": 0,
+      "stratum_total": 40000,
+      "partition": "train"
+    },
+    {
+      "language": "tr",
+      "domain": "NOT_PROVIDED",
+      "label": "neutral",
+      "target_rows": 8000,
+      "actual_rows": 8000,
+      "deviation_rows": 0,
+      "stratum_total": 40000,
+      "partition": "validation"
+    },
+    {
+      "language": "tr",
+      "domain": "NOT_PROVIDED",
+      "label": "positive",
+      "target_rows": 32000,
+      "actual_rows": 32000,
+      "deviation_rows": 0,
+      "stratum_total": 40000,
+      "partition": "train"
+    },
+    {
+      "language": "tr",
+      "domain": "NOT_PROVIDED",
+      "label": "positive",
+      "target_rows": 8000,
+      "actual_rows": 8000,
+      "deviation_rows": 0,
+      "stratum_total": 40000,
+      "partition": "validation"
+    }
+  ],
+  "experiments": 54,
+  "errors": [],
+  "note": "Main and low development roles differ by design; source/test fit isolation must also pass model-pipeline tests."
+}

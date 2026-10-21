@@ -1,0 +1,12 @@
+SAUCIS — XLM-R ETKIN BATCH / CHECKPOINT PILOTU
+================================================================
+Durum: XLMR_PILOT_PASSED
+Protocol: dc483a2f7daabc096c06
+Bu pilot tam egitim/hiperparametre secimi/final-test degerlendirmesi DEGIL.
+Her scope: 3 optimizer adimi (32+32+17 kayit); ayni GPUda ayri process replay.
+Tam XLM-R backbone, sabit256padding; yeni egitim parametreleri otomatik kilitlenmedi.
+main:joint / fp32: PASS
+main:joint / bf16: PASS
+binary:joint / fp32: PASS
+binary:joint / bf16: PASS
+PAYLAS: shareable_xlmr_pilot.zip. PRIVATE checkpoint/ID/log dosyalari yerelde kalsin.

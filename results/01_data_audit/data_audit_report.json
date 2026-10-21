@@ -1,0 +1,2134 @@
+{
+  "schema_version": "1.0.0",
+  "created_at_utc": "2026-10-14T14:23:14.979891+00:00",
+  "state": "RAW_AUDIT_COMPLETE",
+  "training_allowed": false,
+  "sources": {
+    "tr": {
+      "repo_id": "maydogan/Turkish_SentimentAnalysis_TRSAv1",
+      "revision": "3bda52ed2c57ac1e80ac463192cafeeae9f72213",
+      "reported_bytes": 16094674,
+      "sha256": "9a4ed0fdb4ae45f2d16322d9b459b4e924c39b2c18c43c29378adc417d966589",
+      "bytes": 16094674,
+      "language": "tr",
+      "metadata_count": 150000
+    },
+    "kz": {
+      "repo_id": "issai/kazsandra",
+      "revision": "a39e47875861b4f3bdf697b5fb768a1fdd95869a",
+      "reported_bytes": 24381051,
+      "sha256": "496035dd5c19ceacac6b07809fc073a87a4918f63145432f94483dd409f9e3a6",
+      "bytes": 24381051,
+      "language": "kz",
+      "metadata_count": 180064
+    }
+  },
+  "ingestion": {
+    "tr": {
+      "rows_read": 150000,
+      "columns": [
+        "id",
+        "score",
+        "review"
+      ],
+      "invalid_label_count": 0,
+      "unrecognized_label_hashes": {},
+      "unrecognized_or_missing_domain_count": 0,
+      "missing_original_id_count": 0
+    },
+    "kz": {
+      "rows_read": 180064,
+      "columns": [
+        "custom_id",
+        "text",
+        "label",
+        "domain"
+      ],
+      "invalid_label_count": 0,
+      "unrecognized_label_hashes": {},
+      "unrecognized_or_missing_domain_count": 0,
+      "missing_original_id_count": 0
+    }
+  },
+  "checks": [
+    {
+      "check": "tr_csv_rows_vs_cached_metadata",
+      "status": "PASS",
+      "details": {
+        "csv_rows": 150000,
+        "metadata_rows": 150000
+      }
+    },
+    {
+      "check": "tr_explicit_label_mapping",
+      "status": "PASS",
+      "details": 0
+    },
+    {
+      "check": "tr_native_id_completeness",
+      "status": "PASS",
+      "details": 0
+    },
+    {
+      "check": "kz_csv_rows_vs_cached_metadata",
+      "status": "PASS",
+      "details": {
+        "csv_rows": 180064,
+        "metadata_rows": 180064
+      }
+    },
+    {
+      "check": "kz_explicit_label_mapping",
+      "status": "PASS",
+      "details": 0
+    },
+    {
+      "check": "kz_domain_values",
+      "status": "PASS",
+      "details": 0
+    },
+    {
+      "check": "kz_native_id_completeness",
+      "status": "PASS",
+      "details": 0
+    },
+    {
+      "check": "tr_original_id_reuse",
+      "status": "PASS",
+      "details": {
+        "language": "tr",
+        "duplicate_native_id_groups": 0,
+        "rows_in_duplicate_id_groups": 0,
+        "duplicate_id_groups_with_different_content": 0
+      }
+    },
+    {
+      "check": "kz_original_id_reuse",
+      "status": "PASS",
+      "details": {
+        "language": "kz",
+        "duplicate_native_id_groups": 0,
+        "rows_in_duplicate_id_groups": 0,
+        "duplicate_id_groups_with_different_content": 0
+      }
+    },
+    {
+      "check": "tr_nonempty_eligible_data",
+      "status": "PASS",
+      "details": 150000
+    },
+    {
+      "check": "kz_nonempty_eligible_data",
+      "status": "PASS",
+      "details": 180014
+    },
+    {
+      "check": "train_validation_test_separation",
+      "status": "NOT_RUN",
+      "details": "This stage does not allocate splits."
+    },
+    {
+      "check": "per_seed_budget_feasibility",
+      "status": "NOT_RUN",
+      "details": "Only unsplit capacities computed; exact grouped quotas require split stage."
+    },
+    {
+      "check": "human_label_validation",
+      "status": "NOT_RUN",
+      "details": "Rating mapping audit is NOT independent annotation validation."
+    },
+    {
+      "check": "cuda_runtime_and_model_loading",
+      "status": "NOT_RUN",
+      "details": "No torch import, CUDA allocation or model loading in this stage."
+    }
+  ],
+  "tables": {
+    "corpus_flow": [
+      {
+        "language": "tr",
+        "raw_rows": 150000,
+        "invalid_label_rows": 0,
+        "empty_text_rows": 0,
+        "short_nonempty_text_rows": 0,
+        "eligible_before_any_dedup_or_cap": 150000,
+        "literal_placeholder_text_rows_not_automatically_removed": 0,
+        "candidate_unique_normalized_text_label_pairs": 141877,
+        "candidate_unique_normalized_text_label_domain_tuples": 141877
+      },
+      {
+        "language": "kz",
+        "raw_rows": 180064,
+        "invalid_label_rows": 0,
+        "empty_text_rows": 1,
+        "short_nonempty_text_rows": 49,
+        "eligible_before_any_dedup_or_cap": 180014,
+        "literal_placeholder_text_rows_not_automatically_removed": 0,
+        "candidate_unique_normalized_text_label_pairs": 178596,
+        "candidate_unique_normalized_text_label_domain_tuples": 179089
+      }
+    ],
+    "id_audit": [
+      {
+        "language": "tr",
+        "duplicate_native_id_groups": 0,
+        "rows_in_duplicate_id_groups": 0,
+        "duplicate_id_groups_with_different_content": 0
+      },
+      {
+        "language": "kz",
+        "duplicate_native_id_groups": 0,
+        "rows_in_duplicate_id_groups": 0,
+        "duplicate_id_groups_with_different_content": 0
+      }
+    ],
+    "label_counts": [
+      {
+        "language": "tr",
+        "raw_label": "Negative",
+        "mapped_label": "negative",
+        "raw_rows": 50000
+      },
+      {
+        "language": "tr",
+        "raw_label": "Neutral",
+        "mapped_label": "neutral",
+        "raw_rows": 50000
+      },
+      {
+        "language": "tr",
+        "raw_label": "Positive",
+        "mapped_label": "positive",
+        "raw_rows": 50000
+      },
+      {
+        "language": "kz",
+        "raw_label": "1",
+        "mapped_label": "negative",
+        "raw_rows": 25235
+      },
+      {
+        "language": "kz",
+        "raw_label": "2",
+        "mapped_label": "negative",
+        "raw_rows": 4929
+      },
+      {
+        "language": "kz",
+        "raw_label": "3",
+        "mapped_label": "neutral",
+        "raw_rows": 7262
+      },
+      {
+        "language": "kz",
+        "raw_label": "4",
+        "mapped_label": "positive",
+        "raw_rows": 11617
+      },
+      {
+        "language": "kz",
+        "raw_label": "5",
+        "mapped_label": "positive",
+        "raw_rows": 131021
+      }
+    ],
+    "domain_label_counts": [
+      {
+        "language": "tr",
+        "domain": "NOT_PROVIDED",
+        "label": "negative",
+        "raw_rows": 50000,
+        "eligible_rows_before_dedup": 50000
+      },
+      {
+        "language": "tr",
+        "domain": "NOT_PROVIDED",
+        "label": "neutral",
+        "raw_rows": 50000,
+        "eligible_rows_before_dedup": 50000
+      },
+      {
+        "language": "tr",
+        "domain": "NOT_PROVIDED",
+        "label": "positive",
+        "raw_rows": 50000,
+        "eligible_rows_before_dedup": 50000
+      },
+      {
+        "language": "kz",
+        "domain": "Appstore",
+        "label": "negative",
+        "raw_rows": 26749,
+        "eligible_rows_before_dedup": 26735
+      },
+      {
+        "language": "kz",
+        "domain": "Appstore",
+        "label": "neutral",
+        "raw_rows": 5758,
+        "eligible_rows_before_dedup": 5754
+      },
+      {
+        "language": "kz",
+        "domain": "Appstore",
+        "label": "positive",
+        "raw_rows": 102566,
+        "eligible_rows_before_dedup": 102537
+      },
+      {
+        "language": "kz",
+        "domain": "Bookstore",
+        "label": "negative",
+        "raw_rows": 793,
+        "eligible_rows_before_dedup": 792
+      },
+      {
+        "language": "kz",
+        "domain": "Bookstore",
+        "label": "neutral",
+        "raw_rows": 222,
+        "eligible_rows_before_dedup": 222
+      },
+      {
+        "language": "kz",
+        "domain": "Bookstore",
+        "label": "positive",
+        "raw_rows": 4790,
+        "eligible_rows_before_dedup": 4790
+      },
+      {
+        "language": "kz",
+        "domain": "Mapping",
+        "label": "negative",
+        "raw_rows": 1229,
+        "eligible_rows_before_dedup": 1229
+      },
+      {
+        "language": "kz",
+        "domain": "Mapping",
+        "label": "neutral",
+        "raw_rows": 369,
+        "eligible_rows_before_dedup": 369
+      },
+      {
+        "language": "kz",
+        "domain": "Mapping",
+        "label": "positive",
+        "raw_rows": 7299,
+        "eligible_rows_before_dedup": 7298
+      },
+      {
+        "language": "kz",
+        "domain": "Market",
+        "label": "negative",
+        "raw_rows": 1393,
+        "eligible_rows_before_dedup": 1393
+      },
+      {
+        "language": "kz",
+        "domain": "Market",
+        "label": "neutral",
+        "raw_rows": 913,
+        "eligible_rows_before_dedup": 913
+      },
+      {
+        "language": "kz",
+        "domain": "Market",
+        "label": "positive",
+        "raw_rows": 27983,
+        "eligible_rows_before_dedup": 27982
+      }
+    ],
+    "budget_capacity": [
+      {
+        "language": "tr",
+        "domain_scope": "ALL",
+        "label": "negative",
+        "eligible_rows_before_split": 50000,
+        "groups_containing_class": 46986,
+        "rows_in_globally_singleton_groups": 45588,
+        "split_budget_feasibility": "NOT_YET_VERIFIED; no split, no resampling, no budget reduction"
+      },
+      {
+        "language": "tr",
+        "domain_scope": "ALL",
+        "label": "neutral",
+        "eligible_rows_before_split": 50000,
+        "groups_containing_class": 46219,
+        "rows_in_globally_singleton_groups": 44740,
+        "split_budget_feasibility": "NOT_YET_VERIFIED; no split, no resampling, no budget reduction"
+      },
+      {
+        "language": "tr",
+        "domain_scope": "ALL",
+        "label": "positive",
+        "eligible_rows_before_split": 50000,
+        "groups_containing_class": 48672,
+        "rows_in_globally_singleton_groups": 47806,
+        "split_budget_feasibility": "NOT_YET_VERIFIED; no split, no resampling, no budget reduction"
+      },
+      {
+        "language": "tr",
+        "domain_scope": "NOT_PROVIDED",
+        "label": "negative",
+        "eligible_rows_before_split": 50000,
+        "groups_containing_class": 46986,
+        "rows_in_globally_singleton_groups": 45588,
+        "split_budget_feasibility": "NOT_YET_VERIFIED; no split, no resampling, no budget reduction"
+      },
+      {
+        "language": "tr",
+        "domain_scope": "NOT_PROVIDED",
+        "label": "neutral",
+        "eligible_rows_before_split": 50000,
+        "groups_containing_class": 46219,
+        "rows_in_globally_singleton_groups": 44740,
+        "split_budget_feasibility": "NOT_YET_VERIFIED; no split, no resampling, no budget reduction"
+      },
+      {
+        "language": "tr",
+        "domain_scope": "NOT_PROVIDED",
+        "label": "positive",
+        "eligible_rows_before_split": 50000,
+        "groups_containing_class": 48672,
+        "rows_in_globally_singleton_groups": 47806,
+        "split_budget_feasibility": "NOT_YET_VERIFIED; no split, no resampling, no budget reduction"
+      },
+      {
+        "language": "kz",
+        "domain_scope": "ALL",
+        "label": "negative",
+        "eligible_rows_before_split": 30149,
+        "groups_containing_class": 29942,
+        "rows_in_globally_singleton_groups": 28906,
+        "split_budget_feasibility": "NOT_YET_VERIFIED; no split, no resampling, no budget reduction"
+      },
+      {
+        "language": "kz",
+        "domain_scope": "ALL",
+        "label": "neutral",
+        "eligible_rows_before_split": 7258,
+        "groups_containing_class": 7246,
+        "rows_in_globally_singleton_groups": 6791,
+        "split_budget_feasibility": "NOT_YET_VERIFIED; no split, no resampling, no budget reduction"
+      },
+      {
+        "language": "kz",
+        "domain_scope": "ALL",
+        "label": "positive",
+        "eligible_rows_before_split": 142607,
+        "groups_containing_class": 141408,
+        "rows_in_globally_singleton_groups": 139609,
+        "split_budget_feasibility": "NOT_YET_VERIFIED; no split, no resampling, no budget reduction"
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Appstore",
+        "label": "negative",
+        "eligible_rows_before_split": 26735,
+        "groups_containing_class": 26595,
+        "rows_in_globally_singleton_groups": 25620,
+        "split_budget_feasibility": "NOT_YET_VERIFIED; no split, no resampling, no budget reduction"
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Appstore",
+        "label": "neutral",
+        "eligible_rows_before_split": 5754,
+        "groups_containing_class": 5753,
+        "rows_in_globally_singleton_groups": 5374,
+        "split_budget_feasibility": "NOT_YET_VERIFIED; no split, no resampling, no budget reduction"
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Appstore",
+        "label": "positive",
+        "eligible_rows_before_split": 102537,
+        "groups_containing_class": 102123,
+        "rows_in_globally_singleton_groups": 100733,
+        "split_budget_feasibility": "NOT_YET_VERIFIED; no split, no resampling, no budget reduction"
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Bookstore",
+        "label": "negative",
+        "eligible_rows_before_split": 792,
+        "groups_containing_class": 792,
+        "rows_in_globally_singleton_groups": 762,
+        "split_budget_feasibility": "NOT_YET_VERIFIED; no split, no resampling, no budget reduction"
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Bookstore",
+        "label": "neutral",
+        "eligible_rows_before_split": 222,
+        "groups_containing_class": 222,
+        "rows_in_globally_singleton_groups": 217,
+        "split_budget_feasibility": "NOT_YET_VERIFIED; no split, no resampling, no budget reduction"
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Bookstore",
+        "label": "positive",
+        "eligible_rows_before_split": 4790,
+        "groups_containing_class": 4790,
+        "rows_in_globally_singleton_groups": 4606,
+        "split_budget_feasibility": "NOT_YET_VERIFIED; no split, no resampling, no budget reduction"
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Mapping",
+        "label": "negative",
+        "eligible_rows_before_split": 1229,
+        "groups_containing_class": 1225,
+        "rows_in_globally_singleton_groups": 1190,
+        "split_budget_feasibility": "NOT_YET_VERIFIED; no split, no resampling, no budget reduction"
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Mapping",
+        "label": "neutral",
+        "eligible_rows_before_split": 369,
+        "groups_containing_class": 369,
+        "rows_in_globally_singleton_groups": 345,
+        "split_budget_feasibility": "NOT_YET_VERIFIED; no split, no resampling, no budget reduction"
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Mapping",
+        "label": "positive",
+        "eligible_rows_before_split": 7298,
+        "groups_containing_class": 7213,
+        "rows_in_globally_singleton_groups": 6950,
+        "split_budget_feasibility": "NOT_YET_VERIFIED; no split, no resampling, no budget reduction"
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Market",
+        "label": "negative",
+        "eligible_rows_before_split": 1393,
+        "groups_containing_class": 1383,
+        "rows_in_globally_singleton_groups": 1334,
+        "split_budget_feasibility": "NOT_YET_VERIFIED; no split, no resampling, no budget reduction"
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Market",
+        "label": "neutral",
+        "eligible_rows_before_split": 913,
+        "groups_containing_class": 912,
+        "rows_in_globally_singleton_groups": 855,
+        "split_budget_feasibility": "NOT_YET_VERIFIED; no split, no resampling, no budget reduction"
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Market",
+        "label": "positive",
+        "eligible_rows_before_split": 27982,
+        "groups_containing_class": 27712,
+        "rows_in_globally_singleton_groups": 27320,
+        "split_budget_feasibility": "NOT_YET_VERIFIED; no split, no resampling, no budget reduction"
+      }
+    ],
+    "domain_rating_counts": [
+      {
+        "language": "kz",
+        "domain": "Appstore",
+        "raw_label": "1",
+        "rating": 1,
+        "mapped_label": "negative",
+        "raw_rows": 22547,
+        "eligible_rows": 22539,
+        "eligible_groups": 22539
+      },
+      {
+        "language": "kz",
+        "domain": "Appstore",
+        "raw_label": "2",
+        "rating": 2,
+        "mapped_label": "negative",
+        "raw_rows": 4202,
+        "eligible_rows": 4196,
+        "eligible_groups": 4196
+      },
+      {
+        "language": "kz",
+        "domain": "Appstore",
+        "raw_label": "3",
+        "rating": 3,
+        "mapped_label": "neutral",
+        "raw_rows": 5758,
+        "eligible_rows": 5754,
+        "eligible_groups": 5753
+      },
+      {
+        "language": "kz",
+        "domain": "Appstore",
+        "raw_label": "4",
+        "rating": 4,
+        "mapped_label": "positive",
+        "raw_rows": 7949,
+        "eligible_rows": 7940,
+        "eligible_groups": 7938
+      },
+      {
+        "language": "kz",
+        "domain": "Appstore",
+        "raw_label": "5",
+        "rating": 5,
+        "mapped_label": "positive",
+        "raw_rows": 94617,
+        "eligible_rows": 94597,
+        "eligible_groups": 94578
+      },
+      {
+        "language": "kz",
+        "domain": "Bookstore",
+        "raw_label": "1",
+        "rating": 1,
+        "mapped_label": "negative",
+        "raw_rows": 686,
+        "eligible_rows": 686,
+        "eligible_groups": 686
+      },
+      {
+        "language": "kz",
+        "domain": "Bookstore",
+        "raw_label": "2",
+        "rating": 2,
+        "mapped_label": "negative",
+        "raw_rows": 107,
+        "eligible_rows": 106,
+        "eligible_groups": 106
+      },
+      {
+        "language": "kz",
+        "domain": "Bookstore",
+        "raw_label": "3",
+        "rating": 3,
+        "mapped_label": "neutral",
+        "raw_rows": 222,
+        "eligible_rows": 222,
+        "eligible_groups": 222
+      },
+      {
+        "language": "kz",
+        "domain": "Bookstore",
+        "raw_label": "4",
+        "rating": 4,
+        "mapped_label": "positive",
+        "raw_rows": 368,
+        "eligible_rows": 368,
+        "eligible_groups": 368
+      },
+      {
+        "language": "kz",
+        "domain": "Bookstore",
+        "raw_label": "5",
+        "rating": 5,
+        "mapped_label": "positive",
+        "raw_rows": 4422,
+        "eligible_rows": 4422,
+        "eligible_groups": 4422
+      },
+      {
+        "language": "kz",
+        "domain": "Mapping",
+        "raw_label": "1",
+        "rating": 1,
+        "mapped_label": "negative",
+        "raw_rows": 959,
+        "eligible_rows": 959,
+        "eligible_groups": 959
+      },
+      {
+        "language": "kz",
+        "domain": "Mapping",
+        "raw_label": "2",
+        "rating": 2,
+        "mapped_label": "negative",
+        "raw_rows": 270,
+        "eligible_rows": 270,
+        "eligible_groups": 270
+      },
+      {
+        "language": "kz",
+        "domain": "Mapping",
+        "raw_label": "3",
+        "rating": 3,
+        "mapped_label": "neutral",
+        "raw_rows": 369,
+        "eligible_rows": 369,
+        "eligible_groups": 369
+      },
+      {
+        "language": "kz",
+        "domain": "Mapping",
+        "raw_label": "4",
+        "rating": 4,
+        "mapped_label": "positive",
+        "raw_rows": 525,
+        "eligible_rows": 525,
+        "eligible_groups": 523
+      },
+      {
+        "language": "kz",
+        "domain": "Mapping",
+        "raw_label": "5",
+        "rating": 5,
+        "mapped_label": "positive",
+        "raw_rows": 6774,
+        "eligible_rows": 6773,
+        "eligible_groups": 6727
+      },
+      {
+        "language": "kz",
+        "domain": "Market",
+        "raw_label": "1",
+        "rating": 1,
+        "mapped_label": "negative",
+        "raw_rows": 1043,
+        "eligible_rows": 1043,
+        "eligible_groups": 1042
+      },
+      {
+        "language": "kz",
+        "domain": "Market",
+        "raw_label": "2",
+        "rating": 2,
+        "mapped_label": "negative",
+        "raw_rows": 350,
+        "eligible_rows": 350,
+        "eligible_groups": 349
+      },
+      {
+        "language": "kz",
+        "domain": "Market",
+        "raw_label": "3",
+        "rating": 3,
+        "mapped_label": "neutral",
+        "raw_rows": 913,
+        "eligible_rows": 913,
+        "eligible_groups": 912
+      },
+      {
+        "language": "kz",
+        "domain": "Market",
+        "raw_label": "4",
+        "rating": 4,
+        "mapped_label": "positive",
+        "raw_rows": 2775,
+        "eligible_rows": 2775,
+        "eligible_groups": 2774
+      },
+      {
+        "language": "kz",
+        "domain": "Market",
+        "raw_label": "5",
+        "rating": 5,
+        "mapped_label": "positive",
+        "raw_rows": 25208,
+        "eligible_rows": 25207,
+        "eligible_groups": 25149
+      },
+      {
+        "language": "tr",
+        "domain": "NOT_PROVIDED",
+        "raw_label": "Negative",
+        "rating": null,
+        "mapped_label": "negative",
+        "raw_rows": 50000,
+        "eligible_rows": 50000,
+        "eligible_groups": 46986
+      },
+      {
+        "language": "tr",
+        "domain": "NOT_PROVIDED",
+        "raw_label": "Neutral",
+        "rating": null,
+        "mapped_label": "neutral",
+        "raw_rows": 50000,
+        "eligible_rows": 50000,
+        "eligible_groups": 46219
+      },
+      {
+        "language": "tr",
+        "domain": "NOT_PROVIDED",
+        "raw_label": "Positive",
+        "rating": null,
+        "mapped_label": "positive",
+        "raw_rows": 50000,
+        "eligible_rows": 50000,
+        "eligible_groups": 48672
+      }
+    ],
+    "text_group_audit": [
+      {
+        "scope": "tr",
+        "normalization": "exact",
+        "groups": 140980,
+        "rows": 150000,
+        "repeated_groups": 2736,
+        "rows_in_repeated_groups": 11756,
+        "conflicting_label_groups": 889,
+        "rows_in_conflicting_label_groups": 6864,
+        "cross_language_groups": 0,
+        "rows_in_cross_language_groups": 0,
+        "cross_domain_groups": 0,
+        "largest_group_rows": 281
+      },
+      {
+        "scope": "kz",
+        "normalization": "exact",
+        "groups": 177289,
+        "rows": 180014,
+        "repeated_groups": 1910,
+        "rows_in_repeated_groups": 4635,
+        "conflicting_label_groups": 1189,
+        "rows_in_conflicting_label_groups": 3114,
+        "cross_language_groups": 0,
+        "rows_in_cross_language_groups": 0,
+        "cross_domain_groups": 467,
+        "largest_group_rows": 13
+      },
+      {
+        "scope": "all",
+        "normalization": "exact",
+        "groups": 318269,
+        "rows": 330014,
+        "repeated_groups": 4646,
+        "rows_in_repeated_groups": 16391,
+        "conflicting_label_groups": 2078,
+        "rows_in_conflicting_label_groups": 9978,
+        "cross_language_groups": 0,
+        "rows_in_cross_language_groups": 0,
+        "cross_domain_groups": 467,
+        "largest_group_rows": 281
+      },
+      {
+        "scope": "tr",
+        "normalization": "nfc_ws",
+        "groups": 140891,
+        "rows": 150000,
+        "repeated_groups": 2757,
+        "rows_in_repeated_groups": 11866,
+        "conflicting_label_groups": 898,
+        "rows_in_conflicting_label_groups": 6925,
+        "cross_language_groups": 0,
+        "rows_in_cross_language_groups": 0,
+        "cross_domain_groups": 0,
+        "largest_group_rows": 281
+      },
+      {
+        "scope": "kz",
+        "normalization": "nfc_ws",
+        "groups": 177242,
+        "rows": 180014,
+        "repeated_groups": 1936,
+        "rows_in_repeated_groups": 4708,
+        "conflicting_label_groups": 1193,
+        "rows_in_conflicting_label_groups": 3138,
+        "cross_language_groups": 0,
+        "rows_in_cross_language_groups": 0,
+        "cross_domain_groups": 475,
+        "largest_group_rows": 13
+      },
+      {
+        "scope": "all",
+        "normalization": "nfc_ws",
+        "groups": 318133,
+        "rows": 330014,
+        "repeated_groups": 4693,
+        "rows_in_repeated_groups": 16574,
+        "conflicting_label_groups": 2091,
+        "rows_in_conflicting_label_groups": 10063,
+        "cross_language_groups": 0,
+        "rows_in_cross_language_groups": 0,
+        "cross_domain_groups": 475,
+        "largest_group_rows": 281
+      },
+      {
+        "scope": "tr",
+        "normalization": "nfkc_casefold_ws_diagnostic",
+        "groups": 139577,
+        "rows": 150000,
+        "repeated_groups": 2814,
+        "rows_in_repeated_groups": 13237,
+        "conflicting_label_groups": 937,
+        "rows_in_conflicting_label_groups": 8137,
+        "cross_language_groups": 0,
+        "rows_in_cross_language_groups": 0,
+        "cross_domain_groups": 0,
+        "largest_group_rows": 422
+      },
+      {
+        "scope": "kz",
+        "normalization": "nfkc_casefold_ws_diagnostic",
+        "groups": 176407,
+        "rows": 180014,
+        "repeated_groups": 2349,
+        "rows_in_repeated_groups": 5956,
+        "conflicting_label_groups": 1457,
+        "rows_in_conflicting_label_groups": 4062,
+        "cross_language_groups": 0,
+        "rows_in_cross_language_groups": 0,
+        "cross_domain_groups": 637,
+        "largest_group_rows": 17
+      },
+      {
+        "scope": "all",
+        "normalization": "nfkc_casefold_ws_diagnostic",
+        "groups": 315984,
+        "rows": 330014,
+        "repeated_groups": 5163,
+        "rows_in_repeated_groups": 19193,
+        "conflicting_label_groups": 2394,
+        "rows_in_conflicting_label_groups": 12199,
+        "cross_language_groups": 0,
+        "rows_in_cross_language_groups": 0,
+        "cross_domain_groups": 637,
+        "largest_group_rows": 422
+      }
+    ],
+    "length_script_profiles": [
+      {
+        "language": "tr",
+        "domain_scope": "ALL",
+        "class_scope": "ALL",
+        "metric": "characters_after_whitespace_cleanup",
+        "n": 150000,
+        "mean": 81.45954,
+        "min": 3.0,
+        "p50": 61.0,
+        "p90": 165.0,
+        "p95": 215.0,
+        "p99": 353.0,
+        "max": 1990.0
+      },
+      {
+        "language": "tr",
+        "domain_scope": "ALL",
+        "class_scope": "ALL",
+        "metric": "whitespace_separated_words_not_model_tokens",
+        "n": 150000,
+        "mean": 11.94114,
+        "min": 1.0,
+        "p50": 9.0,
+        "p90": 24.0,
+        "p95": 31.0,
+        "p99": 50.0,
+        "max": 283.0
+      },
+      {
+        "language": "tr",
+        "domain_scope": "ALL",
+        "class_scope": "ALL",
+        "metric": "latin_fraction_of_letters",
+        "n": 149940,
+        "mean": 0.9999939313350937,
+        "min": 0.3137254901960784,
+        "p50": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 1.0
+      },
+      {
+        "language": "tr",
+        "domain_scope": "ALL",
+        "class_scope": "ALL",
+        "metric": "cyrillic_fraction_of_letters",
+        "n": 149940,
+        "mean": 6.068664906212217e-06,
+        "min": 0.0,
+        "p50": 0.0,
+        "p90": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.6862745098039216
+      },
+      {
+        "language": "tr",
+        "domain_scope": "NOT_PROVIDED",
+        "class_scope": "ALL",
+        "metric": "characters_after_whitespace_cleanup",
+        "n": 150000,
+        "mean": 81.45954,
+        "min": 3.0,
+        "p50": 61.0,
+        "p90": 165.0,
+        "p95": 215.0,
+        "p99": 353.0,
+        "max": 1990.0
+      },
+      {
+        "language": "tr",
+        "domain_scope": "NOT_PROVIDED",
+        "class_scope": "ALL",
+        "metric": "whitespace_separated_words_not_model_tokens",
+        "n": 150000,
+        "mean": 11.94114,
+        "min": 1.0,
+        "p50": 9.0,
+        "p90": 24.0,
+        "p95": 31.0,
+        "p99": 50.0,
+        "max": 283.0
+      },
+      {
+        "language": "tr",
+        "domain_scope": "NOT_PROVIDED",
+        "class_scope": "ALL",
+        "metric": "latin_fraction_of_letters",
+        "n": 149940,
+        "mean": 0.9999939313350937,
+        "min": 0.3137254901960784,
+        "p50": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 1.0
+      },
+      {
+        "language": "tr",
+        "domain_scope": "NOT_PROVIDED",
+        "class_scope": "ALL",
+        "metric": "cyrillic_fraction_of_letters",
+        "n": 149940,
+        "mean": 6.068664906212217e-06,
+        "min": 0.0,
+        "p50": 0.0,
+        "p90": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.6862745098039216
+      },
+      {
+        "language": "tr",
+        "domain_scope": "ALL",
+        "class_scope": "negative",
+        "metric": "characters_after_whitespace_cleanup",
+        "n": 50000,
+        "mean": 77.05748,
+        "min": 3.0,
+        "p50": 56.0,
+        "p90": 160.0,
+        "p95": 208.0,
+        "p99": 332.0,
+        "max": 1458.0
+      },
+      {
+        "language": "tr",
+        "domain_scope": "ALL",
+        "class_scope": "negative",
+        "metric": "whitespace_separated_words_not_model_tokens",
+        "n": 50000,
+        "mean": 11.4654,
+        "min": 1.0,
+        "p50": 8.0,
+        "p90": 24.0,
+        "p95": 31.0,
+        "p99": 48.0,
+        "max": 209.0
+      },
+      {
+        "language": "tr",
+        "domain_scope": "ALL",
+        "class_scope": "negative",
+        "metric": "latin_fraction_of_letters",
+        "n": 49975,
+        "mean": 0.9999862676436257,
+        "min": 0.3137254901960784,
+        "p50": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 1.0
+      },
+      {
+        "language": "tr",
+        "domain_scope": "ALL",
+        "class_scope": "negative",
+        "metric": "cyrillic_fraction_of_letters",
+        "n": 49975,
+        "mean": 1.3732356374265564e-05,
+        "min": 0.0,
+        "p50": 0.0,
+        "p90": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.6862745098039216
+      },
+      {
+        "language": "tr",
+        "domain_scope": "ALL",
+        "class_scope": "neutral",
+        "metric": "characters_after_whitespace_cleanup",
+        "n": 50000,
+        "mean": 74.48304,
+        "min": 3.0,
+        "p50": 54.0,
+        "p90": 154.0,
+        "p95": 203.0,
+        "p99": 339.01000000000204,
+        "max": 1990.0
+      },
+      {
+        "language": "tr",
+        "domain_scope": "ALL",
+        "class_scope": "neutral",
+        "metric": "whitespace_separated_words_not_model_tokens",
+        "n": 50000,
+        "mean": 10.99108,
+        "min": 1.0,
+        "p50": 8.0,
+        "p90": 22.0,
+        "p95": 29.0,
+        "p99": 49.0,
+        "max": 283.0
+      },
+      {
+        "language": "tr",
+        "domain_scope": "ALL",
+        "class_scope": "neutral",
+        "metric": "latin_fraction_of_letters",
+        "n": 49967,
+        "mean": 0.9999997056881071,
+        "min": 0.9852941176470589,
+        "p50": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 1.0
+      },
+      {
+        "language": "tr",
+        "domain_scope": "ALL",
+        "class_scope": "neutral",
+        "metric": "cyrillic_fraction_of_letters",
+        "n": 49967,
+        "mean": 2.943118929081429e-07,
+        "min": 0.0,
+        "p50": 0.0,
+        "p90": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.014705882352941176
+      },
+      {
+        "language": "tr",
+        "domain_scope": "ALL",
+        "class_scope": "positive",
+        "metric": "characters_after_whitespace_cleanup",
+        "n": 50000,
+        "mean": 92.8381,
+        "min": 5.0,
+        "p50": 71.0,
+        "p90": 179.0,
+        "p95": 232.0,
+        "p99": 383.0,
+        "max": 1433.0
+      },
+      {
+        "language": "tr",
+        "domain_scope": "ALL",
+        "class_scope": "positive",
+        "metric": "whitespace_separated_words_not_model_tokens",
+        "n": 50000,
+        "mean": 13.36694,
+        "min": 1.0,
+        "p50": 10.0,
+        "p90": 25.0,
+        "p95": 33.0,
+        "p99": 54.0,
+        "max": 207.0
+      },
+      {
+        "language": "tr",
+        "domain_scope": "ALL",
+        "class_scope": "positive",
+        "metric": "latin_fraction_of_letters",
+        "n": 49998,
+        "mean": 0.9999958207283515,
+        "min": 0.7910447761194029,
+        "p50": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 1.0
+      },
+      {
+        "language": "tr",
+        "domain_scope": "ALL",
+        "class_scope": "positive",
+        "metric": "cyrillic_fraction_of_letters",
+        "n": 49998,
+        "mean": 4.1792716484778795e-06,
+        "min": 0.0,
+        "p50": 0.0,
+        "p90": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.208955223880597
+      },
+      {
+        "language": "kz",
+        "domain_scope": "ALL",
+        "class_scope": "ALL",
+        "metric": "characters_after_whitespace_cleanup",
+        "n": 180014,
+        "mean": 58.996255846767475,
+        "min": 3.0,
+        "p50": 39.0,
+        "p90": 120.0,
+        "p95": 172.0,
+        "p99": 366.0,
+        "max": 2146.0
+      },
+      {
+        "language": "kz",
+        "domain_scope": "ALL",
+        "class_scope": "ALL",
+        "metric": "whitespace_separated_words_not_model_tokens",
+        "n": 180014,
+        "mean": 8.488062039619141,
+        "min": 1.0,
+        "p50": 6.0,
+        "p90": 17.0,
+        "p95": 24.0,
+        "p99": 49.0,
+        "max": 281.0
+      },
+      {
+        "language": "kz",
+        "domain_scope": "ALL",
+        "class_scope": "ALL",
+        "metric": "latin_fraction_of_letters",
+        "n": 179749,
+        "mean": 0.02163328985108415,
+        "min": 0.0,
+        "p50": 0.0,
+        "p90": 0.0,
+        "p95": 0.04,
+        "p99": 1.0,
+        "max": 1.0
+      },
+      {
+        "language": "kz",
+        "domain_scope": "ALL",
+        "class_scope": "ALL",
+        "metric": "cyrillic_fraction_of_letters",
+        "n": 179749,
+        "mean": 0.9781500296994088,
+        "min": 0.0,
+        "p50": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 1.0
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Appstore",
+        "class_scope": "ALL",
+        "metric": "characters_after_whitespace_cleanup",
+        "n": 135026,
+        "mean": 56.651533778679664,
+        "min": 3.0,
+        "p50": 37.0,
+        "p90": 115.0,
+        "p95": 168.0,
+        "p99": 384.0,
+        "max": 2146.0
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Appstore",
+        "class_scope": "ALL",
+        "metric": "whitespace_separated_words_not_model_tokens",
+        "n": 135026,
+        "mean": 8.241057277857598,
+        "min": 1.0,
+        "p50": 6.0,
+        "p90": 16.0,
+        "p95": 23.0,
+        "p99": 51.0,
+        "max": 281.0
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Appstore",
+        "class_scope": "ALL",
+        "metric": "latin_fraction_of_letters",
+        "n": 134761,
+        "mean": 0.026244431141908463,
+        "min": 0.0,
+        "p50": 0.0,
+        "p90": 0.0,
+        "p95": 0.06289308176100629,
+        "p99": 1.0,
+        "max": 1.0
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Appstore",
+        "class_scope": "ALL",
+        "metric": "cyrillic_fraction_of_letters",
+        "n": 134761,
+        "mean": 0.973486253355791,
+        "min": 0.0,
+        "p50": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 1.0
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Bookstore",
+        "class_scope": "ALL",
+        "metric": "characters_after_whitespace_cleanup",
+        "n": 5804,
+        "mean": 46.2196760854583,
+        "min": 3.0,
+        "p50": 28.0,
+        "p90": 99.0,
+        "p95": 145.0,
+        "p99": 240.0,
+        "max": 1296.0
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Bookstore",
+        "class_scope": "ALL",
+        "metric": "whitespace_separated_words_not_model_tokens",
+        "n": 5804,
+        "mean": 6.643349414197106,
+        "min": 1.0,
+        "p50": 4.0,
+        "p90": 14.0,
+        "p95": 20.0,
+        "p99": 33.0,
+        "max": 183.0
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Bookstore",
+        "class_scope": "ALL",
+        "metric": "latin_fraction_of_letters",
+        "n": 5804,
+        "mean": 0.02529052348511006,
+        "min": 0.0,
+        "p50": 0.0,
+        "p90": 0.0,
+        "p95": 0.0,
+        "p99": 1.0,
+        "max": 1.0
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Bookstore",
+        "class_scope": "ALL",
+        "metric": "cyrillic_fraction_of_letters",
+        "n": 5804,
+        "mean": 0.9743069328146204,
+        "min": 0.0,
+        "p50": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 1.0
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Mapping",
+        "class_scope": "ALL",
+        "metric": "characters_after_whitespace_cleanup",
+        "n": 8896,
+        "mean": 78.6822167266187,
+        "min": 3.0,
+        "p50": 49.0,
+        "p90": 167.0,
+        "p95": 246.0,
+        "p99": 491.0499999999993,
+        "max": 1939.0
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Mapping",
+        "class_scope": "ALL",
+        "metric": "whitespace_separated_words_not_model_tokens",
+        "n": 8896,
+        "mean": 11.015287769784173,
+        "min": 1.0,
+        "p50": 7.0,
+        "p90": 23.0,
+        "p95": 33.0,
+        "p99": 67.0,
+        "max": 268.0
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Mapping",
+        "class_scope": "ALL",
+        "metric": "latin_fraction_of_letters",
+        "n": 8896,
+        "mean": 0.003876141772362388,
+        "min": 0.0,
+        "p50": 0.0,
+        "p90": 0.0,
+        "p95": 0.0,
+        "p99": 0.09375,
+        "max": 1.0
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Mapping",
+        "class_scope": "ALL",
+        "metric": "cyrillic_fraction_of_letters",
+        "n": 8896,
+        "mean": 0.9960880551614765,
+        "min": 0.0,
+        "p50": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 1.0
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Market",
+        "class_scope": "ALL",
+        "metric": "characters_after_whitespace_cleanup",
+        "n": 30288,
+        "mean": 66.1154912836767,
+        "min": 3.0,
+        "p50": 49.0,
+        "p90": 130.0,
+        "p95": 171.0,
+        "p99": 293.130000000001,
+        "max": 900.0
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Market",
+        "class_scope": "ALL",
+        "metric": "whitespace_separated_words_not_model_tokens",
+        "n": 30288,
+        "mean": 9.200442419440042,
+        "min": 1.0,
+        "p50": 7.0,
+        "p90": 18.0,
+        "p95": 24.0,
+        "p99": 41.0,
+        "max": 122.0
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Market",
+        "class_scope": "ALL",
+        "metric": "latin_fraction_of_letters",
+        "n": 30288,
+        "mean": 0.0056315397785685435,
+        "min": 0.0,
+        "p50": 0.0,
+        "p90": 0.0,
+        "p95": 0.0,
+        "p99": 0.11048340548340621,
+        "max": 1.0
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Market",
+        "class_scope": "ALL",
+        "metric": "cyrillic_fraction_of_letters",
+        "n": 30288,
+        "mean": 0.9943684602214314,
+        "min": 0.0,
+        "p50": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 1.0
+      },
+      {
+        "language": "kz",
+        "domain_scope": "ALL",
+        "class_scope": "negative",
+        "metric": "characters_after_whitespace_cleanup",
+        "n": 30149,
+        "mean": 64.5743805764702,
+        "min": 3.0,
+        "p50": 39.0,
+        "p90": 140.0,
+        "p95": 208.0,
+        "p99": 426.52000000000044,
+        "max": 1939.0
+      },
+      {
+        "language": "kz",
+        "domain_scope": "ALL",
+        "class_scope": "negative",
+        "metric": "whitespace_separated_words_not_model_tokens",
+        "n": 30149,
+        "mean": 9.309927360774818,
+        "min": 1.0,
+        "p50": 6.0,
+        "p90": 20.0,
+        "p95": 29.0,
+        "p99": 58.0,
+        "max": 268.0
+      },
+      {
+        "language": "kz",
+        "domain_scope": "ALL",
+        "class_scope": "negative",
+        "metric": "latin_fraction_of_letters",
+        "n": 30116,
+        "mean": 0.018639732425668427,
+        "min": 0.0,
+        "p50": 0.0,
+        "p90": 0.0,
+        "p95": 0.022573710073710073,
+        "p99": 1.0,
+        "max": 1.0
+      },
+      {
+        "language": "kz",
+        "domain_scope": "ALL",
+        "class_scope": "negative",
+        "metric": "cyrillic_fraction_of_letters",
+        "n": 30116,
+        "mean": 0.9811634482007058,
+        "min": 0.0,
+        "p50": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 1.0
+      },
+      {
+        "language": "kz",
+        "domain_scope": "ALL",
+        "class_scope": "neutral",
+        "metric": "characters_after_whitespace_cleanup",
+        "n": 7258,
+        "mean": 65.05469826398456,
+        "min": 3.0,
+        "p50": 41.0,
+        "p90": 141.0,
+        "p95": 203.14999999999964,
+        "p99": 400.0,
+        "max": 2146.0
+      },
+      {
+        "language": "kz",
+        "domain_scope": "ALL",
+        "class_scope": "neutral",
+        "metric": "whitespace_separated_words_not_model_tokens",
+        "n": 7258,
+        "mean": 9.404656930283824,
+        "min": 1.0,
+        "p50": 6.0,
+        "p90": 20.0,
+        "p95": 28.0,
+        "p99": 56.0,
+        "max": 281.0
+      },
+      {
+        "language": "kz",
+        "domain_scope": "ALL",
+        "class_scope": "neutral",
+        "metric": "latin_fraction_of_letters",
+        "n": 7245,
+        "mean": 0.01937037354813951,
+        "min": 0.0,
+        "p50": 0.0,
+        "p90": 0.0,
+        "p95": 0.03205645161290249,
+        "p99": 1.0,
+        "max": 1.0
+      },
+      {
+        "language": "kz",
+        "domain_scope": "ALL",
+        "class_scope": "neutral",
+        "metric": "cyrillic_fraction_of_letters",
+        "n": 7245,
+        "mean": 0.980503850050126,
+        "min": 0.0,
+        "p50": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 1.0
+      },
+      {
+        "language": "kz",
+        "domain_scope": "ALL",
+        "class_scope": "positive",
+        "metric": "characters_after_whitespace_cleanup",
+        "n": 142607,
+        "mean": 57.508621596415324,
+        "min": 3.0,
+        "p50": 39.0,
+        "p90": 115.0,
+        "p95": 163.0,
+        "p99": 347.0,
+        "max": 1296.0
+      },
+      {
+        "language": "kz",
+        "domain_scope": "ALL",
+        "class_scope": "positive",
+        "metric": "whitespace_separated_words_not_model_tokens",
+        "n": 142607,
+        "mean": 8.26765867033175,
+        "min": 1.0,
+        "p50": 6.0,
+        "p90": 16.0,
+        "p95": 22.0,
+        "p99": 46.0,
+        "max": 183.0
+      },
+      {
+        "language": "kz",
+        "domain_scope": "ALL",
+        "class_scope": "positive",
+        "metric": "latin_fraction_of_letters",
+        "n": 142388,
+        "mean": 0.022381588893409726,
+        "min": 0.0,
+        "p50": 0.0,
+        "p90": 0.0,
+        "p95": 0.045454545454545456,
+        "p99": 1.0,
+        "max": 1.0
+      },
+      {
+        "language": "kz",
+        "domain_scope": "ALL",
+        "class_scope": "positive",
+        "metric": "cyrillic_fraction_of_letters",
+        "n": 142388,
+        "mean": 0.9773929045201378,
+        "min": 0.0,
+        "p50": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 1.0
+      }
+    ],
+    "script_counts": [
+      {
+        "language": "tr",
+        "domain_scope": "ALL",
+        "script_tag": "latin",
+        "rows": 149937
+      },
+      {
+        "language": "tr",
+        "domain_scope": "ALL",
+        "script_tag": "latin+cyrillic",
+        "rows": 3
+      },
+      {
+        "language": "tr",
+        "domain_scope": "ALL",
+        "script_tag": "no_letters",
+        "rows": 60
+      },
+      {
+        "language": "tr",
+        "domain_scope": "NOT_PROVIDED",
+        "script_tag": "latin",
+        "rows": 149937
+      },
+      {
+        "language": "tr",
+        "domain_scope": "NOT_PROVIDED",
+        "script_tag": "latin+cyrillic",
+        "rows": 3
+      },
+      {
+        "language": "tr",
+        "domain_scope": "NOT_PROVIDED",
+        "script_tag": "no_letters",
+        "rows": 60
+      },
+      {
+        "language": "kz",
+        "domain_scope": "ALL",
+        "script_tag": "cyrillic",
+        "rows": 166312
+      },
+      {
+        "language": "kz",
+        "domain_scope": "ALL",
+        "script_tag": "cyrillic+other",
+        "rows": 108
+      },
+      {
+        "language": "kz",
+        "domain_scope": "ALL",
+        "script_tag": "latin",
+        "rows": 2643
+      },
+      {
+        "language": "kz",
+        "domain_scope": "ALL",
+        "script_tag": "latin+cyrillic",
+        "rows": 10612
+      },
+      {
+        "language": "kz",
+        "domain_scope": "ALL",
+        "script_tag": "latin+cyrillic+other",
+        "rows": 56
+      },
+      {
+        "language": "kz",
+        "domain_scope": "ALL",
+        "script_tag": "latin+other",
+        "rows": 8
+      },
+      {
+        "language": "kz",
+        "domain_scope": "ALL",
+        "script_tag": "no_letters",
+        "rows": 265
+      },
+      {
+        "language": "kz",
+        "domain_scope": "ALL",
+        "script_tag": "other",
+        "rows": 10
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Appstore",
+        "script_tag": "cyrillic",
+        "rows": 123413
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Appstore",
+        "script_tag": "cyrillic+other",
+        "rows": 106
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Appstore",
+        "script_tag": "latin",
+        "rows": 2429
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Appstore",
+        "script_tag": "latin+cyrillic",
+        "rows": 8743
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Appstore",
+        "script_tag": "latin+cyrillic+other",
+        "rows": 54
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Appstore",
+        "script_tag": "latin+other",
+        "rows": 8
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Appstore",
+        "script_tag": "no_letters",
+        "rows": 265
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Appstore",
+        "script_tag": "other",
+        "rows": 8
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Bookstore",
+        "script_tag": "cyrillic",
+        "rows": 5574
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Bookstore",
+        "script_tag": "latin",
+        "rows": 133
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Bookstore",
+        "script_tag": "latin+cyrillic",
+        "rows": 93
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Bookstore",
+        "script_tag": "latin+cyrillic+other",
+        "rows": 2
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Bookstore",
+        "script_tag": "other",
+        "rows": 2
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Mapping",
+        "script_tag": "cyrillic",
+        "rows": 8534
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Mapping",
+        "script_tag": "cyrillic+other",
+        "rows": 2
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Mapping",
+        "script_tag": "latin",
+        "rows": 7
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Mapping",
+        "script_tag": "latin+cyrillic",
+        "rows": 353
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Market",
+        "script_tag": "cyrillic",
+        "rows": 28791
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Market",
+        "script_tag": "latin",
+        "rows": 74
+      },
+      {
+        "language": "kz",
+        "domain_scope": "Market",
+        "script_tag": "latin+cyrillic",
+        "rows": 1423
+      }
+    ]
+  },
+  "legacy_overlap": {
+    "status": "checked",
+    "rows": {
+      "train": 53796,
+      "test": 13450
+    },
+    "checksums": {
+      "train": "ea47b695b53670df0a6665d6c306753cfc79d168bc2534f3dab1a1c0c8fff3f7",
+      "test": "014a840e63e4d5272b3877675f89a411b285fd20e69e0bcf271d9a538da0bffa"
+    },
+    "overlaps": [
+      {
+        "normalization": "exact",
+        "train_language": "tr",
+        "test_language": "tr",
+        "common_groups": 24,
+        "affected_test_rows": 24
+      },
+      {
+        "normalization": "exact",
+        "train_language": "tr",
+        "test_language": "kz",
+        "common_groups": 0,
+        "affected_test_rows": 0
+      },
+      {
+        "normalization": "exact",
+        "train_language": "kz",
+        "test_language": "tr",
+        "common_groups": 0,
+        "affected_test_rows": 0
+      },
+      {
+        "normalization": "exact",
+        "train_language": "kz",
+        "test_language": "kz",
+        "common_groups": 50,
+        "affected_test_rows": 51
+      },
+      {
+        "normalization": "nfc_ws",
+        "train_language": "tr",
+        "test_language": "tr",
+        "common_groups": 24,
+        "affected_test_rows": 24
+      },
+      {
+        "normalization": "nfc_ws",
+        "train_language": "tr",
+        "test_language": "kz",
+        "common_groups": 0,
+        "affected_test_rows": 0
+      },
+      {
+        "normalization": "nfc_ws",
+        "train_language": "kz",
+        "test_language": "tr",
+        "common_groups": 0,
+        "affected_test_rows": 0
+      },
+      {
+        "normalization": "nfc_ws",
+        "train_language": "kz",
+        "test_language": "kz",
+        "common_groups": 50,
+        "affected_test_rows": 51
+      }
+    ],
+    "note": "Old outcome direction is not inferred from overlap; old files were not changed."
+  },
+  "model_cache_manifest": [
+    {
+      "repo_id": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "refs": {
+        "refs/main": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42"
+      },
+      "snapshots": [
+        {
+          "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+          "weights": [
+            {
+              "relative_file": "model.safetensors",
+              "bytes": 470641600,
+              "readable_file_exists": true,
+              "content_or_tensor_values_verified": false
+            }
+          ],
+          "metadata": {
+            "config.json": {
+              "model_type": "bert",
+              "architectures": [
+                "BertModel"
+              ],
+              "hidden_size": 384,
+              "max_position_embeddings": 512,
+              "vocab_size": 250037
+            },
+            "sentence_bert_config.json": {
+              "max_seq_length": 128,
+              "do_lower_case": false
+            },
+            "modules.json": [
+              {
+                "idx": 0,
+                "name": "0",
+                "path": "",
+                "type": "sentence_transformers.models.Transformer"
+              },
+              {
+                "idx": 1,
+                "name": "1",
+                "path": "1_Pooling",
+                "type": "sentence_transformers.models.Pooling"
+              }
+            ],
+            "1_Pooling/config.json": {
+              "word_embedding_dimension": 384,
+              "pooling_mode_cls_token": false,
+              "pooling_mode_mean_tokens": true,
+              "pooling_mode_max_tokens": false,
+              "pooling_mode_mean_sqrt_len_tokens": false
+            }
+          }
+        }
+      ],
+      "errors": [],
+      "note": "Metadata only; no model loaded and no revision merged or silently selected."
+    },
+    {
+      "repo_id": "BAAI/bge-m3",
+      "refs": {
+        "refs/main": "5617a9f61b028005a4858fdac845db406aefb181",
+        "refs/refs/pr/130": "9a0624b896d81da7492a910ffa53731274b6cf3d"
+      },
+      "snapshots": [
+        {
+          "revision": "9a0624b896d81da7492a910ffa53731274b6cf3d",
+          "weights": [
+            {
+              "relative_file": "model.safetensors",
+              "bytes": 2271064456,
+              "readable_file_exists": true,
+              "content_or_tensor_values_verified": false
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+          "weights": [
+            {
+              "relative_file": "pytorch_model.bin",
+              "bytes": 2271145830,
+              "readable_file_exists": true,
+              "content_or_tensor_values_verified": false
+            }
+          ],
+          "metadata": {
+            "config.json": {
+              "model_type": "xlm-roberta",
+              "architectures": [
+                "XLMRobertaModel"
+              ],
+              "hidden_size": 1024,
+              "max_position_embeddings": 8194,
+              "torch_dtype": "float32",
+              "vocab_size": 250002
+            },
+            "sentence_bert_config.json": {
+              "max_seq_length": 8192,
+              "do_lower_case": false
+            },
+            "modules.json": [
+              {
+                "idx": 0,
+                "name": "0",
+                "path": "",
+                "type": "sentence_transformers.models.Transformer"
+              },
+              {
+                "idx": 1,
+                "name": "1",
+                "path": "1_Pooling",
+                "type": "sentence_transformers.models.Pooling"
+              },
+              {
+                "idx": 2,
+                "name": "2",
+                "path": "2_Normalize",
+                "type": "sentence_transformers.models.Normalize"
+              }
+            ],
+            "1_Pooling/config.json": {
+              "word_embedding_dimension": 1024,
+              "pooling_mode_cls_token": true,
+              "pooling_mode_mean_tokens": false,
+              "pooling_mode_max_tokens": false,
+              "pooling_mode_mean_sqrt_len_tokens": false
+            }
+          }
+        }
+      ],
+      "errors": [],
+      "note": "Metadata only; no model loaded and no revision merged or silently selected."
+    },
+    {
+      "repo_id": "sentence-transformers/LaBSE",
+      "refs": {
+        "refs/main": "836121a0533e5664b21c7aacc5d22951f2b8b25b"
+      },
+      "snapshots": [
+        {
+          "revision": "836121a0533e5664b21c7aacc5d22951f2b8b25b",
+          "weights": [
+            {
+              "relative_file": "model.safetensors",
+              "bytes": 1883734344,
+              "readable_file_exists": true,
+              "content_or_tensor_values_verified": false
+            },
+            {
+              "relative_file": "2_Dense/model.safetensors",
+              "bytes": 2362528,
+              "readable_file_exists": true,
+              "content_or_tensor_values_verified": false
+            }
+          ],
+          "metadata": {
+            "config.json": {
+              "model_type": "bert",
+              "architectures": [
+                "BertModel"
+              ],
+              "hidden_size": 768,
+              "max_position_embeddings": 512,
+              "vocab_size": 501153
+            },
+            "sentence_bert_config.json": {
+              "max_seq_length": 256,
+              "do_lower_case": false
+            },
+            "modules.json": [
+              {
+                "idx": 0,
+                "name": "0",
+                "path": "",
+                "type": "sentence_transformers.models.Transformer"
+              },
+              {
+                "idx": 1,
+                "name": "1",
+                "path": "1_Pooling",
+                "type": "sentence_transformers.models.Pooling"
+              },
+              {
+                "idx": 2,
+                "name": "2",
+                "path": "2_Dense",
+                "type": "sentence_transformers.models.Dense"
+              },
+              {
+                "idx": 3,
+                "name": "3",
+                "path": "3_Normalize",
+                "type": "sentence_transformers.models.Normalize"
+              }
+            ],
+            "1_Pooling/config.json": {
+              "word_embedding_dimension": 768,
+              "pooling_mode_cls_token": true,
+              "pooling_mode_mean_tokens": false,
+              "pooling_mode_max_tokens": false,
+              "pooling_mode_mean_sqrt_len_tokens": false
+            },
+            "2_Dense/config.json": {
+              "in_features": 768,
+              "out_features": 768,
+              "bias": true,
+              "activation_function": "torch.nn.modules.activation.Tanh"
+            }
+          }
+        }
+      ],
+      "errors": [],
+      "note": "Metadata only; no model loaded and no revision merged or silently selected."
+    }
+  ],
+  "normalizations": {
+    "exact": "Raw CSV cell, without modification.",
+    "nfc_ws": "Unicode NFC + collapse whitespace + strip; case/accents/punctuation retained.",
+    "nfkc_casefold_ws_diagnostic": "Unicode NFKC + casefold + collapse whitespace; diagnostic ONLY, not approved filtering."
+  },
+  "audit_view_min_chars": 3,
+  "source_rows_removed_or_relabeled": false,
+  "split_or_budget_manifests_created": false,
+  "elapsed_seconds": 32.31788214005064,
+  "limitations": [
+    "Full row counts/schema/rating conversion checks are not human label validation.",
+    "Text grouping views do not apply deduplication or casefolding to a training corpus.",
+    "No selected model, checkpoint, tensor content or cache-row alignment was verified.",
+    "Unsplit class capacities do not guarantee grouped train/validation budgets.",
+    "Script measurement is not language identification; words are whitespace tokens only.",
+    "No probability/performance scores were used to select preprocessing or models."
+  ]
+}

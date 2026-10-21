@@ -1,0 +1,317 @@
+[
+  {
+    "source_archive": "SAUCIS_Birlesik_Kontrol_ve_Yontem_Eki.zip",
+    "source_archive_sha256": "70e8c9ad536a3652429a2ab81dac0226b92e601a38992860a3b234443d353a89",
+    "member": "supplementary_methods/SAUCIS_Model_Snapshots_and_Qwen_Prompt_Supplement.tex",
+    "published_path": "docs/supplementary_methods/SAUCIS_Model_Snapshots_and_Qwen_Prompt_Supplement.tex",
+    "sha256": "7b78c9db881321be9bc78363f1c28e2eb26331554d772027a5c84b48e4a4e839"
+  },
+  {
+    "source_archive": "SAUCIS_Birlesik_Kontrol_ve_Yontem_Eki.zip",
+    "source_archive_sha256": "70e8c9ad536a3652429a2ab81dac0226b92e601a38992860a3b234443d353a89",
+    "member": "supplementary_methods/SAUCIS_Statistical_Implementation_Supplement.tex",
+    "published_path": "docs/supplementary_methods/SAUCIS_Statistical_Implementation_Supplement.tex",
+    "sha256": "bb21392399dcddf18016c54640297c2970c6b8e00ea7ac1ded41dd8a5ecee7af"
+  },
+  {
+    "source_archive": "SAUCIS_Birlesik_Kontrol_ve_Yontem_Eki.zip",
+    "source_archive_sha256": "70e8c9ad536a3652429a2ab81dac0226b92e601a38992860a3b234443d353a89",
+    "member": "supplementary_methods/SAUCIS_Supplementary_Methods_standalone.tex",
+    "published_path": "docs/supplementary_methods/SAUCIS_Supplementary_Methods_standalone.tex",
+    "sha256": "e6ffdd237b8b3aa7b253097333bff25063295d79420c6308f4092e443937ce9b"
+  },
+  {
+    "source_archive": "SAUCIS_Birlesik_Kontrol_ve_Yontem_Eki.zip",
+    "source_archive_sha256": "70e8c9ad536a3652429a2ab81dac0226b92e601a38992860a3b234443d353a89",
+    "member": "supplementary_methods/SAUCIS_Supplementary_Methods_standalone.pdf",
+    "published_path": "docs/supplementary_methods/SAUCIS_Supplementary_Methods_standalone.pdf",
+    "sha256": "7a9cf316e30d4b1b5c821ee1aa6657aacb6fb13d7f6cb71e7db7300569c5fb19"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "figures/results_revision/cm_xlmr_kz_to_kz.pdf",
+    "published_path": "paper_outputs/figures/results_revision/cm_xlmr_kz_to_kz.pdf",
+    "sha256": "8392a962a3f162f74f511c2b47cca67c84fcaf9a6ad25a00d5b703228f361489"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "figures/results_revision/cm_xlmr_kz_to_kz.png",
+    "published_path": "paper_outputs/figures/results_revision/cm_xlmr_kz_to_kz.png",
+    "sha256": "f9c7b82a051935f0804e048b3582c1731b3b79a000da6c4de4e34b4dfd6bc2e3"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "figures/results_revision/cm_xlmr_tr_to_tr.pdf",
+    "published_path": "paper_outputs/figures/results_revision/cm_xlmr_tr_to_tr.pdf",
+    "sha256": "86ab1b057d262ab393f08cd68528b7654e1116a9c352fddcbd9da0e3b9930a7a"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "figures/results_revision/cm_xlmr_tr_to_tr.png",
+    "published_path": "paper_outputs/figures/results_revision/cm_xlmr_tr_to_tr.png",
+    "sha256": "c48fc666546272b12ab194a31c59d2761e6ddeb0459dac373d5d2e4730934151"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "figures/results_revision/low_kz_to_kz_lr.pdf",
+    "published_path": "paper_outputs/figures/results_revision/low_kz_to_kz_lr.pdf",
+    "sha256": "08537aefb5ec3cf89963bbea304af44ba4789789faf7a06bfaddd32d2d61372d"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "figures/results_revision/low_kz_to_kz_lr.png",
+    "published_path": "paper_outputs/figures/results_revision/low_kz_to_kz_lr.png",
+    "sha256": "6c55f7470e01cf592f7c132ceb11bd23dcdccfaa8505bdebda987e884c0e830a"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "figures/results_revision/low_tr_to_tr_lr.pdf",
+    "published_path": "paper_outputs/figures/results_revision/low_tr_to_tr_lr.pdf",
+    "sha256": "7ae6ab6008582774687245938b0a322c1f9edd2974598aa63d6e32a1433212e4"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "figures/results_revision/low_tr_to_tr_lr.png",
+    "published_path": "paper_outputs/figures/results_revision/low_tr_to_tr_lr.png",
+    "sha256": "2e4ab271965cf645dcf6930680bd9f777f1c6df168a94d7dcdb1141c4f96a474"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "reproduce/audit_results_inputs.py",
+    "published_path": "paper_outputs/reproduce/audit_results_inputs.py",
+    "sha256": "c6c4bd177a2f5fb432fc1ac8e9942a025242b743624bbce2ab242d1372534957"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "reproduce/build_results_figures.py",
+    "published_path": "paper_outputs/reproduce/build_results_figures.py",
+    "sha256": "eba61946431bfadc8cb0816e52829f57a5fea76e2fbc561bdc8d4caea17439c9"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "reproduce/build_results_text.py",
+    "published_path": "paper_outputs/reproduce/build_results_text.py",
+    "sha256": "f0f4892b96589d0eef6c1d552ff59afb885e80535289cb8173292e10bf982d6a"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "source_tables/all_class_results.csv",
+    "published_path": "paper_outputs/source_tables/all_class_results.csv",
+    "sha256": "ca57d7b79a2265bf9e8c988b34b06ca5c675e320d3f66863f00b5b743cc52361"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "source_tables/all_mean_sd.csv",
+    "published_path": "paper_outputs/source_tables/all_mean_sd.csv",
+    "sha256": "95c4667d0fc330b9f8650b4c2e6b73d173baee18d15b75867915744dfc00272e"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "source_tables/all_results.csv",
+    "published_path": "paper_outputs/source_tables/all_results.csv",
+    "sha256": "7ed1951884a30c5b2fd8c400a14e895cc6d01f763ee3b37e38ae4386f45476e7"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "source_tables/all_strata_results.csv",
+    "published_path": "paper_outputs/source_tables/all_strata_results.csv",
+    "sha256": "b402acfeb1b6216b52305b5fd646b68a9240d79404bad1a939cf429356422517"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "source_tables/binary_mean_sd.csv",
+    "published_path": "paper_outputs/source_tables/binary_mean_sd.csv",
+    "sha256": "f15f515d57240f406e998f0da08e2a3b395ccb141252f991acbcd6cb61275724"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "source_tables/domain_mean_sd.csv",
+    "published_path": "paper_outputs/source_tables/domain_mean_sd.csv",
+    "sha256": "bf49cc3e827dde10dcd3f4ff582d8e211be801601a40488b308e369621f74da2"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "source_tables/extreme_mean_sd.csv",
+    "published_path": "paper_outputs/source_tables/extreme_mean_sd.csv",
+    "sha256": "038b7a0e11248186401a420c0fd3aa0c4b65156b6052ce635b5e8c7269704650"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "source_tables/joint_delta_mean_sd.csv",
+    "published_path": "paper_outputs/source_tables/joint_delta_mean_sd.csv",
+    "sha256": "9e41fb4409205e62638ae5c0f766e1f55b1e30c1964964f0f4b378835c83e8a1"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "source_tables/joint_paired_differences_ci.csv",
+    "published_path": "paper_outputs/source_tables/joint_paired_differences_ci.csv",
+    "sha256": "2a229ef45169ecfd1b6d4caae0698787d19e6d3a4b330b2ba98bddcad8d10c91"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "source_tables/joint_summary_for_manuscript.csv",
+    "published_path": "paper_outputs/source_tables/joint_summary_for_manuscript.csv",
+    "sha256": "f8c844641a59a2af92d57443b9aa56df8beef8f18a1c04c7fee9024bda4ab7de"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "source_tables/lexical_coverage.csv",
+    "published_path": "paper_outputs/source_tables/lexical_coverage.csv",
+    "sha256": "97e352273b687a8bf4ccec06a207ed71c5095b96b49109584eed54a4c24b9006"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "source_tables/llm_analysis_report.json",
+    "published_path": "paper_outputs/source_tables/llm_analysis_report.json",
+    "sha256": "eb18b51691027fd43f2b5f587464c8b0670305205298e4f59a764012d71c3e39"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "source_tables/llm_class_metrics_by_seed.csv",
+    "published_path": "paper_outputs/source_tables/llm_class_metrics_by_seed.csv",
+    "sha256": "81e12f082a3f6d0829d4f618d64e2dda0ffd18ca6c215b3be4dd3fdeabe7c7d5"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "source_tables/llm_class_metrics_mean_sd.csv",
+    "published_path": "paper_outputs/source_tables/llm_class_metrics_mean_sd.csv",
+    "sha256": "71b8921740bedd25307b93d65fd22bc43d09c5622c2bce0fdecb58642c4bcfa9"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "source_tables/llm_confusion_counts_and_rowpercent.csv",
+    "published_path": "paper_outputs/source_tables/llm_confusion_counts_and_rowpercent.csv",
+    "sha256": "b7d34507be2864e5fc93be2a29135b3c3c46e8d4bdcbedb6ff3201722d2c9b2a"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "source_tables/llm_equal_subset_mean_sd.csv",
+    "published_path": "paper_outputs/source_tables/llm_equal_subset_mean_sd.csv",
+    "sha256": "f5b9827dc4ef33d384e12694c61c04c017c8639b993d3c9cb06975884ae1a604"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "source_tables/llm_equal_subset_results.csv",
+    "published_path": "paper_outputs/source_tables/llm_equal_subset_results.csv",
+    "sha256": "1fe076a2acc16f68348f105466fd63a5201b144272b0244453df0b454fab25ab"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "source_tables/llm_exploratory_paired_holm20.csv",
+    "published_path": "paper_outputs/source_tables/llm_exploratory_paired_holm20.csv",
+    "sha256": "4e35c472cd6d08d389b56941d76e8278804bb97b582f418fe8278f695110d2a3"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "source_tables/low_mean_sd.csv",
+    "published_path": "paper_outputs/source_tables/low_mean_sd.csv",
+    "sha256": "7eeca9f7d9cd43a58913d6993ab85049d0248c72c76151e223911a8f9c5f5afb"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "source_tables/main_confusion_counts_and_rowpercent.csv",
+    "published_path": "paper_outputs/source_tables/main_confusion_counts_and_rowpercent.csv",
+    "sha256": "5040ac3609b31d345767f1f5ae4176717f91f4b34716164731c7dad225a63594"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "source_tables/main_confusion_rowpercent_mean_sd.csv",
+    "published_path": "paper_outputs/source_tables/main_confusion_rowpercent_mean_sd.csv",
+    "sha256": "ba56d9528306bfae054e61542c4d5f4cc20e44f6bfdb19ed85d4ef702c2a343c"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "source_tables/main_error_slices.csv",
+    "published_path": "paper_outputs/source_tables/main_error_slices.csv",
+    "sha256": "a36f831ad8cfa337064ced85abd172d5cbc822c3a7c6f01ccd1f0c3a740bd1a0"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "source_tables/main_error_slices_mean_sd.csv",
+    "published_path": "paper_outputs/source_tables/main_error_slices_mean_sd.csv",
+    "sha256": "ea57337509b299a03d41a2721fe618ad375518ae06fcd01d740d6b9e3bb9af8d"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "source_tables/main_mean_sd.csv",
+    "published_path": "paper_outputs/source_tables/main_mean_sd.csv",
+    "sha256": "5b8420c57defbc3087e91f75719d1725c4b60c9e2ee4f9be341743efdb91e7aa"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "source_tables/main_split_conditional_ci.csv",
+    "published_path": "paper_outputs/source_tables/main_split_conditional_ci.csv",
+    "sha256": "559435582df8d588180f567931abb10fa88b8b1ba3cadc7e917babe9c605b2c9"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "source_tables/sampling_summary.json",
+    "published_path": "paper_outputs/source_tables/sampling_summary.json",
+    "sha256": "3ad837f72277a6be9e44039607d68450e96c3f7b00bef62a04d8a68e50eb67d4"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "source_tables/source_analysis_report.json",
+    "published_path": "paper_outputs/source_tables/source_analysis_report.json",
+    "sha256": "bf26d6a657e77a227f49c721543e0b28bdba67c3190a9a39ccbf3ec48ad2671e"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "source_tables/test_group_overlap_between_splits.csv",
+    "published_path": "paper_outputs/source_tables/test_group_overlap_between_splits.csv",
+    "sha256": "57d3dfb246ddfc0aba290bcbd9fcf6d29695a65027f264a16bb14069c96e6aba"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "source_tables/transfer_contrast_summary_for_manuscript.csv",
+    "published_path": "paper_outputs/source_tables/transfer_contrast_summary_for_manuscript.csv",
+    "sha256": "217fad9d44cab6a1f477546915a3fcd7c1f74385b81dc1832a94e61997186412"
+  },
+  {
+    "source_archive": "SAUCIS_Revizyon_Results.zip",
+    "source_archive_sha256": "a0f914a6db4e469b4cf041431d4929d586714b02480f5f1aaeb7349ede467ae9",
+    "member": "source_tables/transfer_paired_tests_holm40.csv",
+    "published_path": "paper_outputs/source_tables/transfer_paired_tests_holm40.csv",
+    "sha256": "087c420ceb0399e43bfda489ea82de8333941f5a2b07ce551a2e295f4c92d6e3"
+  }
+]

@@ -1,0 +1,15 @@
+--- original/test_llm_baseline.py
++++ tests/test_llm_baseline.py
+@@ -6,10 +6,10 @@
+ import numpy as np
+ import pytest
+ 
+-HERE=Path(__file__).resolve().parent
++HERE=Path(__file__).resolve().parents[1]
+ sp=importlib.util.spec_from_file_location('llm',HERE/'10_revision_llm_baseline.py')
+ M=importlib.util.module_from_spec(sp);sys.modules[sp.name]=M;sp.loader.exec_module(M)
+-SUPPORT=HERE/'test_support/08_revision_evaluate_test.py'
++SUPPORT=HERE/'08_revision_evaluate_test.py'
+ 
+ @pytest.mark.parametrize('input_,expected',[
+  ('NEGATIVE',0),('negative\n',0),(' neutral ',1),('POSITIVE',2),('PoSiTiVe',2),

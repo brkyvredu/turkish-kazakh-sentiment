@@ -1,0 +1,10 @@
+{
+  "state": "SELECTIONS_LOCKED_BEFORE_TEST",
+  "linear_models": 1200,
+  "xlmr_models": 45,
+  "linear_evaluations": 2700,
+  "xlmr_evaluations": 120,
+  "selection_lock_sha256": "ce5e64c36db7469b56a7318cb308451fca68d73be0ebd48d2bc8b13d1900f425",
+  "test_rows_read_to_select_models": false,
+  "weight_verification": "All selected models/transformers and selected validation payloads checked; unselected epoch weights not reread."
+}

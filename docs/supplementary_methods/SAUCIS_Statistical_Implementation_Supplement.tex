@@ -1,0 +1,61 @@
+% Supplementary fragment, not an extra main-text Methods subsection.
+% Append after the existing Model Snapshots and Fixed LLM Prompt supplement.
+% Use only one \appendix command in the containing document.
+\section{Statistical Computation and Execution Records}
+\label{supp:statistical_implementation}
+
+\subsection{Metric conventions and resampling}
+For every three-class evaluation, negative, neutral, and positive remained the fixed reference labels. Binary and extreme-rating evaluations used only negative and positive. Metric denominators that were zero were assigned a value of zero. In Qwen comparisons, the fourth prediction column represented invalid output, not a fourth reference class; its counts remained in the true-class supports. Thus, resampling did not remove invalid responses or score only successfully parsed answers.
+
+Each bootstrap draw sampled the observed number of normalized text groups uniformly with replacement. A sampled group's entire contribution to the evaluated confusion matrix was copied as many times as the group was drawn. Scores were computed from the sum of these contributions, not as an average of per-group F1 scores. For paired differences, the same group multiplicities were applied to both models. The percentile endpoints were calculated with NumPy's \texttt{quantile} at probabilities 0.025 and 0.975. Counts of draws missing a reference class were retained, while the fixed label list and zero-division convention were unchanged. Resampling did not impose the original class counts, including for the class-balanced LLM subsets.
+
+The supervised analysis combined identical group-level confusion contributions into types solely to accelerate computation. A type retained its number of distinct groups: multinomial draws over type multiplicities represented uniform group sampling, and binomial swap counts represented independent 0.5-probability group swaps. This calculation did not redefine the data groups or replace a multi-record group by one review. The supplementary LLM analysis used group-level contributions directly, retaining a $3\times4$ confusion matrix per model when invalid outputs were possible.
+
+The absolute observed and randomized macro-F1 differences were compared with a numerical tolerance of $10^{-12}$. Specifically, a draw counted as at least as extreme when its absolute difference was at least the observed absolute difference minus this tolerance. With 10,000 draws, the smallest raw plus-one Monte Carlo value was $1/10001$, not zero. Holm adjustment for $m$ hypotheses used the ordered values $p_{(i)}$:
+\[
+ \widetilde{p}_{(i)}=
+ \min\left\{1,\max_{1\leq j\leq i}(m-j+1)p_{(j)}\right\}.
+\]
+The adjusted values were then restored to the original comparison order. Here $m=40$ for the main transfer family and $m=20$ for the later LLM family. The families were not combined. The paired bootstrap intervals were not adjusted by Holm and were not simultaneous confidence intervals.
+
+\subsection{Random-number streams and scope}
+The supervised analysis used NumPy PCG64 streams seeded from the first 16 hexadecimal digits of a SHA-256 digest of a canonical JSON encoding of the analysis-unit key and the purpose (bootstrap or swap). Keys included the partition seed, evaluation condition, and model or contrast. Bootstrap and swap streams were initialized separately. The LLM comparison used \texttt{default\_rng}, seeded from a digest of a fixed LLM-analysis tag, partition seed, language, and contrast name; that stream produced the bootstrap draws followed by the swaps. These deterministic computation seeds are distinct from the five data-partition seeds and do not create additional independent experimental replicates.
+
+There were 330 main-task single-model intervals ($11\times6\times5$), 40 main transfer comparisons ($4\times2\times5$), 110 joint-minus-monolingual intervals ($11\times2\times5$), and 20 separate LLM comparisons ($2\times2\times5$). All were computed from stored predictions. No additional model fitting, threshold adjustment, calibration, or inference was performed for this statistical analysis. Non-main supervised results were summarized descriptively; class-specific and diagnostic-slice summaries did not receive additional significance tests.
+
+The group definition addresses text repetition under the specified normalization rule; it does not identify all possible dependencies between users, products, or semantically similar reviews. Bootstrap interpretation treats these text groups as the resampling units, while paired randomization additionally requires null exchangeability of the paired prediction assignments. Neither procedure estimates uncertainty due to alternative training corpora, alternative label definitions, or unknown label noise.
+
+\subsection{Recorded supervised software environment}
+Table~\ref{tab:recorded_supervised_environment} reproduces the dependency versions in the completed XLM-R training and supervised final-evaluation manifests. These are recorded run versions, not recommendations to update the environment or assertions about the latest releases.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Software versions recorded for the supervised training/evaluation pipeline.}
+\label{tab:recorded_supervised_environment}
+\begin{tabular}{ll}
+\hline
+Component & Recorded version \\
+\hline
+Python & 3.12.3 \\
+NumPy & 2.3.5 \\
+SciPy & 1.17.1 \\
+scikit-learn & 1.8.0 \\
+joblib & 1.5.3 \\
+threadpoolctl & 3.6.0 \\
+PyTorch & \texttt{2.10.0+cu128} \\
+Transformers & 5.12.1 \\
+Sentence Transformers & 5.6.0 \\
+Tokenizers & 0.22.2 \\
+Safetensors & 0.8.0 \\
+Hugging Face Hub & 1.21.0 \\
+\hline
+\end{tabular}
+\end{table}
+
+The post-test analysis manifest separately recorded NumPy 2.3.5 and Unicode data version 15.0.0. The \texttt{+cu128} suffix above is the recorded PyTorch build tag, not a claim that the host driver or every installed CUDA component had the same version. The supplied Qwen aggregate report records its model revision, device, completion, and output validity, but does not contain a separate package-version inventory. Consequently, the table is not presented as an independently captured Qwen environment snapshot.
+
+\subsection{Artifact continuity}
+The supervised test registry froze 1,245 selected models before final inference and generated 2,820 evaluations. Test predictions carried sample and text-group identifiers to support exact alignment. Completion records, input/configuration fingerprints, and file checksums were checked before reuse. The shared reports retained aggregate results rather than raw reviews, record identifiers, or individual model outputs. The Qwen analysis was stored in a separate experiment directory and retrieved the original monolingual reference predictions on its fixed subsets; it did not replace the main-test results.
+
+GPU model and device changes were recorded at execution time. XLM-R used RTX PRO 6000 Blackwell and RTX 6000 Ada devices on a shared server, with one device visible to an active worker; Qwen inference used an RTX 6000 Ada. Checkpoints included optimization and random-number states as well as training progress. These records support traceable continuation, not a guarantee of bitwise equality after hardware changes.

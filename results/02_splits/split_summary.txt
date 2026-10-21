@@ -1,0 +1,49 @@
+SAUCIS REVIZYONU — GRUP BAGIMSIZ SPLIT VE BUTCE DENETIMI
+================================================================
+Durum: SPLIT_MANIFESTS_READY
+Protocol: dc483a2f7daabc096c06
+Gruplama: NFKC -> casefold -> bosluk; yalnizca bolunme anahtari.
+Ham/model metni casefold edilmedi; etiketler degistirilmedi.
+Ayni grubun kayitlari global olarak tek bolumde; domainler ayri bolunmedi.
+Model egitimi, indirme, GPU kullanimi veya legacy dosya degisikligi YOK.
+
+Seed 42: SPLIT_MANIFESTS_READY; 56 subset; 54 evaluation recipes
+  main:tr:train: rows=36,000, groups=34,146, labels={'positive': 12000, 'neutral': 12000, 'negative': 12000}
+  main:tr:validation: rows=15,000, groups=13,957, labels={'neutral': 5000, 'negative': 5000, 'positive': 5000}
+  main:tr:test: rows=30,000, groups=27,915, labels={'negative': 10000, 'neutral': 10000, 'positive': 10000}
+  main:kz:train: rows=29,080, groups=28,692, labels={'negative': 12000, 'positive': 12000, 'neutral': 5080}
+  main:kz:validation: rows=18,000, groups=17,639, labels={'positive': 14261, 'negative': 3014, 'neutral': 725}
+  main:kz:test: rows=36,006, groups=35,286, labels={'negative': 6031, 'positive': 28522, 'neutral': 1453}
+Seed 43: SPLIT_MANIFESTS_READY; 56 subset; 54 evaluation recipes
+  main:tr:train: rows=36,000, groups=34,176, labels={'positive': 12000, 'negative': 12000, 'neutral': 12000}
+  main:tr:validation: rows=15,000, groups=13,957, labels={'positive': 5000, 'negative': 5000, 'neutral': 5000}
+  main:tr:test: rows=30,000, groups=27,917, labels={'positive': 10000, 'neutral': 10000, 'negative': 10000}
+  main:kz:train: rows=29,080, groups=28,700, labels={'negative': 12000, 'positive': 12000, 'neutral': 5080}
+  main:kz:validation: rows=18,000, groups=17,639, labels={'positive': 14261, 'negative': 3014, 'neutral': 725}
+  main:kz:test: rows=36,006, groups=35,286, labels={'negative': 6031, 'positive': 28522, 'neutral': 1453}
+Seed 44: SPLIT_MANIFESTS_READY; 56 subset; 54 evaluation recipes
+  main:tr:train: rows=36,000, groups=34,114, labels={'negative': 12000, 'positive': 12000, 'neutral': 12000}
+  main:tr:validation: rows=15,000, groups=13,956, labels={'positive': 5000, 'neutral': 5000, 'negative': 5000}
+  main:tr:test: rows=30,000, groups=27,916, labels={'neutral': 10000, 'negative': 10000, 'positive': 10000}
+  main:kz:train: rows=29,080, groups=28,713, labels={'negative': 12000, 'positive': 12000, 'neutral': 5080}
+  main:kz:validation: rows=18,000, groups=17,642, labels={'negative': 3014, 'positive': 14261, 'neutral': 725}
+  main:kz:test: rows=36,006, groups=35,283, labels={'negative': 6031, 'positive': 28522, 'neutral': 1453}
+Seed 45: SPLIT_MANIFESTS_READY; 56 subset; 54 evaluation recipes
+  main:tr:train: rows=36,000, groups=34,080, labels={'positive': 12000, 'neutral': 12000, 'negative': 12000}
+  main:tr:validation: rows=15,000, groups=13,956, labels={'negative': 5000, 'positive': 5000, 'neutral': 5000}
+  main:tr:test: rows=30,000, groups=27,916, labels={'positive': 10000, 'negative': 10000, 'neutral': 10000}
+  main:kz:train: rows=29,080, groups=28,710, labels={'negative': 12000, 'positive': 12000, 'neutral': 5080}
+  main:kz:validation: rows=18,000, groups=17,642, labels={'negative': 3014, 'positive': 14261, 'neutral': 725}
+  main:kz:test: rows=36,006, groups=35,284, labels={'positive': 28522, 'negative': 6031, 'neutral': 1453}
+Seed 46: SPLIT_MANIFESTS_READY; 56 subset; 54 evaluation recipes
+  main:tr:train: rows=36,000, groups=34,130, labels={'positive': 12000, 'negative': 12000, 'neutral': 12000}
+  main:tr:validation: rows=15,000, groups=13,957, labels={'neutral': 5000, 'negative': 5000, 'positive': 5000}
+  main:tr:test: rows=30,000, groups=27,913, labels={'negative': 10000, 'positive': 10000, 'neutral': 10000}
+  main:kz:train: rows=29,080, groups=28,712, labels={'negative': 12000, 'positive': 12000, 'neutral': 5080}
+  main:kz:validation: rows=18,000, groups=17,639, labels={'negative': 3014, 'positive': 14261, 'neutral': 725}
+  main:kz:test: rows=36,006, groups=35,285, labels={'negative': 6031, 'positive': 28522, 'neutral': 1453}
+
+Kontroller: 1630; BLOCKED: 0
+Bu asama egitim izni DEGIL; model pipeline ve CUDA smoke kontrolleri sirada.
+Kesinti: ayni komut dogrulanmis biten seedleri atlar; yarim seed yeniden olusturulur.
+PAYLAS: shareable_split_audit.zip. PRIVATE/local SQLite dosyalarini paylasma.

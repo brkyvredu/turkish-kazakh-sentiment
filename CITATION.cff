@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: "Turkish–Kazakh Sentiment Classification: Research Code and Aggregate Results"
+message: "Please cite the version-specific software record once this release has been archived. The article DOI and software DOI have not yet been assigned in this package."
+type: software
+version: 1.0.0
+repository-code: "https://github.com/brkyvredu/turkish-kazakh-sentiment"
+abstract: "Frozen revision scripts, pinned input specifications, aggregate supervised and supplementary zero-shot LLM results, and audit tools for Turkish–Kazakh sentiment classification."
+authors:
+  - family-names: Yavru
+    given-names: Ismail Burak
+    affiliation: Bursa Uludag University
+    orcid: "https://orcid.org/0000-0002-7364-6166"
+keywords:
+  - cross-lingual sentiment classification
+  - Turkish
+  - Kazakh
+  - multilingual representations
+  - low-resource learning
+  - reproducibility

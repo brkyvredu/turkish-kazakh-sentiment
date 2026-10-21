@@ -1,0 +1,43 @@
+{
+  "candidate_fits": 6000,
+  "selected_models": 1200,
+  "selection_checks": 1200,
+  "nonconverged_attempts": [
+    {
+      "seed": "42",
+      "context_id": "main:kz",
+      "representation": "word",
+      "classifier": "svm",
+      "C": "100.0",
+      "attempt": "1",
+      "state": "NONCONVERGED",
+      "max_iter": "10000",
+      "tol": "0.0001",
+      "n_iter": "10000",
+      "fit_seconds": "",
+      "source": "legacy_status",
+      "resolved_dual": "",
+      "warning_categories": "[]"
+    },
+    {
+      "seed": "45",
+      "context_id": "main:kz",
+      "representation": "word",
+      "classifier": "svm",
+      "C": "100.0",
+      "attempt": "1",
+      "state": "NONCONVERGED",
+      "max_iter": "10000",
+      "tol": "0.0001",
+      "n_iter": "10000",
+      "fit_seconds": "29.75301599712111",
+      "source": "recovery_runner",
+      "resolved_dual": "True",
+      "warning_categories": "[\"ConvergenceWarning\"]"
+    }
+  ],
+  "all_failed_candidates_recovered": true,
+  "model_weight_files_opened": false,
+  "scope": "report/CSV consistency; not independent replay of all trained estimators",
+  "report_sha256": "0457561c0de81252b45c5fe2db2ea782a1ae7b27df21abb41a05adbe1c5ccccf"
+}

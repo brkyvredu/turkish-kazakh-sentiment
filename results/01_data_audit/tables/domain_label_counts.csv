@@ -1,0 +1,16 @@
+language,domain,label,raw_rows,eligible_rows_before_dedup
+tr,NOT_PROVIDED,negative,50000,50000
+tr,NOT_PROVIDED,neutral,50000,50000
+tr,NOT_PROVIDED,positive,50000,50000
+kz,Appstore,negative,26749,26735
+kz,Appstore,neutral,5758,5754
+kz,Appstore,positive,102566,102537
+kz,Bookstore,negative,793,792
+kz,Bookstore,neutral,222,222
+kz,Bookstore,positive,4790,4790
+kz,Mapping,negative,1229,1229
+kz,Mapping,neutral,369,369
+kz,Mapping,positive,7299,7298
+kz,Market,negative,1393,1393
+kz,Market,neutral,913,913
+kz,Market,positive,27983,27982

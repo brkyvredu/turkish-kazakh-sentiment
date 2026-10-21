@@ -1,0 +1,5 @@
+# Preserve byte identities: original pipeline modules check one another's SHA-256.
+* -text
+*.pdf binary
+*.png binary
+*.gz binary

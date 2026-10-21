@@ -1,0 +1,8 @@
+SAUCIS — SABITLENMIS MODELLERIN FINAL TEST DEGERLENDIRMESI
+=================================================================
+Durum: FINAL_TEST_RESULTS_READY
+Tamamlanan degerlendirme: 2820/2820
+Egitim/refit/kalibrasyon/teste gore model secimi YOK. Test etiketleri yalnizca metriklerde kullanildi.
+LR/SVM ayri; XLM source-validation secimi sabit. Uc-puan gorunumleri binary tahminlerden alindi.
+Ortalama/SD betimsel; eslestirilmis guven araligi/anlamlilik analizi sonraki asama.
+PRIVATE tahminler, yorumlar ve ornek kimlikleri paylasim ZIPinde YOK.

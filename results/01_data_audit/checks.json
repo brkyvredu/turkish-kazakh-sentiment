@@ -1,0 +1,93 @@
+[
+  {
+    "check": "tr_csv_rows_vs_cached_metadata",
+    "status": "PASS",
+    "details": {
+      "csv_rows": 150000,
+      "metadata_rows": 150000
+    }
+  },
+  {
+    "check": "tr_explicit_label_mapping",
+    "status": "PASS",
+    "details": 0
+  },
+  {
+    "check": "tr_native_id_completeness",
+    "status": "PASS",
+    "details": 0
+  },
+  {
+    "check": "kz_csv_rows_vs_cached_metadata",
+    "status": "PASS",
+    "details": {
+      "csv_rows": 180064,
+      "metadata_rows": 180064
+    }
+  },
+  {
+    "check": "kz_explicit_label_mapping",
+    "status": "PASS",
+    "details": 0
+  },
+  {
+    "check": "kz_domain_values",
+    "status": "PASS",
+    "details": 0
+  },
+  {
+    "check": "kz_native_id_completeness",
+    "status": "PASS",
+    "details": 0
+  },
+  {
+    "check": "tr_original_id_reuse",
+    "status": "PASS",
+    "details": {
+      "language": "tr",
+      "duplicate_native_id_groups": 0,
+      "rows_in_duplicate_id_groups": 0,
+      "duplicate_id_groups_with_different_content": 0
+    }
+  },
+  {
+    "check": "kz_original_id_reuse",
+    "status": "PASS",
+    "details": {
+      "language": "kz",
+      "duplicate_native_id_groups": 0,
+      "rows_in_duplicate_id_groups": 0,
+      "duplicate_id_groups_with_different_content": 0
+    }
+  },
+  {
+    "check": "tr_nonempty_eligible_data",
+    "status": "PASS",
+    "details": 150000
+  },
+  {
+    "check": "kz_nonempty_eligible_data",
+    "status": "PASS",
+    "details": 180014
+  },
+  {
+    "check": "train_validation_test_separation",
+    "status": "NOT_RUN",
+    "details": "This stage does not allocate splits."
+  },
+  {
+    "check": "per_seed_budget_feasibility",
+    "status": "NOT_RUN",
+    "details": "Only unsplit capacities computed; exact grouped quotas require split stage."
+  },
+  {
+    "check": "human_label_validation",
+    "status": "NOT_RUN",
+    "details": "Rating mapping audit is NOT independent annotation validation."
+  },
+  {
+    "check": "cuda_runtime_and_model_loading",
+    "status": "NOT_RUN",
+    "details": "No torch import, CUDA allocation or model loading in this stage."
+  }
+]

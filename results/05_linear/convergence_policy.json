@@ -1,0 +1,15 @@
+{
+  "policy_id": "svm_convergence_only_10000_then_100000_v1",
+  "svm_iteration_caps": [
+    10000,
+    100000
+  ],
+  "tol": 0.0001,
+  "trigger": "ConvergenceWarning or iteration cap reached; never validation performance",
+  "retry": "fresh estimator, identical seed, data, C, loss, penalty and dual selection",
+  "lr_iteration_caps": [
+    3000
+  ],
+  "second_failure": "block; never omit candidate or relax tolerance",
+  "legacy_reuse": "checksum-verified converged fits only; preserve actual producer/parameters"
+}

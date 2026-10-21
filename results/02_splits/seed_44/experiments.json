@@ -1,0 +1,719 @@
+[
+  {
+    "experiment_id": "main:tr_to_tr",
+    "training_context_id": "main:tr",
+    "train_set": "main:tr:train",
+    "validation_set": "main:tr:validation",
+    "test_set": "main:tr:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "tr"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "main:tr_to_kz",
+    "training_context_id": "main:tr",
+    "train_set": "main:tr:train",
+    "validation_set": "main:tr:validation",
+    "test_set": "main:kz:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "tr"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "main:kz_to_tr",
+    "training_context_id": "main:kz",
+    "train_set": "main:kz:train",
+    "validation_set": "main:kz:validation",
+    "test_set": "main:tr:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "kz"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "main:kz_to_kz",
+    "training_context_id": "main:kz",
+    "train_set": "main:kz:train",
+    "validation_set": "main:kz:validation",
+    "test_set": "main:kz:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "kz"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "main:joint_to_tr",
+    "training_context_id": "main:joint",
+    "train_set": "main:joint:train",
+    "validation_set": "main:joint:validation",
+    "test_set": "main:tr:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "tr",
+      "kz"
+    ],
+    "selection_metric": "equal_language_mean_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "main:joint_to_kz",
+    "training_context_id": "main:joint",
+    "train_set": "main:joint:train",
+    "validation_set": "main:joint:validation",
+    "test_set": "main:kz:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "tr",
+      "kz"
+    ],
+    "selection_metric": "equal_language_mean_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "binary:tr_to_tr",
+    "training_context_id": "binary:tr",
+    "train_set": "binary:tr:train",
+    "validation_set": "binary:tr:validation",
+    "test_set": "binary:tr:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "tr"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "binary:tr_to_kz",
+    "training_context_id": "binary:tr",
+    "train_set": "binary:tr:train",
+    "validation_set": "binary:tr:validation",
+    "test_set": "binary:kz:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "tr"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "extreme:tr_to_kz",
+    "training_context_id": "binary:tr",
+    "train_set": "binary:tr:train",
+    "validation_set": "binary:tr:validation",
+    "test_set": "extreme:kz:test",
+    "reuse_fitted_model_from": "binary:tr_to_kz",
+    "validation_languages": [
+      "tr"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "binary:kz_to_tr",
+    "training_context_id": "binary:kz",
+    "train_set": "binary:kz:train",
+    "validation_set": "binary:kz:validation",
+    "test_set": "binary:tr:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "kz"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "binary:kz_to_kz",
+    "training_context_id": "binary:kz",
+    "train_set": "binary:kz:train",
+    "validation_set": "binary:kz:validation",
+    "test_set": "binary:kz:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "kz"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "extreme:kz_to_kz",
+    "training_context_id": "binary:kz",
+    "train_set": "binary:kz:train",
+    "validation_set": "binary:kz:validation",
+    "test_set": "extreme:kz:test",
+    "reuse_fitted_model_from": "binary:kz_to_kz",
+    "validation_languages": [
+      "kz"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "binary:joint_to_tr",
+    "training_context_id": "binary:joint",
+    "train_set": "binary:joint:train",
+    "validation_set": "binary:joint:validation",
+    "test_set": "binary:tr:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "tr",
+      "kz"
+    ],
+    "selection_metric": "equal_language_mean_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "binary:joint_to_kz",
+    "training_context_id": "binary:joint",
+    "train_set": "binary:joint:train",
+    "validation_set": "binary:joint:validation",
+    "test_set": "binary:kz:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "tr",
+      "kz"
+    ],
+    "selection_metric": "equal_language_mean_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "extreme:joint_to_kz",
+    "training_context_id": "binary:joint",
+    "train_set": "binary:joint:train",
+    "validation_set": "binary:joint:validation",
+    "test_set": "extreme:kz:test",
+    "reuse_fitted_model_from": "binary:joint_to_kz",
+    "validation_languages": [
+      "tr",
+      "kz"
+    ],
+    "selection_metric": "equal_language_mean_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "low:100:tr_to_tr",
+    "training_context_id": "low:100:tr",
+    "train_set": "low_n100:tr:train",
+    "validation_set": "low_n100:tr:validation",
+    "test_set": "main:tr:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "tr"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "low:100:tr_to_kz",
+    "training_context_id": "low:100:tr",
+    "train_set": "low_n100:tr:train",
+    "validation_set": "low_n100:tr:validation",
+    "test_set": "main:kz:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "tr"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "low:100:kz_to_tr",
+    "training_context_id": "low:100:kz",
+    "train_set": "low_n100:kz:train",
+    "validation_set": "low_n100:kz:validation",
+    "test_set": "main:tr:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "kz"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "low:100:kz_to_kz",
+    "training_context_id": "low:100:kz",
+    "train_set": "low_n100:kz:train",
+    "validation_set": "low_n100:kz:validation",
+    "test_set": "main:kz:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "kz"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "low:100:joint_to_tr",
+    "training_context_id": "low:100:joint",
+    "train_set": "low_n100:joint:train",
+    "validation_set": "low_n100:joint:validation",
+    "test_set": "main:tr:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "tr",
+      "kz"
+    ],
+    "selection_metric": "equal_language_mean_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "low:100:joint_to_kz",
+    "training_context_id": "low:100:joint",
+    "train_set": "low_n100:joint:train",
+    "validation_set": "low_n100:joint:validation",
+    "test_set": "main:kz:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "tr",
+      "kz"
+    ],
+    "selection_metric": "equal_language_mean_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "low:500:tr_to_tr",
+    "training_context_id": "low:500:tr",
+    "train_set": "low_n500:tr:train",
+    "validation_set": "low_n500:tr:validation",
+    "test_set": "main:tr:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "tr"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "low:500:tr_to_kz",
+    "training_context_id": "low:500:tr",
+    "train_set": "low_n500:tr:train",
+    "validation_set": "low_n500:tr:validation",
+    "test_set": "main:kz:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "tr"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "low:500:kz_to_tr",
+    "training_context_id": "low:500:kz",
+    "train_set": "low_n500:kz:train",
+    "validation_set": "low_n500:kz:validation",
+    "test_set": "main:tr:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "kz"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "low:500:kz_to_kz",
+    "training_context_id": "low:500:kz",
+    "train_set": "low_n500:kz:train",
+    "validation_set": "low_n500:kz:validation",
+    "test_set": "main:kz:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "kz"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "low:500:joint_to_tr",
+    "training_context_id": "low:500:joint",
+    "train_set": "low_n500:joint:train",
+    "validation_set": "low_n500:joint:validation",
+    "test_set": "main:tr:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "tr",
+      "kz"
+    ],
+    "selection_metric": "equal_language_mean_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "low:500:joint_to_kz",
+    "training_context_id": "low:500:joint",
+    "train_set": "low_n500:joint:train",
+    "validation_set": "low_n500:joint:validation",
+    "test_set": "main:kz:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "tr",
+      "kz"
+    ],
+    "selection_metric": "equal_language_mean_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "low:1000:tr_to_tr",
+    "training_context_id": "low:1000:tr",
+    "train_set": "low_n1000:tr:train",
+    "validation_set": "low_n1000:tr:validation",
+    "test_set": "main:tr:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "tr"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "low:1000:tr_to_kz",
+    "training_context_id": "low:1000:tr",
+    "train_set": "low_n1000:tr:train",
+    "validation_set": "low_n1000:tr:validation",
+    "test_set": "main:kz:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "tr"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "low:1000:kz_to_tr",
+    "training_context_id": "low:1000:kz",
+    "train_set": "low_n1000:kz:train",
+    "validation_set": "low_n1000:kz:validation",
+    "test_set": "main:tr:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "kz"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "low:1000:kz_to_kz",
+    "training_context_id": "low:1000:kz",
+    "train_set": "low_n1000:kz:train",
+    "validation_set": "low_n1000:kz:validation",
+    "test_set": "main:kz:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "kz"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "low:1000:joint_to_tr",
+    "training_context_id": "low:1000:joint",
+    "train_set": "low_n1000:joint:train",
+    "validation_set": "low_n1000:joint:validation",
+    "test_set": "main:tr:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "tr",
+      "kz"
+    ],
+    "selection_metric": "equal_language_mean_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "low:1000:joint_to_kz",
+    "training_context_id": "low:1000:joint",
+    "train_set": "low_n1000:joint:train",
+    "validation_set": "low_n1000:joint:validation",
+    "test_set": "main:kz:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "tr",
+      "kz"
+    ],
+    "selection_metric": "equal_language_mean_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "low:3000:tr_to_tr",
+    "training_context_id": "low:3000:tr",
+    "train_set": "low_n3000:tr:train",
+    "validation_set": "low_n3000:tr:validation",
+    "test_set": "main:tr:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "tr"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "low:3000:tr_to_kz",
+    "training_context_id": "low:3000:tr",
+    "train_set": "low_n3000:tr:train",
+    "validation_set": "low_n3000:tr:validation",
+    "test_set": "main:kz:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "tr"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "low:3000:kz_to_tr",
+    "training_context_id": "low:3000:kz",
+    "train_set": "low_n3000:kz:train",
+    "validation_set": "low_n3000:kz:validation",
+    "test_set": "main:tr:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "kz"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "low:3000:kz_to_kz",
+    "training_context_id": "low:3000:kz",
+    "train_set": "low_n3000:kz:train",
+    "validation_set": "low_n3000:kz:validation",
+    "test_set": "main:kz:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "kz"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "low:3000:joint_to_tr",
+    "training_context_id": "low:3000:joint",
+    "train_set": "low_n3000:joint:train",
+    "validation_set": "low_n3000:joint:validation",
+    "test_set": "main:tr:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "tr",
+      "kz"
+    ],
+    "selection_metric": "equal_language_mean_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "low:3000:joint_to_kz",
+    "training_context_id": "low:3000:joint",
+    "train_set": "low_n3000:joint:train",
+    "validation_set": "low_n3000:joint:validation",
+    "test_set": "main:kz:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "tr",
+      "kz"
+    ],
+    "selection_metric": "equal_language_mean_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "low:5000:tr_to_tr",
+    "training_context_id": "low:5000:tr",
+    "train_set": "low_n5000:tr:train",
+    "validation_set": "low_n5000:tr:validation",
+    "test_set": "main:tr:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "tr"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "low:5000:tr_to_kz",
+    "training_context_id": "low:5000:tr",
+    "train_set": "low_n5000:tr:train",
+    "validation_set": "low_n5000:tr:validation",
+    "test_set": "main:kz:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "tr"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "low:5000:kz_to_tr",
+    "training_context_id": "low:5000:kz",
+    "train_set": "low_n5000:kz:train",
+    "validation_set": "low_n5000:kz:validation",
+    "test_set": "main:tr:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "kz"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "low:5000:kz_to_kz",
+    "training_context_id": "low:5000:kz",
+    "train_set": "low_n5000:kz:train",
+    "validation_set": "low_n5000:kz:validation",
+    "test_set": "main:kz:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "kz"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "low:5000:joint_to_tr",
+    "training_context_id": "low:5000:joint",
+    "train_set": "low_n5000:joint:train",
+    "validation_set": "low_n5000:joint:validation",
+    "test_set": "main:tr:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "tr",
+      "kz"
+    ],
+    "selection_metric": "equal_language_mean_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "low:5000:joint_to_kz",
+    "training_context_id": "low:5000:joint",
+    "train_set": "low_n5000:joint:train",
+    "validation_set": "low_n5000:joint:validation",
+    "test_set": "main:kz:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "tr",
+      "kz"
+    ],
+    "selection_metric": "equal_language_mean_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "domain:TRSAv1_to_TRSAv1",
+    "training_context_id": "domain:TRSAv1",
+    "train_set": "domain:TRSAv1:train",
+    "validation_set": "domain:TRSAv1:validation",
+    "test_set": "domain:TRSAv1:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "tr"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "domain:TRSAv1_to_KZ_Market",
+    "training_context_id": "domain:TRSAv1",
+    "train_set": "domain:TRSAv1:train",
+    "validation_set": "domain:TRSAv1:validation",
+    "test_set": "domain:KZ_Market:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "tr"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "domain:TRSAv1_to_KZ_Appstore",
+    "training_context_id": "domain:TRSAv1",
+    "train_set": "domain:TRSAv1:train",
+    "validation_set": "domain:TRSAv1:validation",
+    "test_set": "domain:KZ_Appstore:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "tr"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "domain:KZ_Market_to_TRSAv1",
+    "training_context_id": "domain:KZ_Market",
+    "train_set": "domain:KZ_Market:train",
+    "validation_set": "domain:KZ_Market:validation",
+    "test_set": "domain:TRSAv1:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "kz"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "domain:KZ_Market_to_KZ_Market",
+    "training_context_id": "domain:KZ_Market",
+    "train_set": "domain:KZ_Market:train",
+    "validation_set": "domain:KZ_Market:validation",
+    "test_set": "domain:KZ_Market:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "kz"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "domain:KZ_Market_to_KZ_Appstore",
+    "training_context_id": "domain:KZ_Market",
+    "train_set": "domain:KZ_Market:train",
+    "validation_set": "domain:KZ_Market:validation",
+    "test_set": "domain:KZ_Appstore:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "kz"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "domain:KZ_Appstore_to_TRSAv1",
+    "training_context_id": "domain:KZ_Appstore",
+    "train_set": "domain:KZ_Appstore:train",
+    "validation_set": "domain:KZ_Appstore:validation",
+    "test_set": "domain:TRSAv1:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "kz"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "domain:KZ_Appstore_to_KZ_Market",
+    "training_context_id": "domain:KZ_Appstore",
+    "train_set": "domain:KZ_Appstore:train",
+    "validation_set": "domain:KZ_Appstore:validation",
+    "test_set": "domain:KZ_Market:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "kz"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  },
+  {
+    "experiment_id": "domain:KZ_Appstore_to_KZ_Appstore",
+    "training_context_id": "domain:KZ_Appstore",
+    "train_set": "domain:KZ_Appstore:train",
+    "validation_set": "domain:KZ_Appstore:validation",
+    "test_set": "domain:KZ_Appstore:test",
+    "reuse_fitted_model_from": null,
+    "validation_languages": [
+      "kz"
+    ],
+    "selection_metric": "source_macro_f1",
+    "test_labels_must_not_select_models": true
+  }
+]

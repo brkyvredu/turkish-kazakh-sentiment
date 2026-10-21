@@ -1,0 +1,217 @@
+[
+  {
+    "repo_id": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "refs": {
+      "refs/main": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42"
+    },
+    "snapshots": [
+      {
+        "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+        "weights": [
+          {
+            "relative_file": "model.safetensors",
+            "bytes": 470641600,
+            "readable_file_exists": true,
+            "content_or_tensor_values_verified": false
+          }
+        ],
+        "metadata": {
+          "config.json": {
+            "model_type": "bert",
+            "architectures": [
+              "BertModel"
+            ],
+            "hidden_size": 384,
+            "max_position_embeddings": 512,
+            "vocab_size": 250037
+          },
+          "sentence_bert_config.json": {
+            "max_seq_length": 128,
+            "do_lower_case": false
+          },
+          "modules.json": [
+            {
+              "idx": 0,
+              "name": "0",
+              "path": "",
+              "type": "sentence_transformers.models.Transformer"
+            },
+            {
+              "idx": 1,
+              "name": "1",
+              "path": "1_Pooling",
+              "type": "sentence_transformers.models.Pooling"
+            }
+          ],
+          "1_Pooling/config.json": {
+            "word_embedding_dimension": 384,
+            "pooling_mode_cls_token": false,
+            "pooling_mode_mean_tokens": true,
+            "pooling_mode_max_tokens": false,
+            "pooling_mode_mean_sqrt_len_tokens": false
+          }
+        }
+      }
+    ],
+    "errors": [],
+    "note": "Metadata only; no model loaded and no revision merged or silently selected."
+  },
+  {
+    "repo_id": "BAAI/bge-m3",
+    "refs": {
+      "refs/main": "5617a9f61b028005a4858fdac845db406aefb181",
+      "refs/refs/pr/130": "9a0624b896d81da7492a910ffa53731274b6cf3d"
+    },
+    "snapshots": [
+      {
+        "revision": "9a0624b896d81da7492a910ffa53731274b6cf3d",
+        "weights": [
+          {
+            "relative_file": "model.safetensors",
+            "bytes": 2271064456,
+            "readable_file_exists": true,
+            "content_or_tensor_values_verified": false
+          }
+        ],
+        "metadata": {}
+      },
+      {
+        "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+        "weights": [
+          {
+            "relative_file": "pytorch_model.bin",
+            "bytes": 2271145830,
+            "readable_file_exists": true,
+            "content_or_tensor_values_verified": false
+          }
+        ],
+        "metadata": {
+          "config.json": {
+            "model_type": "xlm-roberta",
+            "architectures": [
+              "XLMRobertaModel"
+            ],
+            "hidden_size": 1024,
+            "max_position_embeddings": 8194,
+            "torch_dtype": "float32",
+            "vocab_size": 250002
+          },
+          "sentence_bert_config.json": {
+            "max_seq_length": 8192,
+            "do_lower_case": false
+          },
+          "modules.json": [
+            {
+              "idx": 0,
+              "name": "0",
+              "path": "",
+              "type": "sentence_transformers.models.Transformer"
+            },
+            {
+              "idx": 1,
+              "name": "1",
+              "path": "1_Pooling",
+              "type": "sentence_transformers.models.Pooling"
+            },
+            {
+              "idx": 2,
+              "name": "2",
+              "path": "2_Normalize",
+              "type": "sentence_transformers.models.Normalize"
+            }
+          ],
+          "1_Pooling/config.json": {
+            "word_embedding_dimension": 1024,
+            "pooling_mode_cls_token": true,
+            "pooling_mode_mean_tokens": false,
+            "pooling_mode_max_tokens": false,
+            "pooling_mode_mean_sqrt_len_tokens": false
+          }
+        }
+      }
+    ],
+    "errors": [],
+    "note": "Metadata only; no model loaded and no revision merged or silently selected."
+  },
+  {
+    "repo_id": "sentence-transformers/LaBSE",
+    "refs": {
+      "refs/main": "836121a0533e5664b21c7aacc5d22951f2b8b25b"
+    },
+    "snapshots": [
+      {
+        "revision": "836121a0533e5664b21c7aacc5d22951f2b8b25b",
+        "weights": [
+          {
+            "relative_file": "model.safetensors",
+            "bytes": 1883734344,
+            "readable_file_exists": true,
+            "content_or_tensor_values_verified": false
+          },
+          {
+            "relative_file": "2_Dense/model.safetensors",
+            "bytes": 2362528,
+            "readable_file_exists": true,
+            "content_or_tensor_values_verified": false
+          }
+        ],
+        "metadata": {
+          "config.json": {
+            "model_type": "bert",
+            "architectures": [
+              "BertModel"
+            ],
+            "hidden_size": 768,
+            "max_position_embeddings": 512,
+            "vocab_size": 501153
+          },
+          "sentence_bert_config.json": {
+            "max_seq_length": 256,
+            "do_lower_case": false
+          },
+          "modules.json": [
+            {
+              "idx": 0,
+              "name": "0",
+              "path": "",
+              "type": "sentence_transformers.models.Transformer"
+            },
+            {
+              "idx": 1,
+              "name": "1",
+              "path": "1_Pooling",
+              "type": "sentence_transformers.models.Pooling"
+            },
+            {
+              "idx": 2,
+              "name": "2",
+              "path": "2_Dense",
+              "type": "sentence_transformers.models.Dense"
+            },
+            {
+              "idx": 3,
+              "name": "3",
+              "path": "3_Normalize",
+              "type": "sentence_transformers.models.Normalize"
+            }
+          ],
+          "1_Pooling/config.json": {
+            "word_embedding_dimension": 768,
+            "pooling_mode_cls_token": true,
+            "pooling_mode_mean_tokens": false,
+            "pooling_mode_max_tokens": false,
+            "pooling_mode_mean_sqrt_len_tokens": false
+          },
+          "2_Dense/config.json": {
+            "in_features": 768,
+            "out_features": 768,
+            "bias": true,
+            "activation_function": "torch.nn.modules.activation.Tanh"
+          }
+        }
+      }
+    ],
+    "errors": [],
+    "note": "Metadata only; no model loaded and no revision merged or silently selected."
+  }
+]

@@ -1,0 +1,1376 @@
+{
+  "count": 90,
+  "jobs": [
+    {
+      "seed": 42,
+      "context_id": "main:tr",
+      "learning_rate": 1e-05,
+      "train_rows": 36000,
+      "validation_rows": 15000,
+      "epochs": 3,
+      "optimizer_steps": 3375,
+      "warmup_steps_proposed": 338,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "tr"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 42,
+      "context_id": "main:tr",
+      "learning_rate": 2e-05,
+      "train_rows": 36000,
+      "validation_rows": 15000,
+      "epochs": 3,
+      "optimizer_steps": 3375,
+      "warmup_steps_proposed": 338,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "tr"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 42,
+      "context_id": "main:kz",
+      "learning_rate": 1e-05,
+      "train_rows": 29080,
+      "validation_rows": 18000,
+      "epochs": 3,
+      "optimizer_steps": 2727,
+      "warmup_steps_proposed": 273,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 42,
+      "context_id": "main:kz",
+      "learning_rate": 2e-05,
+      "train_rows": 29080,
+      "validation_rows": 18000,
+      "epochs": 3,
+      "optimizer_steps": 2727,
+      "warmup_steps_proposed": 273,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 42,
+      "context_id": "main:joint",
+      "learning_rate": 1e-05,
+      "train_rows": 65080,
+      "validation_rows": 33000,
+      "epochs": 3,
+      "optimizer_steps": 6102,
+      "warmup_steps_proposed": 611,
+      "selection_rule": "equal_language_mean_macro_f1",
+      "validation_languages": [
+        "kz",
+        "tr"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 42,
+      "context_id": "main:joint",
+      "learning_rate": 2e-05,
+      "train_rows": 65080,
+      "validation_rows": 33000,
+      "epochs": 3,
+      "optimizer_steps": 6102,
+      "warmup_steps_proposed": 611,
+      "selection_rule": "equal_language_mean_macro_f1",
+      "validation_languages": [
+        "kz",
+        "tr"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 42,
+      "context_id": "binary:tr",
+      "learning_rate": 1e-05,
+      "train_rows": 24000,
+      "validation_rows": 10000,
+      "epochs": 3,
+      "optimizer_steps": 2250,
+      "warmup_steps_proposed": 225,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "tr"
+      ],
+      "task": "binary"
+    },
+    {
+      "seed": 42,
+      "context_id": "binary:tr",
+      "learning_rate": 2e-05,
+      "train_rows": 24000,
+      "validation_rows": 10000,
+      "epochs": 3,
+      "optimizer_steps": 2250,
+      "warmup_steps_proposed": 225,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "tr"
+      ],
+      "task": "binary"
+    },
+    {
+      "seed": 42,
+      "context_id": "binary:kz",
+      "learning_rate": 1e-05,
+      "train_rows": 24000,
+      "validation_rows": 17275,
+      "epochs": 3,
+      "optimizer_steps": 2250,
+      "warmup_steps_proposed": 225,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "binary"
+    },
+    {
+      "seed": 42,
+      "context_id": "binary:kz",
+      "learning_rate": 2e-05,
+      "train_rows": 24000,
+      "validation_rows": 17275,
+      "epochs": 3,
+      "optimizer_steps": 2250,
+      "warmup_steps_proposed": 225,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "binary"
+    },
+    {
+      "seed": 42,
+      "context_id": "binary:joint",
+      "learning_rate": 1e-05,
+      "train_rows": 48000,
+      "validation_rows": 27275,
+      "epochs": 3,
+      "optimizer_steps": 4500,
+      "warmup_steps_proposed": 450,
+      "selection_rule": "equal_language_mean_macro_f1",
+      "validation_languages": [
+        "kz",
+        "tr"
+      ],
+      "task": "binary"
+    },
+    {
+      "seed": 42,
+      "context_id": "binary:joint",
+      "learning_rate": 2e-05,
+      "train_rows": 48000,
+      "validation_rows": 27275,
+      "epochs": 3,
+      "optimizer_steps": 4500,
+      "warmup_steps_proposed": 450,
+      "selection_rule": "equal_language_mean_macro_f1",
+      "validation_languages": [
+        "kz",
+        "tr"
+      ],
+      "task": "binary"
+    },
+    {
+      "seed": 42,
+      "context_id": "domain:TRSAv1",
+      "learning_rate": 1e-05,
+      "train_rows": 1500,
+      "validation_rows": 240,
+      "epochs": 3,
+      "optimizer_steps": 141,
+      "warmup_steps_proposed": 15,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "tr"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 42,
+      "context_id": "domain:TRSAv1",
+      "learning_rate": 2e-05,
+      "train_rows": 1500,
+      "validation_rows": 240,
+      "epochs": 3,
+      "optimizer_steps": 141,
+      "warmup_steps_proposed": 15,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "tr"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 42,
+      "context_id": "domain:KZ_Market",
+      "learning_rate": 1e-05,
+      "train_rows": 1500,
+      "validation_rows": 240,
+      "epochs": 3,
+      "optimizer_steps": 141,
+      "warmup_steps_proposed": 15,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 42,
+      "context_id": "domain:KZ_Market",
+      "learning_rate": 2e-05,
+      "train_rows": 1500,
+      "validation_rows": 240,
+      "epochs": 3,
+      "optimizer_steps": 141,
+      "warmup_steps_proposed": 15,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 42,
+      "context_id": "domain:KZ_Appstore",
+      "learning_rate": 1e-05,
+      "train_rows": 1500,
+      "validation_rows": 240,
+      "epochs": 3,
+      "optimizer_steps": 141,
+      "warmup_steps_proposed": 15,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 42,
+      "context_id": "domain:KZ_Appstore",
+      "learning_rate": 2e-05,
+      "train_rows": 1500,
+      "validation_rows": 240,
+      "epochs": 3,
+      "optimizer_steps": 141,
+      "warmup_steps_proposed": 15,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 43,
+      "context_id": "main:tr",
+      "learning_rate": 1e-05,
+      "train_rows": 36000,
+      "validation_rows": 15000,
+      "epochs": 3,
+      "optimizer_steps": 3375,
+      "warmup_steps_proposed": 338,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "tr"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 43,
+      "context_id": "main:tr",
+      "learning_rate": 2e-05,
+      "train_rows": 36000,
+      "validation_rows": 15000,
+      "epochs": 3,
+      "optimizer_steps": 3375,
+      "warmup_steps_proposed": 338,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "tr"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 43,
+      "context_id": "main:kz",
+      "learning_rate": 1e-05,
+      "train_rows": 29080,
+      "validation_rows": 18000,
+      "epochs": 3,
+      "optimizer_steps": 2727,
+      "warmup_steps_proposed": 273,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 43,
+      "context_id": "main:kz",
+      "learning_rate": 2e-05,
+      "train_rows": 29080,
+      "validation_rows": 18000,
+      "epochs": 3,
+      "optimizer_steps": 2727,
+      "warmup_steps_proposed": 273,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 43,
+      "context_id": "main:joint",
+      "learning_rate": 1e-05,
+      "train_rows": 65080,
+      "validation_rows": 33000,
+      "epochs": 3,
+      "optimizer_steps": 6102,
+      "warmup_steps_proposed": 611,
+      "selection_rule": "equal_language_mean_macro_f1",
+      "validation_languages": [
+        "kz",
+        "tr"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 43,
+      "context_id": "main:joint",
+      "learning_rate": 2e-05,
+      "train_rows": 65080,
+      "validation_rows": 33000,
+      "epochs": 3,
+      "optimizer_steps": 6102,
+      "warmup_steps_proposed": 611,
+      "selection_rule": "equal_language_mean_macro_f1",
+      "validation_languages": [
+        "kz",
+        "tr"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 43,
+      "context_id": "binary:tr",
+      "learning_rate": 1e-05,
+      "train_rows": 24000,
+      "validation_rows": 10000,
+      "epochs": 3,
+      "optimizer_steps": 2250,
+      "warmup_steps_proposed": 225,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "tr"
+      ],
+      "task": "binary"
+    },
+    {
+      "seed": 43,
+      "context_id": "binary:tr",
+      "learning_rate": 2e-05,
+      "train_rows": 24000,
+      "validation_rows": 10000,
+      "epochs": 3,
+      "optimizer_steps": 2250,
+      "warmup_steps_proposed": 225,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "tr"
+      ],
+      "task": "binary"
+    },
+    {
+      "seed": 43,
+      "context_id": "binary:kz",
+      "learning_rate": 1e-05,
+      "train_rows": 24000,
+      "validation_rows": 17275,
+      "epochs": 3,
+      "optimizer_steps": 2250,
+      "warmup_steps_proposed": 225,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "binary"
+    },
+    {
+      "seed": 43,
+      "context_id": "binary:kz",
+      "learning_rate": 2e-05,
+      "train_rows": 24000,
+      "validation_rows": 17275,
+      "epochs": 3,
+      "optimizer_steps": 2250,
+      "warmup_steps_proposed": 225,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "binary"
+    },
+    {
+      "seed": 43,
+      "context_id": "binary:joint",
+      "learning_rate": 1e-05,
+      "train_rows": 48000,
+      "validation_rows": 27275,
+      "epochs": 3,
+      "optimizer_steps": 4500,
+      "warmup_steps_proposed": 450,
+      "selection_rule": "equal_language_mean_macro_f1",
+      "validation_languages": [
+        "kz",
+        "tr"
+      ],
+      "task": "binary"
+    },
+    {
+      "seed": 43,
+      "context_id": "binary:joint",
+      "learning_rate": 2e-05,
+      "train_rows": 48000,
+      "validation_rows": 27275,
+      "epochs": 3,
+      "optimizer_steps": 4500,
+      "warmup_steps_proposed": 450,
+      "selection_rule": "equal_language_mean_macro_f1",
+      "validation_languages": [
+        "kz",
+        "tr"
+      ],
+      "task": "binary"
+    },
+    {
+      "seed": 43,
+      "context_id": "domain:TRSAv1",
+      "learning_rate": 1e-05,
+      "train_rows": 1500,
+      "validation_rows": 240,
+      "epochs": 3,
+      "optimizer_steps": 141,
+      "warmup_steps_proposed": 15,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "tr"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 43,
+      "context_id": "domain:TRSAv1",
+      "learning_rate": 2e-05,
+      "train_rows": 1500,
+      "validation_rows": 240,
+      "epochs": 3,
+      "optimizer_steps": 141,
+      "warmup_steps_proposed": 15,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "tr"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 43,
+      "context_id": "domain:KZ_Market",
+      "learning_rate": 1e-05,
+      "train_rows": 1500,
+      "validation_rows": 240,
+      "epochs": 3,
+      "optimizer_steps": 141,
+      "warmup_steps_proposed": 15,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 43,
+      "context_id": "domain:KZ_Market",
+      "learning_rate": 2e-05,
+      "train_rows": 1500,
+      "validation_rows": 240,
+      "epochs": 3,
+      "optimizer_steps": 141,
+      "warmup_steps_proposed": 15,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 43,
+      "context_id": "domain:KZ_Appstore",
+      "learning_rate": 1e-05,
+      "train_rows": 1500,
+      "validation_rows": 240,
+      "epochs": 3,
+      "optimizer_steps": 141,
+      "warmup_steps_proposed": 15,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 43,
+      "context_id": "domain:KZ_Appstore",
+      "learning_rate": 2e-05,
+      "train_rows": 1500,
+      "validation_rows": 240,
+      "epochs": 3,
+      "optimizer_steps": 141,
+      "warmup_steps_proposed": 15,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 44,
+      "context_id": "main:tr",
+      "learning_rate": 1e-05,
+      "train_rows": 36000,
+      "validation_rows": 15000,
+      "epochs": 3,
+      "optimizer_steps": 3375,
+      "warmup_steps_proposed": 338,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "tr"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 44,
+      "context_id": "main:tr",
+      "learning_rate": 2e-05,
+      "train_rows": 36000,
+      "validation_rows": 15000,
+      "epochs": 3,
+      "optimizer_steps": 3375,
+      "warmup_steps_proposed": 338,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "tr"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 44,
+      "context_id": "main:kz",
+      "learning_rate": 1e-05,
+      "train_rows": 29080,
+      "validation_rows": 18000,
+      "epochs": 3,
+      "optimizer_steps": 2727,
+      "warmup_steps_proposed": 273,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 44,
+      "context_id": "main:kz",
+      "learning_rate": 2e-05,
+      "train_rows": 29080,
+      "validation_rows": 18000,
+      "epochs": 3,
+      "optimizer_steps": 2727,
+      "warmup_steps_proposed": 273,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 44,
+      "context_id": "main:joint",
+      "learning_rate": 1e-05,
+      "train_rows": 65080,
+      "validation_rows": 33000,
+      "epochs": 3,
+      "optimizer_steps": 6102,
+      "warmup_steps_proposed": 611,
+      "selection_rule": "equal_language_mean_macro_f1",
+      "validation_languages": [
+        "kz",
+        "tr"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 44,
+      "context_id": "main:joint",
+      "learning_rate": 2e-05,
+      "train_rows": 65080,
+      "validation_rows": 33000,
+      "epochs": 3,
+      "optimizer_steps": 6102,
+      "warmup_steps_proposed": 611,
+      "selection_rule": "equal_language_mean_macro_f1",
+      "validation_languages": [
+        "kz",
+        "tr"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 44,
+      "context_id": "binary:tr",
+      "learning_rate": 1e-05,
+      "train_rows": 24000,
+      "validation_rows": 10000,
+      "epochs": 3,
+      "optimizer_steps": 2250,
+      "warmup_steps_proposed": 225,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "tr"
+      ],
+      "task": "binary"
+    },
+    {
+      "seed": 44,
+      "context_id": "binary:tr",
+      "learning_rate": 2e-05,
+      "train_rows": 24000,
+      "validation_rows": 10000,
+      "epochs": 3,
+      "optimizer_steps": 2250,
+      "warmup_steps_proposed": 225,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "tr"
+      ],
+      "task": "binary"
+    },
+    {
+      "seed": 44,
+      "context_id": "binary:kz",
+      "learning_rate": 1e-05,
+      "train_rows": 24000,
+      "validation_rows": 17275,
+      "epochs": 3,
+      "optimizer_steps": 2250,
+      "warmup_steps_proposed": 225,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "binary"
+    },
+    {
+      "seed": 44,
+      "context_id": "binary:kz",
+      "learning_rate": 2e-05,
+      "train_rows": 24000,
+      "validation_rows": 17275,
+      "epochs": 3,
+      "optimizer_steps": 2250,
+      "warmup_steps_proposed": 225,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "binary"
+    },
+    {
+      "seed": 44,
+      "context_id": "binary:joint",
+      "learning_rate": 1e-05,
+      "train_rows": 48000,
+      "validation_rows": 27275,
+      "epochs": 3,
+      "optimizer_steps": 4500,
+      "warmup_steps_proposed": 450,
+      "selection_rule": "equal_language_mean_macro_f1",
+      "validation_languages": [
+        "kz",
+        "tr"
+      ],
+      "task": "binary"
+    },
+    {
+      "seed": 44,
+      "context_id": "binary:joint",
+      "learning_rate": 2e-05,
+      "train_rows": 48000,
+      "validation_rows": 27275,
+      "epochs": 3,
+      "optimizer_steps": 4500,
+      "warmup_steps_proposed": 450,
+      "selection_rule": "equal_language_mean_macro_f1",
+      "validation_languages": [
+        "kz",
+        "tr"
+      ],
+      "task": "binary"
+    },
+    {
+      "seed": 44,
+      "context_id": "domain:TRSAv1",
+      "learning_rate": 1e-05,
+      "train_rows": 1500,
+      "validation_rows": 240,
+      "epochs": 3,
+      "optimizer_steps": 141,
+      "warmup_steps_proposed": 15,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "tr"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 44,
+      "context_id": "domain:TRSAv1",
+      "learning_rate": 2e-05,
+      "train_rows": 1500,
+      "validation_rows": 240,
+      "epochs": 3,
+      "optimizer_steps": 141,
+      "warmup_steps_proposed": 15,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "tr"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 44,
+      "context_id": "domain:KZ_Market",
+      "learning_rate": 1e-05,
+      "train_rows": 1500,
+      "validation_rows": 240,
+      "epochs": 3,
+      "optimizer_steps": 141,
+      "warmup_steps_proposed": 15,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 44,
+      "context_id": "domain:KZ_Market",
+      "learning_rate": 2e-05,
+      "train_rows": 1500,
+      "validation_rows": 240,
+      "epochs": 3,
+      "optimizer_steps": 141,
+      "warmup_steps_proposed": 15,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 44,
+      "context_id": "domain:KZ_Appstore",
+      "learning_rate": 1e-05,
+      "train_rows": 1500,
+      "validation_rows": 240,
+      "epochs": 3,
+      "optimizer_steps": 141,
+      "warmup_steps_proposed": 15,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 44,
+      "context_id": "domain:KZ_Appstore",
+      "learning_rate": 2e-05,
+      "train_rows": 1500,
+      "validation_rows": 240,
+      "epochs": 3,
+      "optimizer_steps": 141,
+      "warmup_steps_proposed": 15,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 45,
+      "context_id": "main:tr",
+      "learning_rate": 1e-05,
+      "train_rows": 36000,
+      "validation_rows": 15000,
+      "epochs": 3,
+      "optimizer_steps": 3375,
+      "warmup_steps_proposed": 338,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "tr"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 45,
+      "context_id": "main:tr",
+      "learning_rate": 2e-05,
+      "train_rows": 36000,
+      "validation_rows": 15000,
+      "epochs": 3,
+      "optimizer_steps": 3375,
+      "warmup_steps_proposed": 338,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "tr"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 45,
+      "context_id": "main:kz",
+      "learning_rate": 1e-05,
+      "train_rows": 29080,
+      "validation_rows": 18000,
+      "epochs": 3,
+      "optimizer_steps": 2727,
+      "warmup_steps_proposed": 273,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 45,
+      "context_id": "main:kz",
+      "learning_rate": 2e-05,
+      "train_rows": 29080,
+      "validation_rows": 18000,
+      "epochs": 3,
+      "optimizer_steps": 2727,
+      "warmup_steps_proposed": 273,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 45,
+      "context_id": "main:joint",
+      "learning_rate": 1e-05,
+      "train_rows": 65080,
+      "validation_rows": 33000,
+      "epochs": 3,
+      "optimizer_steps": 6102,
+      "warmup_steps_proposed": 611,
+      "selection_rule": "equal_language_mean_macro_f1",
+      "validation_languages": [
+        "kz",
+        "tr"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 45,
+      "context_id": "main:joint",
+      "learning_rate": 2e-05,
+      "train_rows": 65080,
+      "validation_rows": 33000,
+      "epochs": 3,
+      "optimizer_steps": 6102,
+      "warmup_steps_proposed": 611,
+      "selection_rule": "equal_language_mean_macro_f1",
+      "validation_languages": [
+        "kz",
+        "tr"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 45,
+      "context_id": "binary:tr",
+      "learning_rate": 1e-05,
+      "train_rows": 24000,
+      "validation_rows": 10000,
+      "epochs": 3,
+      "optimizer_steps": 2250,
+      "warmup_steps_proposed": 225,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "tr"
+      ],
+      "task": "binary"
+    },
+    {
+      "seed": 45,
+      "context_id": "binary:tr",
+      "learning_rate": 2e-05,
+      "train_rows": 24000,
+      "validation_rows": 10000,
+      "epochs": 3,
+      "optimizer_steps": 2250,
+      "warmup_steps_proposed": 225,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "tr"
+      ],
+      "task": "binary"
+    },
+    {
+      "seed": 45,
+      "context_id": "binary:kz",
+      "learning_rate": 1e-05,
+      "train_rows": 24000,
+      "validation_rows": 17275,
+      "epochs": 3,
+      "optimizer_steps": 2250,
+      "warmup_steps_proposed": 225,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "binary"
+    },
+    {
+      "seed": 45,
+      "context_id": "binary:kz",
+      "learning_rate": 2e-05,
+      "train_rows": 24000,
+      "validation_rows": 17275,
+      "epochs": 3,
+      "optimizer_steps": 2250,
+      "warmup_steps_proposed": 225,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "binary"
+    },
+    {
+      "seed": 45,
+      "context_id": "binary:joint",
+      "learning_rate": 1e-05,
+      "train_rows": 48000,
+      "validation_rows": 27275,
+      "epochs": 3,
+      "optimizer_steps": 4500,
+      "warmup_steps_proposed": 450,
+      "selection_rule": "equal_language_mean_macro_f1",
+      "validation_languages": [
+        "kz",
+        "tr"
+      ],
+      "task": "binary"
+    },
+    {
+      "seed": 45,
+      "context_id": "binary:joint",
+      "learning_rate": 2e-05,
+      "train_rows": 48000,
+      "validation_rows": 27275,
+      "epochs": 3,
+      "optimizer_steps": 4500,
+      "warmup_steps_proposed": 450,
+      "selection_rule": "equal_language_mean_macro_f1",
+      "validation_languages": [
+        "kz",
+        "tr"
+      ],
+      "task": "binary"
+    },
+    {
+      "seed": 45,
+      "context_id": "domain:TRSAv1",
+      "learning_rate": 1e-05,
+      "train_rows": 1500,
+      "validation_rows": 240,
+      "epochs": 3,
+      "optimizer_steps": 141,
+      "warmup_steps_proposed": 15,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "tr"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 45,
+      "context_id": "domain:TRSAv1",
+      "learning_rate": 2e-05,
+      "train_rows": 1500,
+      "validation_rows": 240,
+      "epochs": 3,
+      "optimizer_steps": 141,
+      "warmup_steps_proposed": 15,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "tr"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 45,
+      "context_id": "domain:KZ_Market",
+      "learning_rate": 1e-05,
+      "train_rows": 1500,
+      "validation_rows": 240,
+      "epochs": 3,
+      "optimizer_steps": 141,
+      "warmup_steps_proposed": 15,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 45,
+      "context_id": "domain:KZ_Market",
+      "learning_rate": 2e-05,
+      "train_rows": 1500,
+      "validation_rows": 240,
+      "epochs": 3,
+      "optimizer_steps": 141,
+      "warmup_steps_proposed": 15,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 45,
+      "context_id": "domain:KZ_Appstore",
+      "learning_rate": 1e-05,
+      "train_rows": 1500,
+      "validation_rows": 240,
+      "epochs": 3,
+      "optimizer_steps": 141,
+      "warmup_steps_proposed": 15,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 45,
+      "context_id": "domain:KZ_Appstore",
+      "learning_rate": 2e-05,
+      "train_rows": 1500,
+      "validation_rows": 240,
+      "epochs": 3,
+      "optimizer_steps": 141,
+      "warmup_steps_proposed": 15,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 46,
+      "context_id": "main:tr",
+      "learning_rate": 1e-05,
+      "train_rows": 36000,
+      "validation_rows": 15000,
+      "epochs": 3,
+      "optimizer_steps": 3375,
+      "warmup_steps_proposed": 338,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "tr"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 46,
+      "context_id": "main:tr",
+      "learning_rate": 2e-05,
+      "train_rows": 36000,
+      "validation_rows": 15000,
+      "epochs": 3,
+      "optimizer_steps": 3375,
+      "warmup_steps_proposed": 338,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "tr"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 46,
+      "context_id": "main:kz",
+      "learning_rate": 1e-05,
+      "train_rows": 29080,
+      "validation_rows": 18000,
+      "epochs": 3,
+      "optimizer_steps": 2727,
+      "warmup_steps_proposed": 273,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 46,
+      "context_id": "main:kz",
+      "learning_rate": 2e-05,
+      "train_rows": 29080,
+      "validation_rows": 18000,
+      "epochs": 3,
+      "optimizer_steps": 2727,
+      "warmup_steps_proposed": 273,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 46,
+      "context_id": "main:joint",
+      "learning_rate": 1e-05,
+      "train_rows": 65080,
+      "validation_rows": 33000,
+      "epochs": 3,
+      "optimizer_steps": 6102,
+      "warmup_steps_proposed": 611,
+      "selection_rule": "equal_language_mean_macro_f1",
+      "validation_languages": [
+        "kz",
+        "tr"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 46,
+      "context_id": "main:joint",
+      "learning_rate": 2e-05,
+      "train_rows": 65080,
+      "validation_rows": 33000,
+      "epochs": 3,
+      "optimizer_steps": 6102,
+      "warmup_steps_proposed": 611,
+      "selection_rule": "equal_language_mean_macro_f1",
+      "validation_languages": [
+        "kz",
+        "tr"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 46,
+      "context_id": "binary:tr",
+      "learning_rate": 1e-05,
+      "train_rows": 24000,
+      "validation_rows": 10000,
+      "epochs": 3,
+      "optimizer_steps": 2250,
+      "warmup_steps_proposed": 225,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "tr"
+      ],
+      "task": "binary"
+    },
+    {
+      "seed": 46,
+      "context_id": "binary:tr",
+      "learning_rate": 2e-05,
+      "train_rows": 24000,
+      "validation_rows": 10000,
+      "epochs": 3,
+      "optimizer_steps": 2250,
+      "warmup_steps_proposed": 225,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "tr"
+      ],
+      "task": "binary"
+    },
+    {
+      "seed": 46,
+      "context_id": "binary:kz",
+      "learning_rate": 1e-05,
+      "train_rows": 24000,
+      "validation_rows": 17275,
+      "epochs": 3,
+      "optimizer_steps": 2250,
+      "warmup_steps_proposed": 225,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "binary"
+    },
+    {
+      "seed": 46,
+      "context_id": "binary:kz",
+      "learning_rate": 2e-05,
+      "train_rows": 24000,
+      "validation_rows": 17275,
+      "epochs": 3,
+      "optimizer_steps": 2250,
+      "warmup_steps_proposed": 225,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "binary"
+    },
+    {
+      "seed": 46,
+      "context_id": "binary:joint",
+      "learning_rate": 1e-05,
+      "train_rows": 48000,
+      "validation_rows": 27275,
+      "epochs": 3,
+      "optimizer_steps": 4500,
+      "warmup_steps_proposed": 450,
+      "selection_rule": "equal_language_mean_macro_f1",
+      "validation_languages": [
+        "kz",
+        "tr"
+      ],
+      "task": "binary"
+    },
+    {
+      "seed": 46,
+      "context_id": "binary:joint",
+      "learning_rate": 2e-05,
+      "train_rows": 48000,
+      "validation_rows": 27275,
+      "epochs": 3,
+      "optimizer_steps": 4500,
+      "warmup_steps_proposed": 450,
+      "selection_rule": "equal_language_mean_macro_f1",
+      "validation_languages": [
+        "kz",
+        "tr"
+      ],
+      "task": "binary"
+    },
+    {
+      "seed": 46,
+      "context_id": "domain:TRSAv1",
+      "learning_rate": 1e-05,
+      "train_rows": 1500,
+      "validation_rows": 240,
+      "epochs": 3,
+      "optimizer_steps": 141,
+      "warmup_steps_proposed": 15,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "tr"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 46,
+      "context_id": "domain:TRSAv1",
+      "learning_rate": 2e-05,
+      "train_rows": 1500,
+      "validation_rows": 240,
+      "epochs": 3,
+      "optimizer_steps": 141,
+      "warmup_steps_proposed": 15,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "tr"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 46,
+      "context_id": "domain:KZ_Market",
+      "learning_rate": 1e-05,
+      "train_rows": 1500,
+      "validation_rows": 240,
+      "epochs": 3,
+      "optimizer_steps": 141,
+      "warmup_steps_proposed": 15,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 46,
+      "context_id": "domain:KZ_Market",
+      "learning_rate": 2e-05,
+      "train_rows": 1500,
+      "validation_rows": 240,
+      "epochs": 3,
+      "optimizer_steps": 141,
+      "warmup_steps_proposed": 15,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 46,
+      "context_id": "domain:KZ_Appstore",
+      "learning_rate": 1e-05,
+      "train_rows": 1500,
+      "validation_rows": 240,
+      "epochs": 3,
+      "optimizer_steps": 141,
+      "warmup_steps_proposed": 15,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "three_class"
+    },
+    {
+      "seed": 46,
+      "context_id": "domain:KZ_Appstore",
+      "learning_rate": 2e-05,
+      "train_rows": 1500,
+      "validation_rows": 240,
+      "epochs": 3,
+      "optimizer_steps": 141,
+      "warmup_steps_proposed": 15,
+      "selection_rule": "source_macro_f1",
+      "validation_languages": [
+        "kz"
+      ],
+      "task": "three_class"
+    }
+  ],
+  "executed_here": false
+}

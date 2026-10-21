@@ -1,0 +1,445 @@
+{
+  "schema_version": "1.0.0",
+  "created_at": "2026-10-16T12:24:46.403662+00:00",
+  "state": "FEATURE_BANKS_READY",
+  "protocol_id": "dc483a2f7daabc096c06",
+  "input_rows": 330014,
+  "corpus_sha256": "48647a430ae5140c9e43c189a240204fd91653344fc15a84cd4f11a19b9a0941",
+  "builder_sha256": "1365dd5beca0a63a9e7b95da4e836e16279c8ad6d55aac3849c02e3ed488d430",
+  "smoke_report_sha256": "e47ce3c0ba4e2abf1350bf4228a668f04fcb69c04766fa5749e66ff542efbf4d",
+  "packages": {
+    "python": "3.12.3",
+    "numpy": "2.3.5",
+    "torch": "2.10.0+cu128",
+    "transformers": "5.12.1",
+    "sentence-transformers": "5.6.0",
+    "tokenizers": "0.22.2",
+    "safetensors": "0.8.0",
+    "huggingface-hub": "1.21.0"
+  },
+  "requested_models": [
+    "minilm",
+    "labse",
+    "bge_m3",
+    "xlmr_tokens"
+  ],
+  "banks": {
+    "minilm": {
+      "state": "FEATURE_BANK_READY",
+      "alias": "minilm",
+      "spec_sha256": "586c752969fa76032ef4a3f6280e93c7c332f96fe9547658ab552cce3133fb59",
+      "rows": 330014,
+      "dimension": 384,
+      "max_length": 128,
+      "precision": "float32",
+      "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+      "shards": 645,
+      "reused_shards_this_run": 0,
+      "feature_bytes": 553931644,
+      "profiles": {
+        "all": {
+          "rows": 330014,
+          "mean_tokens": 21.754943729659953,
+          "median_tokens": 16,
+          "p95_tokens": 56,
+          "p99_tokens": 104,
+          "max_tokens": 654,
+          "truncated_rows": 1778,
+          "truncated_fraction": 0.005387650220899719
+        },
+        "domain:kz:Appstore": {
+          "rows": 135026,
+          "mean_tokens": 20.80508939019152,
+          "median_tokens": 14,
+          "p95_tokens": 57,
+          "p99_tokens": 122,
+          "max_tokens": 611,
+          "truncated_rows": 1157,
+          "truncated_fraction": 0.008568720098351428
+        },
+        "domain:kz:Bookstore": {
+          "rows": 5804,
+          "mean_tokens": 16.42694693314955,
+          "median_tokens": 11,
+          "p95_tokens": 46,
+          "p99_tokens": 76,
+          "max_tokens": 654,
+          "truncated_rows": 22,
+          "truncated_fraction": 0.003790489317711923
+        },
+        "domain:kz:Mapping": {
+          "rows": 8896,
+          "mean_tokens": 25.482688848920862,
+          "median_tokens": 17,
+          "p95_tokens": 73,
+          "p99_tokens": 146,
+          "max_tokens": 564,
+          "truncated_rows": 124,
+          "truncated_fraction": 0.01393884892086331
+        },
+        "domain:kz:Market": {
+          "rows": 30288,
+          "mean_tokens": 23.829701531959852,
+          "median_tokens": 19,
+          "p95_tokens": 56,
+          "p99_tokens": 92,
+          "max_tokens": 265,
+          "truncated_rows": 94,
+          "truncated_fraction": 0.003103539355520338
+        },
+        "domain:tr:NOT_PROVIDED": {
+          "rows": 150000,
+          "mean_tokens": 22.17612,
+          "median_tokens": 17,
+          "p95_tokens": 56,
+          "p99_tokens": 90,
+          "max_tokens": 522,
+          "truncated_rows": 381,
+          "truncated_fraction": 0.00254
+        },
+        "language:kz": {
+          "rows": 180014,
+          "mean_tokens": 21.4039908007155,
+          "median_tokens": 15,
+          "p95_tokens": 57,
+          "p99_tokens": 118,
+          "max_tokens": 654,
+          "truncated_rows": 1397,
+          "truncated_fraction": 0.007760507516082082
+        },
+        "language:tr": {
+          "rows": 150000,
+          "mean_tokens": 22.17612,
+          "median_tokens": 17,
+          "p95_tokens": 56,
+          "p99_tokens": 90,
+          "max_tokens": 522,
+          "truncated_rows": 381,
+          "truncated_fraction": 0.00254
+        }
+      },
+      "recorded_gpu_uuids": [
+        "GPU-REDACTED"
+      ],
+      "oom_retries_recorded": 0,
+      "labels_used": false,
+      "model_training": false,
+      "final_test_predictions": false,
+      "bank_directory": "minilm_586c752969fa"
+    },
+    "labse": {
+      "state": "FEATURE_BANK_READY",
+      "alias": "labse",
+      "spec_sha256": "78a540ae2bdb1f057b4e0d68781a925c437c728b28c4960584485f79f9a5d23a",
+      "rows": 330014,
+      "dimension": 768,
+      "max_length": 256,
+      "precision": "float32",
+      "revision": "836121a0533e5664b21c7aacc5d22951f2b8b25b",
+      "shards": 645,
+      "reused_shards_this_run": 0,
+      "feature_bytes": 1060833148,
+      "profiles": {
+        "all": {
+          "rows": 330014,
+          "mean_tokens": 19.57176665232384,
+          "median_tokens": 14,
+          "p95_tokens": 51,
+          "p99_tokens": 92,
+          "max_tokens": 653,
+          "truncated_rows": 80,
+          "truncated_fraction": 0.0002424139581957129
+        },
+        "domain:kz:Appstore": {
+          "rows": 135026,
+          "mean_tokens": 18.085220624176085,
+          "median_tokens": 12,
+          "p95_tokens": 50,
+          "p99_tokens": 102,
+          "max_tokens": 561,
+          "truncated_rows": 49,
+          "truncated_fraction": 0.00036289307244530684
+        },
+        "domain:kz:Bookstore": {
+          "rows": 5804,
+          "mean_tokens": 14.788249483115093,
+          "median_tokens": 10,
+          "p95_tokens": 41,
+          "p99_tokens": 72,
+          "max_tokens": 653,
+          "truncated_rows": 5,
+          "truncated_fraction": 0.0008614748449345279
+        },
+        "domain:kz:Mapping": {
+          "rows": 8896,
+          "mean_tokens": 22.674797661870503,
+          "median_tokens": 15,
+          "p95_tokens": 65,
+          "p99_tokens": 132,
+          "max_tokens": 518,
+          "truncated_rows": 12,
+          "truncated_fraction": 0.0013489208633093526
+        },
+        "domain:kz:Market": {
+          "rows": 30288,
+          "mean_tokens": 20.37460380348653,
+          "median_tokens": 16,
+          "p95_tokens": 49,
+          "p99_tokens": 80,
+          "max_tokens": 228,
+          "truncated_rows": 0,
+          "truncated_fraction": 0.0
+        },
+        "domain:tr:NOT_PROVIDED": {
+          "rows": 150000,
+          "mean_tokens": 20.748866666666668,
+          "median_tokens": 16,
+          "p95_tokens": 52,
+          "p99_tokens": 84,
+          "max_tokens": 471,
+          "truncated_rows": 14,
+          "truncated_fraction": 9.333333333333333e-05
+        },
+        "language:kz": {
+          "rows": 180014,
+          "mean_tokens": 18.59092626129079,
+          "median_tokens": 13,
+          "p95_tokens": 50,
+          "p99_tokens": 100,
+          "max_tokens": 653,
+          "truncated_rows": 66,
+          "truncated_fraction": 0.0003666381503660826
+        },
+        "language:tr": {
+          "rows": 150000,
+          "mean_tokens": 20.748866666666668,
+          "median_tokens": 16,
+          "p95_tokens": 52,
+          "p99_tokens": 84,
+          "max_tokens": 471,
+          "truncated_rows": 14,
+          "truncated_fraction": 9.333333333333333e-05
+        }
+      },
+      "recorded_gpu_uuids": [
+        "GPU-REDACTED"
+      ],
+      "oom_retries_recorded": 0,
+      "labels_used": false,
+      "model_training": false,
+      "final_test_predictions": false,
+      "bank_directory": "labse_78a540ae2bdb"
+    },
+    "bge_m3": {
+      "state": "FEATURE_BANK_READY",
+      "alias": "bge_m3",
+      "spec_sha256": "b70965dcf4058c4e48070fe056edff7938d8a29d690579478adb4164095484b5",
+      "rows": 330014,
+      "dimension": 1024,
+      "max_length": 8192,
+      "precision": "float32",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "shards": 645,
+      "reused_shards_this_run": 0,
+      "feature_bytes": 1398767484,
+      "profiles": {
+        "all": {
+          "rows": 330014,
+          "mean_tokens": 21.754943729659953,
+          "median_tokens": 16,
+          "p95_tokens": 56,
+          "p99_tokens": 104,
+          "max_tokens": 654,
+          "truncated_rows": 0,
+          "truncated_fraction": 0.0
+        },
+        "domain:kz:Appstore": {
+          "rows": 135026,
+          "mean_tokens": 20.80508939019152,
+          "median_tokens": 14,
+          "p95_tokens": 57,
+          "p99_tokens": 122,
+          "max_tokens": 611,
+          "truncated_rows": 0,
+          "truncated_fraction": 0.0
+        },
+        "domain:kz:Bookstore": {
+          "rows": 5804,
+          "mean_tokens": 16.42694693314955,
+          "median_tokens": 11,
+          "p95_tokens": 46,
+          "p99_tokens": 76,
+          "max_tokens": 654,
+          "truncated_rows": 0,
+          "truncated_fraction": 0.0
+        },
+        "domain:kz:Mapping": {
+          "rows": 8896,
+          "mean_tokens": 25.482688848920862,
+          "median_tokens": 17,
+          "p95_tokens": 73,
+          "p99_tokens": 146,
+          "max_tokens": 564,
+          "truncated_rows": 0,
+          "truncated_fraction": 0.0
+        },
+        "domain:kz:Market": {
+          "rows": 30288,
+          "mean_tokens": 23.829701531959852,
+          "median_tokens": 19,
+          "p95_tokens": 56,
+          "p99_tokens": 92,
+          "max_tokens": 265,
+          "truncated_rows": 0,
+          "truncated_fraction": 0.0
+        },
+        "domain:tr:NOT_PROVIDED": {
+          "rows": 150000,
+          "mean_tokens": 22.17612,
+          "median_tokens": 17,
+          "p95_tokens": 56,
+          "p99_tokens": 90,
+          "max_tokens": 522,
+          "truncated_rows": 0,
+          "truncated_fraction": 0.0
+        },
+        "language:kz": {
+          "rows": 180014,
+          "mean_tokens": 21.4039908007155,
+          "median_tokens": 15,
+          "p95_tokens": 57,
+          "p99_tokens": 118,
+          "max_tokens": 654,
+          "truncated_rows": 0,
+          "truncated_fraction": 0.0
+        },
+        "language:tr": {
+          "rows": 150000,
+          "mean_tokens": 22.17612,
+          "median_tokens": 17,
+          "p95_tokens": 56,
+          "p99_tokens": 90,
+          "max_tokens": 522,
+          "truncated_rows": 0,
+          "truncated_fraction": 0.0
+        }
+      },
+      "recorded_gpu_uuids": [
+        "GPU-REDACTED"
+      ],
+      "oom_retries_recorded": 0,
+      "labels_used": false,
+      "model_training": false,
+      "final_test_predictions": false,
+      "bank_directory": "bge_m3_b70965dcf405"
+    },
+    "xlmr_tokens": {
+      "state": "FEATURE_BANK_READY",
+      "alias": "xlmr_tokens",
+      "spec_sha256": "2c8d363113f02ba40f7c628b45011ab2a6c2b4c9339adb80d7d16c10e8eda886",
+      "rows": 330014,
+      "dimension": null,
+      "max_length": 256,
+      "precision": "int32",
+      "revision": "e73636d4f797dec63c3081bb6ed5c7b0bb3f2089",
+      "shards": 645,
+      "reused_shards_this_run": 0,
+      "feature_bytes": 78508908,
+      "profiles": {
+        "all": {
+          "rows": 330014,
+          "mean_tokens": 21.754943729659953,
+          "median_tokens": 16,
+          "p95_tokens": 56,
+          "p99_tokens": 104,
+          "max_tokens": 654,
+          "truncated_rows": 154,
+          "truncated_fraction": 0.00046664686952674735
+        },
+        "domain:kz:Appstore": {
+          "rows": 135026,
+          "mean_tokens": 20.80508939019152,
+          "median_tokens": 14,
+          "p95_tokens": 57,
+          "p99_tokens": 122,
+          "max_tokens": 611,
+          "truncated_rows": 110,
+          "truncated_fraction": 0.0008146579177343622
+        },
+        "domain:kz:Bookstore": {
+          "rows": 5804,
+          "mean_tokens": 16.42694693314955,
+          "median_tokens": 11,
+          "p95_tokens": 46,
+          "p99_tokens": 76,
+          "max_tokens": 654,
+          "truncated_rows": 5,
+          "truncated_fraction": 0.0008614748449345279
+        },
+        "domain:kz:Mapping": {
+          "rows": 8896,
+          "mean_tokens": 25.482688848920862,
+          "median_tokens": 17,
+          "p95_tokens": 73,
+          "p99_tokens": 146,
+          "max_tokens": 564,
+          "truncated_rows": 19,
+          "truncated_fraction": 0.002135791366906475
+        },
+        "domain:kz:Market": {
+          "rows": 30288,
+          "mean_tokens": 23.829701531959852,
+          "median_tokens": 19,
+          "p95_tokens": 56,
+          "p99_tokens": 92,
+          "max_tokens": 265,
+          "truncated_rows": 1,
+          "truncated_fraction": 3.301637612255679e-05
+        },
+        "domain:tr:NOT_PROVIDED": {
+          "rows": 150000,
+          "mean_tokens": 22.17612,
+          "median_tokens": 17,
+          "p95_tokens": 56,
+          "p99_tokens": 90,
+          "max_tokens": 522,
+          "truncated_rows": 19,
+          "truncated_fraction": 0.00012666666666666666
+        },
+        "language:kz": {
+          "rows": 180014,
+          "mean_tokens": 21.4039908007155,
+          "median_tokens": 15,
+          "p95_tokens": 57,
+          "p99_tokens": 118,
+          "max_tokens": 654,
+          "truncated_rows": 135,
+          "truncated_fraction": 0.0007499416712033509
+        },
+        "language:tr": {
+          "rows": 150000,
+          "mean_tokens": 22.17612,
+          "median_tokens": 17,
+          "p95_tokens": 56,
+          "p99_tokens": 90,
+          "max_tokens": 522,
+          "truncated_rows": 19,
+          "truncated_fraction": 0.00012666666666666666
+        }
+      },
+      "recorded_gpu_uuids": [],
+      "oom_retries_recorded": 0,
+      "labels_used": false,
+      "model_training": false,
+      "final_test_predictions": false,
+      "bank_directory": "xlmr_tokens_2c8d363113f0"
+    }
+  },
+  "final_test_predictions_created": false,
+  "models_fitted": false,
+  "limitations": [
+    "Frozen features include unlabeled test texts; no corpus fitting or test performance.",
+    "Not full XLM-R training or training-batch sizing. Native limits not changed.",
+    "Per-shard hardware/batch recorded; cross-GPU bitwise identity is not asserted."
+  ]
+}

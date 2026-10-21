@@ -1,0 +1,15 @@
+{
+  "groups": 315984,
+  "repeated_groups": 5163,
+  "conflicting_label_groups": 2394,
+  "cross_domain_groups": 637,
+  "largest_group_rows": 422,
+  "merged_nfc_group_categories": {
+    "casefold_sufficient": 2084,
+    "compatibility_normalization_sufficient": 1,
+    "combined_operations_required": 2
+  },
+  "nfc_groups": 318133,
+  "row_retention": "All eligible records retained in corpus and base split.",
+  "interpretation": "Matching-key grouping, not semantic equivalence, human label validation or exhaustive near-deduplication."
+}

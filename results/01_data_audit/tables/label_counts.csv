@@ -1,0 +1,9 @@
+language,raw_label,mapped_label,raw_rows
+tr,Negative,negative,50000
+tr,Neutral,neutral,50000
+tr,Positive,positive,50000
+kz,1,negative,25235
+kz,2,negative,4929
+kz,3,neutral,7262
+kz,4,positive,11617
+kz,5,positive,131021

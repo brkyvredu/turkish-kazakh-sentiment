@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0.0",
+  "protocol_id": "dc483a2f7daabc096c06",
+  "corpus_sha256": "48647a430ae5140c9e43c189a240204fd91653344fc15a84cd4f11a19b9a0941",
+  "runner_sha256": "9e6d39a4a02494f95b09211b13275ad87cf0954b32547ad3b1ae5bde67b2b9e4",
+  "helper_sha256": {
+    "linear": "957ffda653a635eb63ea3b3f940f78e350fd4177f90e20f769a2ec10a9603338",
+    "features": "1365dd5beca0a63a9e7b95da4e836e16279c8ad6d55aac3849c02e3ed488d430",
+    "smoke": "e045b983a7719717a3dbcaf25ba83b2201be4cd340aca411af80e6d2caeb45b0",
+    "pilot": "6c8a833b1c3d5175516f966b6004f2511920576b335df470ed5bba60a970a8da"
+  },
+  "split_report_sha256": "b39f3b3401bdb7ed439c6155846cf97da37bb713d698751bf30c3d4a477c0b5f",
+  "feature_report_sha256": "9e7182e4e79c1a34cd244fc621362c9cc16b4ce13ca5506d5687511101657aab",
+  "smoke_report_sha256": "e47ce3c0ba4e2abf1350bf4228a668f04fcb69c04766fa5749e66ff542efbf4d",
+  "linear_report_sha256": "0457561c0de81252b45c5fe2db2ea782a1ae7b27df21abb41a05adbe1c5ccccf",
+  "pilot_report_sha256": "6b46203bd0ec461aa3511ed81b1cc6dc5e4f9ae76a3fd9e5542b19ab1231c3f1",
+  "neural_packages": {
+    "python": "3.12.3",
+    "numpy": "2.3.5",
+    "torch": "2.10.0+cu128",
+    "transformers": "5.12.1",
+    "sentence-transformers": "5.6.0",
+    "tokenizers": "0.22.2",
+    "safetensors": "0.8.0",
+    "huggingface-hub": "1.21.0"
+  },
+  "linear_packages": {
+    "python": "3.12.3",
+    "numpy": "2.3.5",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.8.0",
+    "joblib": "1.5.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "xlmr_asset_sha256": "c9626afc81e09987ebb53dd61351a70001c04e23f18a27886d5d392c373dea3b",
+  "token_spec_sha256": "2c8d363113f02ba40f7c628b45011ab2a6c2b4c9339adb80d7d16c10e8eda886",
+  "settings": {
+    "model": "FacebookAI/xlm-roberta-base",
+    "revision": "e73636d4f797dec63c3081bb6ed5c7b0bb3f2089",
+    "precision": "fp32",
+    "microbatch": 4,
+    "effective_batch": 32,
+    "max_length": 256,
+    "padding": "fixed_256",
+    "epochs": 3,
+    "learning_rates": [
+      1e-05,
+      2e-05
+    ],
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "families": [
+      "main",
+      "binary",
+      "domain"
+    ],
+    "optimizer": {
+      "name": "AdamW",
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08,
+      "weight_decay": 0.01,
+      "parameter_groups": "all_trainable_parameters",
+      "foreach": false,
+      "fused": false
+    },
+    "warmup_ratio": 0.1,
+    "warmup_rounding": "ceil",
+    "scheduler": "linear_warmup_then_linear_decay",
+    "max_grad_norm": 1.0,
+    "class_weights": "N_train/(K*class_count_train)",
+    "loss_normalization": "sum_weighted_CE_per_effective_batch/sum_label_weights_per_effective_batch",
+    "attention": "eager",
+    "TF32": false,
+    "deterministic_algorithms": true,
+    "model_init_seed": "split_seed, same initialization across both learning rates",
+    "training_order": "PCG64 permutation keyed by seed/context/epoch, independent of model RNG and LR",
+    "validation_every": "epoch",
+    "validation_microbatch": 4,
+    "selection": "source_macro_f1 or equal_language_mean_macro_f1 as fixed in each recipe",
+    "tie_break": "smaller_learning_rate_then_earlier_epoch_on_exact_score_tie",
+    "refit_train_plus_validation": false,
+    "pilot_checkpoint_used": false,
+    "final_test_read": false
+  },
+  "threads": 4,
+  "retention": "immutable weights/predictions for all 3 epochs of all 90 candidates; 2 rotating run-local full-state working slots",
+  "gpu_identity_in_scientific_key": false
+}

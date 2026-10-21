@@ -1,0 +1,12 @@
+SAUCIS — TAM XLM-R EGITIMI / VALIDATION SECIMI
+==================================================================
+Durum: XLMR_MODELS_READY
+Protocol: dc483a2f7daabc096c06
+Tamamlanan LR adayi: 90/90; secilmis model: 45/45
+Tamamlanan epoch validation: 270/270
+FP32; microbatch4; effectivebatch32; max_length256; 3epoch; 2LR; 5seed.
+Ana/binary/domain; low-resource XLM ve LLM bu kapsama eklenmedi.
+Secim kaynak validation; joint esit dil Macro-F1. Esitlik: kucuk LR, erken epoch.
+FINAL TEST OKUNMADI. Pilot checkpointi kullanilmadi. Train+validation refit YOK.
+Bitmis epoch/model dosyalari korunur; yalnizca bu kosunun 2 gecici resume slotu donusumlu guncellenir.
+Ham metin/kimlik/token/tahmin/PRIVATE checkpoint ZIPe dahil DEGIL.

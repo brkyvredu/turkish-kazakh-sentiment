@@ -1,0 +1,12 @@
+# Recorded supervised environment, not a newly resolved lock of transitive deps.
+# Install the matching torch CUDA wheel separately; see docs/REPRODUCING.md.
+numpy==2.3.5
+scipy==1.17.1
+scikit-learn==1.8.0
+joblib==1.5.3
+threadpoolctl==3.6.0
+transformers==5.12.1
+sentence-transformers==5.6.0
+tokenizers==0.22.2
+safetensors==0.8.0
+huggingface-hub==1.21.0

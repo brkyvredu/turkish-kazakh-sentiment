@@ -1,0 +1,29 @@
+{
+  "title": "Turkish–Kazakh Sentiment Classification: Research Code and Aggregate Results",
+  "version": "1.0.0",
+  "upload_type": "software",
+  "description": "Reproducibility source package accompanying “Turkish–Kazakh Sentiment Classification: An Empirical Comparison of Lexical and Multilingual Models”. It contains the frozen revision scripts, pinned upstream input specifications, aggregate supervised and supplementary zero-shot LLM results, numerical audit tools, and supplementary methods. It does not redistribute raw reviews, individual predictions, pretrained or fitted model weights, credentials, or local runtime databases. Five grouped partitions are repeated partitions of two corpora, not independent external datasets. The 40 supervised transfer tests and the 20 exploratory LLM tests are separate families. No article DOI or publication acceptance is asserted.",
+  "creators": [
+    {
+      "name": "Yavru, Ismail Burak",
+      "affiliation": "Bursa Uludag University",
+      "orcid": "0000-0002-7364-6166"
+    }
+  ],
+  "keywords": [
+    "cross-lingual sentiment classification",
+    "Turkish",
+    "Kazakh",
+    "multilingual representations",
+    "low-resource learning",
+    "reproducibility"
+  ],
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/brkyvredu/turkish-kazakh-sentiment",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "state": "POST_TEST_ANALYSIS_READY",
+  "protocol_id": "dc483a2f7daabc096c06",
+  "aggregate_audit": {
+    "state": "AGGREGATE_AUDIT_PASS",
+    "evaluations": 2820,
+    "five_split_groups": 564,
+    "model_contexts": 1245,
+    "checks": "all confusion/class/strata metrics; source model consistency; shared target identity; unique complete scope"
+  },
+  "main_predictions_verified": 330,
+  "completed_analysis_units": 788,
+  "training_or_prediction_performed": false,
+  "individual_conditional_CIs": 330,
+  "paired_transfer_tests": 40,
+  "holm_family_size": 40,
+  "joint_conditional_difference_CIs": 110,
+  "main_diagnostic_rows": 3241,
+  "full_aggregate_evaluations": 2820,
+  "conditional_inference_only": true,
+  "preregistration_claimed": false,
+  "individual_or_joint_CIs_simultaneous": false,
+  "unverified_here": "No re-inference; non-main results checked at aggregate level; no human label validation.",
+  "finished_at": "2026-10-20T12:23:55.714897+00:00",
+  "new_units": 810,
+  "reused_units": 0
+}

@@ -1,0 +1,6 @@
+{
+  "scope": "Targeted literal credential/private-key/home-path scan over all text and decompressed JSON; runtime files excluded by allowlisted packaging",
+  "text_files_scanned": 186,
+  "findings": [],
+  "not_a_universal_secret_detection_guarantee": true
+}

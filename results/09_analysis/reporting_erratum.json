@@ -1,0 +1,12 @@
+{
+  "historical_field": "completed_analysis_units",
+  "historical_value": 788,
+  "completed_units_from_scope": 810,
+  "new_units": 810,
+  "reused_units": 0,
+  "reason": "Last 22 joint units ran after the last refresh of this summary field.",
+  "joint_rows_present": 110,
+  "last_seed_joint_rows_present": 22,
+  "scientific_results_changed": false,
+  "frozen_producer_modified": false
+}

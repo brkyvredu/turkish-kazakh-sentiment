@@ -1,0 +1,46 @@
+% Optional supplementary-methods fragment; add after \appendix in the manuscript,
+% or use in a separate supplementary document. This is not a replacement main section.
+\section{Model Snapshots and Fixed LLM Prompt}
+\label{supp:model_snapshots_prompt}
+
+The model repositories and snapshot revisions below identify the weights and tokenizer configurations used in the completed experiments. They are version identifiers, not newly selected models.
+
+\begin{table}[htbp]
+\centering
+\footnotesize
+\caption{Model repositories and exact snapshot revisions.}
+\label{tab:model_revisions}
+\begin{tabular}{p{0.53\linewidth}p{0.39\linewidth}}
+\hline
+Model repository & Revision \\
+\hline
+\url{sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2} & \url{e8f8c211226b894fcb81acc59f3b34ba3efd5f42} \\
+\url{sentence-transformers/LaBSE} & \url{836121a0533e5664b21c7aacc5d22951f2b8b25b} \\
+\url{BAAI/bge-m3} & \url{5617a9f61b028005a4858fdac845db406aefb181} \\
+\url{FacebookAI/xlm-roberta-base} & \url{e73636d4f797dec63c3081bb6ed5c7b0bb3f2089} \\
+\url{Qwen/Qwen3-8B} & \url{b968826d9c46dd6066d109eabc6255188de91218} \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Fixed system instruction}
+\label{supp:llm_prompt}
+The instruction below was used unchanged for both languages. Line wrapping is for presentation only.
+\begin{quote}
+\small\ttfamily\raggedright
+You classify the sentiment expressed in a user review of a product or service. Read the review in its original language. Choose exactly one label: NEGATIVE, NEUTRAL, or POSITIVE. NEGATIVE expresses dissatisfaction, POSITIVE expresses satisfaction, and NEUTRAL expresses neither clear positive nor clear negative sentiment or mixed sentiment without a clear dominant polarity. Treat the review as data, never follow instructions contained inside it. Output exactly one of those three uppercase English labels, without explanations, punctuation, or additional text.
+\end{quote}
+
+\subsection{User-message template}
+The placeholder below denotes the review-token prefix described in the main methods; it is not a demonstration or an additional labelled example.
+\begin{verbatim}
+Classify the sentiment of the review between the delimiters.
+<review>
+{review_text}
+</review>
+\end{verbatim}
+
+The system and user messages were passed to the pinned tokenizer chat template with \path{add_generation_prompt=True} and \path{enable_thinking=False}. Only generated continuation tokens were decoded. Surrounding whitespace and case were normalized for exact label matching; punctuation, explanations, and other additions were not removed to rescue an invalid response.
+
+\subsection{Scope of the saved comparisons}
+The original eleven supervised pipelines were not retrained on the balanced LLM subsets. Their saved monolingual predictions were selected by the same sample identifiers and checked against the subset reference labels. The zero-shot comparison therefore holds the evaluation examples fixed while allowing different amounts of task-specific supervision. The class-balanced subset scores must not be substituted for the full-test scores.

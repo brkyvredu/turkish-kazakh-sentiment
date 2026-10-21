@@ -1,0 +1,39 @@
+SAUCIS REVIZYONU — TAM SATIR VERI DENETIMI
+==============================================================
+Durum: RAW_AUDIT_COMPLETE
+Indirme, paket kurulumu, model egitimi, GPU kullanimi veya eski dosya degisikligi yok.
+Asagidaki filtre/grup sayilari denetim gorunumudur; yeni split uretilmedi.
+
+TR: CSV=150,000; metadata=150000; etiketi taninan ve >=3 karakter=150,000
+  revision=3bda52ed2c57ac1e80ac463192cafeeae9f72213
+  SHA256=9a4ed0fdb4ae45f2d16322d9b459b4e924c39b2c18c43c29378adc417d966589
+KZ: CSV=180,064; metadata=180064; etiketi taninan ve >=3 karakter=180,014
+  revision=a39e47875861b4f3bdf697b5fb768a1fdd95869a
+  SHA256=496035dd5c19ceacac6b07809fc073a87a4918f63145432f94483dd409f9e3a6
+
+GRUP DENETIMI (NFC + bosluk; buyuk/kucuk harf degismez):
+  tr: grup=140891; tekrar grubu=2757; celiskili etiket grubu=898; dillerarasi grup=0
+  kz: grup=177242; tekrar grubu=1936; celiskili etiket grubu=1193; dillerarasi grup=0
+  all: grup=318133; tekrar grubu=4693; celiskili etiket grubu=2091; dillerarasi grup=0
+
+KONTROLLER:
+  PASS: tr_csv_rows_vs_cached_metadata
+  PASS: tr_explicit_label_mapping
+  PASS: tr_native_id_completeness
+  PASS: kz_csv_rows_vs_cached_metadata
+  PASS: kz_explicit_label_mapping
+  PASS: kz_domain_values
+  PASS: kz_native_id_completeness
+  PASS: tr_original_id_reuse
+  PASS: kz_original_id_reuse
+  PASS: tr_nonempty_eligible_data
+  PASS: kz_nonempty_eligible_data
+  NOT_RUN: train_validation_test_separation
+  NOT_RUN: per_seed_budget_feasibility
+  NOT_RUN: human_label_validation
+  NOT_RUN: cuda_runtime_and_model_loading
+
+NOT: Tamamlandi = veri okuma/denetim tamamlandi; egitim ve split onayi DEGIL.
+model_cache_manifest: snapshot/config metadata; agirliklar yuklenmedi.
+Paylasilacak: shareable_data_audit.zip (ham yorum ve ozgun kayit IDsi icermez).
+local_hash_ledger.sqlite3 ve source_manifest.local.json yerel kalabilir.

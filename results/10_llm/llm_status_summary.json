@@ -1,0 +1,196 @@
+{
+  "status": "LLM_ANALYSIS_READY",
+  "model": {
+    "repo_id": "Qwen/Qwen3-8B",
+    "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "download_completed_at": "2026-10-20T19:53:12.796109+00:00",
+    "license_model_card": "apache-2.0",
+    "model_selected_before_additional_LLM_test_scores": true
+  },
+  "run_directory": "llm_dc483a2f7daabc096c06_2b62ff21fe",
+  "original_results_unchanged": true,
+  "no_retraining_or_prompt_selection": true,
+  "generated_at": "2026-10-21T06:07:28.838683+00:00",
+  "sampling": {
+    "status": "SAMPLE_PREPARED",
+    "count": 9000,
+    "strata": [
+      {
+        "seed": 42,
+        "language": "tr",
+        "sampled": 900,
+        "test_rows": 30000,
+        "class_counts": {
+          "NEGATIVE": 300,
+          "NEUTRAL": 300,
+          "POSITIVE": 300
+        },
+        "test_manifest_sha256": "73d9d08df9f71673f6dc1631ab98aa87ec78cfb544437e3f7bad3d77c6d7da00"
+      },
+      {
+        "seed": 42,
+        "language": "kz",
+        "sampled": 900,
+        "test_rows": 36006,
+        "class_counts": {
+          "NEGATIVE": 300,
+          "NEUTRAL": 300,
+          "POSITIVE": 300
+        },
+        "test_manifest_sha256": "50fdf72ece7aa659f8890109e254f208a289072f452ba1149d930455a881c077"
+      },
+      {
+        "seed": 43,
+        "language": "tr",
+        "sampled": 900,
+        "test_rows": 30000,
+        "class_counts": {
+          "NEGATIVE": 300,
+          "NEUTRAL": 300,
+          "POSITIVE": 300
+        },
+        "test_manifest_sha256": "0cc5242713f869189e90f389318eca6e9ce70fc4a5001f0753f7989c663ae11e"
+      },
+      {
+        "seed": 43,
+        "language": "kz",
+        "sampled": 900,
+        "test_rows": 36006,
+        "class_counts": {
+          "NEGATIVE": 300,
+          "NEUTRAL": 300,
+          "POSITIVE": 300
+        },
+        "test_manifest_sha256": "07262df7ac829d5dcf765f014c10d84e8c5f5e0bc40af0c77344f7a976456c18"
+      },
+      {
+        "seed": 44,
+        "language": "tr",
+        "sampled": 900,
+        "test_rows": 30000,
+        "class_counts": {
+          "NEGATIVE": 300,
+          "NEUTRAL": 300,
+          "POSITIVE": 300
+        },
+        "test_manifest_sha256": "65cfca38f46950dda71765a74db31cbe87fcdacfa2ed8bc259212dd265a6b9ca"
+      },
+      {
+        "seed": 44,
+        "language": "kz",
+        "sampled": 900,
+        "test_rows": 36006,
+        "class_counts": {
+          "NEGATIVE": 300,
+          "NEUTRAL": 300,
+          "POSITIVE": 300
+        },
+        "test_manifest_sha256": "db1ed1018b292a079a9513538c97f98a0f87b5bde4b7e2c43b4a7d47bfa7c7b6"
+      },
+      {
+        "seed": 45,
+        "language": "tr",
+        "sampled": 900,
+        "test_rows": 30000,
+        "class_counts": {
+          "NEGATIVE": 300,
+          "NEUTRAL": 300,
+          "POSITIVE": 300
+        },
+        "test_manifest_sha256": "77630867077f2098a0e849a833468b2d75387ea55ba45177c6b718b13e27e4fd"
+      },
+      {
+        "seed": 45,
+        "language": "kz",
+        "sampled": 900,
+        "test_rows": 36006,
+        "class_counts": {
+          "NEGATIVE": 300,
+          "NEUTRAL": 300,
+          "POSITIVE": 300
+        },
+        "test_manifest_sha256": "5f9645dd64d33ed4113ce881504d30f21e02de54c93f87bde248afca9d061eca"
+      },
+      {
+        "seed": 46,
+        "language": "tr",
+        "sampled": 900,
+        "test_rows": 30000,
+        "class_counts": {
+          "NEGATIVE": 300,
+          "NEUTRAL": 300,
+          "POSITIVE": 300
+        },
+        "test_manifest_sha256": "36e67dd2c5fe95193a8b61e36fb59ff23e3ce6abd40b27d4a02e35cc7059dbb8"
+      },
+      {
+        "seed": 46,
+        "language": "kz",
+        "sampled": 900,
+        "test_rows": 36006,
+        "class_counts": {
+          "NEGATIVE": 300,
+          "NEUTRAL": 300,
+          "POSITIVE": 300
+        },
+        "test_manifest_sha256": "a2dda54c5d96fa58e05c396b58c68e65ebfe2379799a9f78e28d5262ecf58634"
+      }
+    ],
+    "sample_manifest_sha256": "017971e6c313aed3c3edb874f0b5d50f9aae4b0df32833d81aeb9e1013ef9c49",
+    "prediction_input_sha256": "f302d26aec82007d3e38c1c150da2ac0f0e23abf011a788192641ce58eac15fa",
+    "label_blind_inference_file": true,
+    "selection_did_not_consult_model_scores": true
+  },
+  "pilot": {
+    "state": "PASS",
+    "done": 24,
+    "total": 24,
+    "invalid": 0,
+    "truncated": 0,
+    "elapsed_seconds": 1.844633744098246,
+    "gpu": {
+      "index": "1",
+      "uuid": "GPU-REDACTED",
+      "name": "NVIDIA RTX 6000 Ada Generation",
+      "free_mib": 45372
+    },
+    "label_accessed": false,
+    "model_updated": false,
+    "model_trained": false
+  },
+  "inference": {
+    "state": "PASS",
+    "done": 9000,
+    "total": 9000,
+    "invalid": 35,
+    "truncated": 14,
+    "elapsed_seconds": 483.10031324997544,
+    "gpu": {
+      "index": "1",
+      "uuid": "GPU-REDACTED",
+      "name": "NVIDIA RTX 6000 Ada Generation",
+      "free_mib": 45372
+    },
+    "label_accessed": false,
+    "model_updated": false,
+    "model_trained": false
+  },
+  "analysis": {
+    "state": "LLM_ANALYSIS_READY",
+    "study": "exploratory_after_original_test",
+    "results": 120,
+    "models_per_seed_language": 12,
+    "samples_per_seed_language": 900,
+    "paired_comparisons": 20,
+    "paired_comparisons_family": "one exploratory Holm family of 20; original 40 unchanged",
+    "paired_resampling_unit": "NFKC_casefold_whitespace_text_group",
+    "bootstrap_repetitions": 2000,
+    "permutations": 10000,
+    "true_five_split_independence": false,
+    "balanced_test_subset_not_full_corpus": true,
+    "original_40_Holm_tests_unchanged": true,
+    "invalid_predictions_counted_as_errors": true,
+    "zero_shot_not_direct_supervised_transfer": true,
+    "label_supervision_not_in_prompt": true
+  }
+}

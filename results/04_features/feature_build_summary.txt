@@ -1,0 +1,11 @@
+SAUCIS — TAM VERI OZELLIK URETIMI
+==========================================================
+Durum: FEATURE_BANKS_READY
+Protocol: dc483a2f7daabc096c06
+Frozen encoder ciktilari/token sayimlari; etiketle fit ve final-test skoru YOK.
+minilm: FEATURE_BANK_READY; rows=330014; dimension=384; max_length=128
+labse: FEATURE_BANK_READY; rows=330014; dimension=768; max_length=256
+bge_m3: FEATURE_BANK_READY; rows=330014; dimension=1024; max_length=8192
+xlmr_tokens: FEATURE_BANK_READY; rows=330014; dimension=None; max_length=256
+PRIVATE NPZ ve ornek kimlikleri paylasim ZIPine eklenmez.
+TF-IDF her egitim butcesinde yeniden fit edilecek. XLM-R fine-tuning henuz yapilmadi.
