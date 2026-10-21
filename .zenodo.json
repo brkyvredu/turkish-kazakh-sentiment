@@ -1,0 +1,30 @@
+{
+  "title": "Turkish–Kazakh Sentiment Classification: Research Code and Aggregate Results",
+  "version": "1.0.0",
+  "upload_type": "software",
+  "description": "Research code and aggregate results for Turkish–Kazakh sentiment classification. The repository contains the experimental scripts, pinned dataset and model revisions, recorded software dependencies, supplementary methods, and validation tools. The evaluation covers lexical models, frozen multilingual embeddings, fine-tuned XLM-R, and a separate zero-shot Qwen3-8B comparison. Raw review texts, individual predictions, and model weights are not redistributed.",
+  "creators": [
+    {
+      "name": "Yavru, Ismail Burak",
+      "affiliation": "Bursa Uludag University",
+      "orcid": "0000-0002-7364-6166"
+    }
+  ],
+  "keywords": [
+    "cross-lingual sentiment classification",
+    "Turkish",
+    "Kazakh",
+    "multilingual representations",
+    "low-resource learning",
+    "reproducibility"
+  ],
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/brkyvredu/turkish-kazakh-sentiment",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "license": "mit"
+}

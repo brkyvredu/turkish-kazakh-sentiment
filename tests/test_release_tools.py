@@ -49,7 +49,7 @@ def test_inventory_exact_selected_sources(tmp_path):
  assert 'historical' in inv['dataset_metadata'][0]['reference_count_origin']
 
 def minimal_release(tmp_path):
- for rel in ['metadata/zenodo.template.json','license_templates/MIT.txt','CITATION.cff','LICENSE_CHOICE_REQUIRED.md']:
+ for rel in ['.zenodo.json','LICENSE','CITATION.cff']:
   d=tmp_path/rel;d.parent.mkdir(parents=True,exist_ok=True);d.write_bytes((ROOT/rel).read_bytes())
  return tmp_path
 
@@ -59,7 +59,7 @@ def test_explicit_metadata_choice(tmp_path):
  assert code.read_bytes()==before
  z=json.loads((root/'.zenodo.json').read_text());assert z['license']=='mit'
  assert 'doi' not in z and 'doi:' not in (root/'CITATION.cff').read_text()
- assert (root/'LICENSE').read_bytes()==(ROOT/'license_templates/MIT.txt').read_bytes()
+ assert (root/'LICENSE').read_bytes()==(ROOT/'LICENSE').read_bytes()
  assert 'license: "MIT"' in (root/'CITATION.cff').read_text()
  for line in (root/'SHA256SUMS.txt').read_text().splitlines():
   h,p=line.split('  ',1);assert hashlib.sha256((root/p).read_bytes()).hexdigest()==h
@@ -68,7 +68,7 @@ def test_explicit_metadata_choice(tmp_path):
 def test_metadata_reject_invalid_url(tmp_path,url):
  root=minimal_release(tmp_path)
  with pytest.raises(ValueError):F.finalize(root,url,'MIT')
- assert not (root/'LICENSE').exists()
+ assert (root/'LICENSE').read_bytes()==(ROOT/'LICENSE').read_bytes()
 
 def test_existing_license_not_replaced(tmp_path):
  root=minimal_release(tmp_path);(root/'LICENSE').write_text('another choice')
@@ -97,7 +97,37 @@ def test_stage_path_escape_rejected(tmp_path):
  state=state_fixture(tmp_path);state['split']['output']=str(tmp_path.parent)
  with pytest.raises(ValueError):S.command('features',tmp_path,state,'1',4)
 
-def test_no_active_license_chosen_in_delivered_candidate():
- # This assertion applies to the unfinalized candidate; skip after owner choice.
- if (ROOT/'metadata/release_owner_choices.json').exists():pytest.skip('Owner has explicitly selected a license.')
- assert not (ROOT/'LICENSE').exists() and not (ROOT/'.zenodo.json').exists()
+def test_active_license_matches_metadata():
+ assert (ROOT/'LICENSE').read_text(encoding='utf-8').startswith('MIT License\n')
+ assert json.loads((ROOT/'.zenodo.json').read_text(encoding='utf-8'))['license']=='mit'
+ assert 'license: MIT' in (ROOT/'CITATION.cff').read_text(encoding='utf-8') or 'license: "MIT"' in (ROOT/'CITATION.cff').read_text(encoding='utf-8')
+
+
+def test_metadata_preserves_existing_doi_and_release_date(tmp_path):
+ root=minimal_release(tmp_path)
+ F.finalize(root,'https://github.com/synthetic-owner/repo.git','MIT','10.1234/synthetic-test-only','2026-10-21')
+ first=(root/'CITATION.cff').read_bytes()
+ F.finalize(root,'https://github.com/synthetic-owner/repo','MIT')
+ assert (root/'CITATION.cff').read_bytes()==first
+ assert json.loads((root/'.zenodo.json').read_text(encoding='utf-8'))['publication_date']=='2026-10-21'
+
+
+def test_metadata_reads_unicode_with_explicit_encoding(tmp_path,monkeypatch):
+ root=minimal_release(tmp_path)
+ read_text=Path.read_text
+ def checked_read(path,*args,**kwargs):
+  if path.suffix in ('.json','.cff') or path.name=='LICENSE':
+   assert kwargs.get('encoding')=='utf-8'
+  return read_text(path,*args,**kwargs)
+ monkeypatch.setattr(Path,'read_text',checked_read)
+ F.finalize(root,'https://github.com/synthetic-owner/repo','MIT')
+ for rel in ['CITATION.cff','.zenodo.json','SHA256SUMS.txt']:
+  raw=(root/rel).read_bytes()
+  assert b'\r\n' not in raw
+  raw.decode('utf-8')
+
+
+def test_metadata_update_does_not_create_preparation_notes(tmp_path):
+ root=minimal_release(tmp_path)
+ F.finalize(root,'https://github.com/synthetic-owner/repo','MIT')
+ assert set(p.name for p in root.iterdir())=={'.zenodo.json','LICENSE','CITATION.cff','SHA256SUMS.txt'}

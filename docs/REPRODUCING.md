@@ -14,11 +14,10 @@ to audit classification arithmetic, mean/SD, contrast points and reported probab
 corrections. They do not contain the private group-level predictions needed to
 repeat bootstrap draws. A full reproduction below regenerates those privately.
 
-## B. Install the recorded supervised environment for a NEW run
+## B. Install the recorded supervised environment
 
 The research pipeline uses Linux file locking and NVIDIA CUDA. Python **3.12.3**
-was recorded. Use a separate environment; do not upgrade the author's original
-completed environment merely to inspect this release.
+was recorded. Use a separate virtual environment for reproduction.
 
 ```bash
 python3.12 -m venv .venv
@@ -57,10 +56,10 @@ Omit `--allow-download` for a cache-only check. The helper refuses different CSV
 checksums, model file checksums or a conflicting isolated `refs/main`. It preserves
 the original BGE-M3 weight format rather than silently replacing it with another
 revision. Dataset/model licenses remain the upstream providers' terms. Access
-credentials, when needed, stay in the owner's local HF authentication mechanism;
+credentials, when needed, are handled through local Hugging Face authentication;
 never insert them into repository files.
 
-The original step00 is included for provenance and author-environment diagnostics.
+Step00 records the original environment diagnostics.
 It need not be run on a new machine: it can discover multiple copies of known
 caches and lacks prepared-dataset metadata on a clean installation. The release
 adapter instead emits only the explicitly selected inputs. The provided reference
@@ -71,7 +70,7 @@ Allow substantial free disk space. The full XLM-R run retains 270 epoch weight
 files (the historical files were approximately 1.1 GB each), in addition to feature
 banks, predictions, source models and rotating full-state checkpoints. Check free
 space for the actual workspace filesystem; do not delete completed checkpoints
-or disable safety checks to force progress. No new runtime estimate is promised.
+or disable safety checks to force progress. Runtime depends on the available hardware.
 
 ## D. Run one stage at a time
 
@@ -97,7 +96,7 @@ python tools/run_stage.py --workspace ./_reproduction --stage linear --execute
 ```
 
 The original step05 may stop at a nonconverged SVM candidate. Preserve its output.
-The approved successor imports valid completed candidates and retries convergence
+The recovery implementation imports valid completed candidates and retries convergence
 failures with the same settings except for the documented iteration ceiling:
 
 ```bash

@@ -1,10 +1,10 @@
 cff-version: 1.2.0
 title: "Turkish–Kazakh Sentiment Classification: Research Code and Aggregate Results"
-message: "Please cite the version-specific software record once this release has been archived. The article DOI and software DOI have not yet been assigned in this package."
+message: "Please cite this software using the metadata in this file."
 type: software
 version: 1.0.0
 repository-code: "https://github.com/brkyvredu/turkish-kazakh-sentiment"
-abstract: "Frozen revision scripts, pinned input specifications, aggregate supervised and supplementary zero-shot LLM results, and audit tools for Turkish–Kazakh sentiment classification."
+abstract: "Research code and aggregate results for Turkish–Kazakh sentiment classification. The repository contains the experimental scripts, pinned dataset and model revisions, recorded software dependencies, supplementary methods, and validation tools. The evaluation covers lexical models, frozen multilingual embeddings, fine-tuned XLM-R, and a separate zero-shot Qwen3-8B comparison. Raw review texts, individual predictions, and model weights are not redistributed."
 authors:
   - family-names: Yavru
     given-names: Ismail Burak
@@ -17,3 +17,4 @@ keywords:
   - multilingual representations
   - low-resource learning
   - reproducibility
+license: "MIT"

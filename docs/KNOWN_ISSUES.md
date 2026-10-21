@@ -13,8 +13,7 @@ under the same experiment identity. A metadata erratum is shipped separately.
 Step02 includes the data-audit report hash (and therefore fresh audit provenance)
 in its protocol identity. New clean runs do not have to use the historical
 `dc483a2f7daabc096c06` folder name even with identical raw CSV files. Pass the actual
-`[OUTPUT]` paths between stages. Never rename fresh artifacts to pretend they came
-from the historical run. SQLite checksums also depend on creation/runtime details.
+`[OUTPUT]` paths between stages. Use the generated identifiers for new runs rather than the historical folder names. SQLite checksums also depend on creation/runtime details.
 
 ## Original step10 download resolves upstream main on its first download
 For archival fidelity, the original code is retained. For NEW reproduction, do
@@ -25,11 +24,10 @@ the input manifest that the unchanged worker verifies. It does not change prompt
 sampling, decoding, precision, or model parameters.
 
 ## Original step00 scans known caches
-The original preflight is an author-environment diagnostic. For a clean workspace,
+The original preflight inventories the research environment. For a clean workspace,
 use the release input adapter, which inventories only the chosen pinned cache and
 supplies explicitly identified historical row-count references. This avoids
-ambiguous multiple cache copies and absent prepared-dataset metadata. Step01 still
-reads and audits all raw rows; no PASS result is manufactured by the adapter.
+ambiguous multiple cache copies and absent prepared-dataset metadata. Step01 reads and audits all raw rows independently of the input adapter.
 
 ## Step05 convergence recovery
 Both original step05 and its recovery implementation are included. The recovery

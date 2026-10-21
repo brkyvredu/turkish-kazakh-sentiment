@@ -164,7 +164,7 @@ def audit(root=ROOT,verify_files=True):
     check(not forbidden,'Private/binary artifacts found: '+', '.join(forbidden));passed('excluded_runtime_artifacts',True)
     if verify_files and (root/'SHA256SUMS.txt').is_file():
         entries=0
-        for line in (root/'SHA256SUMS.txt').read_text().splitlines():
+        for line in (root/'SHA256SUMS.txt').read_text(encoding='utf-8').splitlines():
             hh,rel=line.split('  ',1);p=root/rel
             check(p.resolve().is_relative_to(root.resolve()) and p.is_file() and sha(p)==hh,'Release file checksum differs: '+rel);entries+=1
         passed('release_file_checksums',entries)

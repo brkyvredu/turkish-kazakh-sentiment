@@ -1,5 +1,9 @@
 {
   "status": "PASS",
+  "scope": "Public aggregates and frozen-code integrity only; no full GPU retraining, inference or bootstrap/permutation replay.",
+  "experiments_reexecuted": false,
+  "conditional_CI_endpoints_independently_recomputed": false,
+  "external_services_contacted": false,
   "checks": [
     {
       "check": "frozen_script_bytes_and_syntax",
@@ -76,9 +80,5 @@
       "status": "PASS",
       "details": true
     }
-  ],
-  "scope": "Public aggregates and frozen-code integrity only; no full GPU retraining, inference or bootstrap/permutation replay.",
-  "experiments_reexecuted": false,
-  "conditional_CI_endpoints_independently_recomputed": false,
-  "external_services_contacted": false
+  ]
 }
